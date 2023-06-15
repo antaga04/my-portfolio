@@ -1,24 +1,38 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { initNotFound } from './src/pages/404/404';
+import { initHome } from './src/pages/home/home';
+import { initProjects } from './src/pages/projects/projects';
+import './style.css';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+document.querySelectorAll('.nav-link').forEach((link) => {
+  console.log('hi');
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
 
-setupCounter(document.querySelector('#counter'))
+    if (e.target.href != window.location.href) {
+      const linkHref = e.target.href;
+      console.log('El link apunta a: ', linkHref);
+
+      history.pushState(null, null, linkHref);
+
+      router();
+    }
+  });
+});
+
+function router() {
+  const pathname = window.location.pathname;
+
+  switch (pathname) {
+    case '/':
+    case '/home':
+      initHome();
+      break;
+    case '/projects':
+      initProjects();
+      break;
+    default:
+      initNotFound();
+  }
+}
+
+router();
