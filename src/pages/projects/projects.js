@@ -3,6 +3,6 @@ export const initProjects = () => {
 
   app.innerHTML = '';
   app.innerHTML += `
-    <div>Proyects</div>
+    <div>Projects</div>
   `;
 };

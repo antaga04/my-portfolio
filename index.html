@@ -7,20 +7,31 @@
 
   <link rel="shortcut icon"
     href="https://res.cloudinary.com/drsfru9lj/image/upload/v1685969708/Portafolio/logo_jnxmse.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <title>Adrian Anta</title>
 </head>
 
 <body>
-  <div class="nav-bar">
-    <ul class="nav-links">
-        <li><a class="nav-link" href="/home">Inicio</a></li>
-        <li><a class="nav-link" href="/projects">Proyectos</a></li>
-    </ul>
-    <div class="progress-bar"></div>
-  </div>
+  <header>
+    <div class="logo">
+      <a class="nav-link" href="/home">
+        <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1685969708/Portafolio/logo_jnxmse.png" alt="Logo">
+      </a>
+    </div>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="/about">About</a></li>
+        <li><a class="nav-link" href="/projects">Work</a></li>
+      </ul>
+    </nav>
+  </header>
   <div id="app"></div>
 
   <script type="module" src="main.js"></script>
+  <script type="module" src="/src/router/router.js"></script>
 </body>
 
 </html>
