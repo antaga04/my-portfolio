@@ -11,24 +11,52 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/v4-shims.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/fontawesome.js"> </script>
+
   <title>Adrian Anta</title>
 </head>
 
 <body>
   <header>
-    <div class="logo">
+    <div id="logo">
       <a class="nav-link" href="/home">
-        <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1685969708/Portafolio/logo_jnxmse.png" alt="Logo">
+        <img href="/home" src="https://res.cloudinary.com/drsfru9lj/image/upload/v1685969708/Portafolio/logo_jnxmse.png"
+          alt="Logo">
       </a>
     </div>
-    <nav class="nav-container">
+
+    <nav id="nav-container" class="header-section">
       <ul class="nav-list">
         <li><a class="nav-link" href="/about">About</a></li>
         <li><a class="nav-link" href="/projects">Work</a></li>
       </ul>
     </nav>
+
+    <div id="icons-container" class="header-section">
+      <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/antaga04/" rel="noopener" target="_blank">
+            <i class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </div>
+
+    <div id="contact" class="header-section">
+      <button class="contact-btn">Get in touch</button>
+    </div>
+
+    <button id="nav-toggle-button" type="button">
+      <span>Menu</span>
+      <i class="fa-solid fa-bars"></i>
+    </button>
   </header>
+
   <div id="app"></div>
+
+  <footer></footer>
 
   <script type="module" src="main.js"></script>
   <script type="module" src="/src/router/router.js"></script>
