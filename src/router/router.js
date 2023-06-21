@@ -1,6 +1,8 @@
 import { initNotFound } from '../pages/404/404';
 import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
+import { initContact } from '../pages/contact/contact';
+import { initAbout } from '../pages/about/about'
 
 const links = document.querySelectorAll('.nav-link');
 console.log(links);
@@ -19,7 +21,6 @@ links.forEach((link) => {
   });
 });
 
-
 const handleLocation = () => {
   const pathname = window.location.pathname;
 
@@ -30,6 +31,12 @@ const handleLocation = () => {
       break;
     case '/projects':
       initProjects();
+      break;
+    case '/contact':
+      initContact();
+      break;
+    case '/about':
+      initAbout();
       break;
     default:
       initNotFound();

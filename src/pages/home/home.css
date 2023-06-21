@@ -1,0 +1,24 @@
+#hand {
+  width: 2rem;
+}
+
+#home-page-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hand-container {
+  transition: transform 0.3s ease;
+}
+
+.first-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  &:hover > .hand-container {
+    transform: translate3d(0px, -0.8rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(35deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+}
