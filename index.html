@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Adrián Anta - Web Developer</title>
+
   <link rel="shortcut icon"
-    href="https://res.cloudinary.com/drsfru9lj/image/upload/v1687358160/Portafolio/portfolio-logo_vrdsft.png" type="image/x-icon">
+    href="https://res.cloudinary.com/drsfru9lj/image/upload/v1692092677/Portafolio/cubo-rubik-green_nwbsyc.png"
+    type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,42 +19,77 @@
   <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/v4-shims.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/fontawesome.js"> </script>
 
-  <title>Adrian Anta</title>
 </head>
 
 <body>
   <header id="nav-bar">
     <div class="nav-1">
       <div class="nav-2">
-        <div id="nav-logo-section">
-          <a class="nav-link nav-logo" href="/home"></a>
+        <div class="nav-3">
+          <div id="nav-logo-section">
+            <a class="nav-link nav-logo" href="/home"></a>
+          </div>
+
+          <nav id="nav-link-section" class="nav-section">
+            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="/projects">Work</a>
+            <a class="nav-link" href="/contact">Contact</a>
+          </nav>
+
+          <div id="nav-icons-section" class="nav-section">
+            <ul class="social-icons">
+              <li><a href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/antaga04/" rel="noopener" target="_blank">
+                  <i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="menu">
+            <button class="menu-btn">
+              <div class="bars-container">
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </button>
+
+            <aside class="menu-slider hidden">
+              <nav class="menu-nav">
+                <ul>
+                  <li><a class="nav-link" href="/about">About</a></li>
+                  <li><a class="nav-link" href="/projects">Work</a></li>
+                  <li><a class="nav-link" href="/contact">Contact</a></li>
+                  <li>
+                    <div style="display: flex;">
+                      <a href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="https://github.com/antaga04/" rel="noopener" target="_blank">
+                        <i class="fa-brands fa-github"></i></a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+          </div>
         </div>
-
-        <nav id="nav-link-section" class="nav-section">
-          <a class="nav-link" href="/about">About</a>
-          <a class="nav-link" href="/projects">Work</a>
-        </nav>
-
-        <div id="nav-icons-section" class="nav-section">
-          <ul class="social-icons">
-            <li><a href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/antaga04/" rel="noopener" target="_blank">
-                <i class="fa-brands fa-github"></i></a></li>
-          </ul>
-        </div>
-
-        <div id="nav-contact-section" class="nav-section">
-          <a class="nav-link" href="/contact">Get in touch</a>
-        </div>
-
       </div>
     </div>
   </header>
 
   <main id="app"></main>
 
-  <footer></footer>
+  <footer id="footer">
+    <div>
+      <p>Designed and built by <span style="white-space: nowrap;">Adrián Anta Gil.</span></p>
+    </div>
+
+    <ul class="footer-icons">
+      <li><a href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://github.com/antaga04/" rel="noopener" target="_blank">
+          <i class="fa-brands fa-github"></i></a></li>
+    </ul>
+  </footer>
 
   <script type="module" src="main.js"></script>
   <script type="module" src="/src/router/router.js"></script>

@@ -1,0 +1,70 @@
+#error-page {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /* background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#adc9ea, #adc9ea); */
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#FFD33B, #FFAE00);
+  padding: 10rem 5rem 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  border-bottom-left-radius: 4.5rem;
+  border-bottom-right-radius: 4.5rem;
+}
+
+.lost-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.lost-container h1 {
+  font-size: 3rem;
+}
+
+.lost-container h2 {
+  color: rgb(27, 27, 27, .8);
+}
+
+.lost-container p {
+  font-size: 18px;
+  color: rgb(27, 27, 27, 1);
+}
+
+.not-found-gif {
+  width: 20rem;
+  height: auto;
+}
+
+#lost-btn {
+  border: 1px solid #000;
+  border-radius: 1rem;
+  padding: .5rem;
+  background-color: #519FAA;
+  text-transform: uppercase;
+}
+
+.error-btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.error-btn img {
+  width: 5rem;
+  height: 1rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 500px) {
+  #error-page {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .not-found-gif {
+    width: 19rem;
+  }
+}

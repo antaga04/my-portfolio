@@ -1,0 +1,39 @@
+.devil-eyes {
+  width: 14rem;
+  height: auto;
+}
+
+/* .circulo {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  right: 0%;
+  bottom: auto;
+  z-index: 0;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1000rem;
+  background-image: radial-gradient(circle farthest-corner at 40% 50%, #9d84ff, #9d84ff 0%, rgba(5, 10, 24, 0) 50%);
+  // opacity: 0.64;
+} */
+
+#about-page {
+  display: flex;
+  justify-content: center;
+  min-height: inherit;
+  position: relative;
+}
+
+.about-wrapper {
+  min-height: inherit;
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#adc9ea, #adc9ea);
+  /* background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#e1eaf4, #e1eaf4); */
+  border-top-left-radius: 4.5rem;
+  border-top-right-radius: 4.5rem;  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+  padding: 10rem 5rem 5rem 5rem;
+  width: 95%;
+}

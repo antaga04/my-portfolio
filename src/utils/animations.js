@@ -1,8 +1,8 @@
-const letters = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+/* const letters = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
 let interval = null;
 let isAnimating = false;
 
-document.querySelector('h1').addEventListener('mouseenter', event => {
+document.querySelector('h1').addEventListener('mouseenter', (event) => {
   if (!isAnimating) {
     isAnimating = true;
     let iteration = 0;
@@ -31,11 +31,52 @@ document.querySelector('h1').addEventListener('mouseenter', event => {
   }
 });
 
-document.querySelector('h1').addEventListener('mouseleave', event => {
+document.querySelector('h1').addEventListener('mouseleave', (event) => {
   if (isAnimating) {
     return;
   }
-  
+
   clearInterval(interval);
   event.target.innerText = event.target.dataset.value;
 });
+ */
+export const handleNavColor = (links, pathname) => {
+  console.log(pathname);
+  const navLogo = document.querySelector('.nav-logo');
+
+  if (pathname === '/home' || pathname === '/') {
+    navLogo.classList.add('active-home');
+  } else {
+    navLogo.classList.remove('active-home');
+  }
+
+  links.forEach((link) => {
+    console.log('link de la lista: ', link);
+    if (link.getAttribute('href') === pathname && pathname !== '/home' && pathname !== '') {
+      link.classList.add('active-link');
+    } else {
+      link.classList.remove('active-link');
+    }
+  });
+};
+/* export const handleNavColor = (links, pathname) => {
+  console.log(pathname);
+  const navLogo = document.querySelector('.nav-logo');
+
+  if (pathname === '/home' || pathname === '/') {
+    navLogo.classList.add('active-home');
+  } else {
+    navLogo.classList.remove('active-home');
+  }
+
+  links.forEach((link) => {
+    console.log('link de la lista: ', link);
+    if (link.getAttribute('href') === pathname && pathname !== '/home' && pathname !== '') {
+      link.style.color = '#7AC3B2';
+      link.style.transform = 'scale(.99)';
+    } else {
+      link.style.color = '#fff';
+      link.style.transform = 'scale(1)';
+    }
+  });
+}; */

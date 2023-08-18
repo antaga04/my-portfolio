@@ -2,10 +2,10 @@ import { initNotFound } from '../pages/404/404';
 import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
 import { initContact } from '../pages/contact/contact';
-import { initAbout } from '../pages/about/about'
+import { initAbout } from '../pages/about/about';
+import { handleNavColor } from '../utils/animations';
 
 const links = document.querySelectorAll('.nav-link');
-console.log(links);
 
 links.forEach((link) => {
   link.addEventListener('click', (ev) => {
@@ -18,12 +18,29 @@ links.forEach((link) => {
       window.history.pushState({}, '', targetHref);
       handleLocation();
     }
+
+    /* links.forEach((otherLink) => {
+      if (isHomeOrRoot(otherLink)) {
+        otherLink.style.filter = 'grayscale(100%) brightness(100%)';
+      }
+
+      if (otherLink === link) {
+        otherLink.style.color = '#7AC3B2';
+        otherLink.style.filter = '';
+      } else {
+        otherLink.style.color = '';
+      }
+    }); */
   });
 });
 
+const isHomeOrRoot = (href) => {
+  return href === '/' || href === '/home';
+};
+
 const handleLocation = () => {
   const pathname = window.location.pathname;
-
+  handleNavColor(links, pathname);
   switch (pathname) {
     case '/':
     case '/home':
