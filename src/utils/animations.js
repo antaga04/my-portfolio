@@ -41,7 +41,7 @@ document.querySelector('h1').addEventListener('mouseleave', (event) => {
 });
  */
 export const handleNavColor = (links, pathname) => {
-  console.log(pathname);
+  // console.log(pathname);
   const navLogo = document.querySelector('.nav-logo');
 
   if (pathname === '/home' || pathname === '/') {
@@ -51,7 +51,7 @@ export const handleNavColor = (links, pathname) => {
   }
 
   links.forEach((link) => {
-    console.log('link de la lista: ', link);
+    // console.log('link de la lista: ', link);
     if (link.getAttribute('href') === pathname && pathname !== '/home' && pathname !== '') {
       link.classList.add('active-link');
     } else {

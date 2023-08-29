@@ -6,11 +6,14 @@ export const initProjects = () => {
   app.innerHTML = '';
   app.innerHTML += `
     <section id="projects-page">
-      <div id="projects-wrapper">
-        <div class="">
-          <h1>Projects</h1>
-        </div>
+      <div class="wrapper">
+        <ul class="carousel">
+          <li class="card"></li>
+          <li class="card"></li>
+          <li class="card"></li>
+          <li class="card"></li>
+        </ul>
       </div>
-  </section>
+    </section>
   `;
 };
