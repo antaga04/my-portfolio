@@ -22,16 +22,16 @@
 }
 
 .dev-email {
-  cursor: pointer;
-  position: relative;
-  /* bottom: 28%;
-  right: 30%; */
-  font-size: 3rem;
-  width: fit-content;
-  height: fit-content;
-  display: flex;
   align-items: center;
+  backdrop-filter: blur(3px);
+  border-radius: .5rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 3rem;
   gap: 2rem;
+  height: fit-content;
+  position: relative;
+  width: fit-content;
 }
 
 .dev-email>.arrow {
@@ -120,9 +120,9 @@
   }
 
   .dev-email {
-    margin-top: .75rem;
     font-size: 1.9rem;
     gap: 1rem;
+    margin-top: .75rem;
   }
 
   .dev-email>.arrow {

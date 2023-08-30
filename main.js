@@ -2,7 +2,7 @@ import './style.css';
 
 const menuBtn = document.querySelector('.menu-btn');
 const menuSlider = document.querySelector('.menu-slider');
-const menuNav = document.querySelectorAll('.menu-nav');
+const menuNav = document.querySelector('.menu-nav');
 const body = document.querySelector('body');
 
 const menuLinks = document.querySelectorAll('.menu-slider a');

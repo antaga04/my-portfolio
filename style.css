@@ -26,9 +26,10 @@ ul {
 body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#F2F2F2, #F2F2F2);
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#F4F7F7, #F4F7F7);
   background-position: 0 0, 0 0;
   background-size: auto, auto;
+  color: #1c1f33;
 }
 
 #app {
@@ -123,15 +124,22 @@ header a {
     filter: grayscale(0%);
   } */
 }
+
 /* quitar 🔽 */
-.active-home {
-  filter: grayscale(0%) brightness(100%);
+.camel {
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#050A18, #050A18);
 }
 
-.active-link {
+.active-home {
+  filter: grayscale(0%) brightness(100%);
+  /* outline: -webkit-focus-ring-color auto 1px; */
+}
+
+.nav-link.active-link {
   /* color: #7AC3B2; */
   color: #519FAA;
   transform: scale(0.98);
+  /* outline: -webkit-focus-ring-color auto 1px; */
 }
 
 #nav-icons-section {

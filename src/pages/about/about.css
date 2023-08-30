@@ -1,14 +1,112 @@
 #about-page {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0rem 5rem 2.5rem 5rem;
+  /* max-width: 1400px; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto;
+  padding: 0rem 5rem 2.5rem 5rem; */
 }
 
+#about-page h2 {
+  font-size: 4.6rem;
+}
+
+/* Intro */
+/* #about-page h1 {
+  -webkit-text-stroke: 1px #f2f2f2 !important;
+  color: #242424;
+  font-size: 7rem;
+  line-height: 1;
+} */
+
+.about--intro {
+  display: flex;
+  font-size: 20px;
+  gap: 4rem;
+  /* justify-content: space-between; */
+  margin-bottom: 2rem;
+  padding: 3rem;
+}
+
+.about--intro .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.about--intro img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.about--intro .info h1 {
+  /* color: rgba(255,211,59, 1); */
+  color: rgba(81, 159, 170, 1);
+  text-transform: uppercase;
+}
+
+.portrait {
+  position: relative;
+}
+
+.drop-cap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0.25rem;
+  float: left;
+  font-weight: 400;
+  line-height: .75;
+  font-size: 3.25rem;
+  font-style: normal;
+  border: 2px solid #000;
+  padding: 0.4em 0.45em;
+  min-width: 5.5rem;
+  min-height: 6rem;
+  margin: 0 0.2em 0.075em 0;
+}
+
+.drop-cap:after,
+.drop-cap:before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+}
+
+.drop-cap:before {
+  width: 1px;
+  height: calc(100% - 0.1em);
+  top: 0;
+  right: 0.1em;
+}
+
+.drop-cap:after {
+  width: calc(100% - 0.1em);
+  height: 1px;
+  left: 0;
+  bottom: 0.1em;
+}
+
+/*  */
+.about--section,
+.xp {
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#e1eaf4, #e1eaf4);
+  background-position: 0 0, 0 0;
+  background-size: auto, auto;
+}
+
+/* EXPERIENCE CARDS */
 .xp--header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.25rem;
+  text-transform: uppercase;
 }
 
 .controls {
@@ -23,6 +121,7 @@
 #left-ctrl,
 #right-ctrl {
   align-items: center;
+  background-color: transparent;
   border-radius: 100rem;
   border: 1px solid #000;
   display: flex;
@@ -33,8 +132,12 @@
   z-index: 1;
 }
 
-.xp {
-  padding: 2rem 0;
+.xp,
+.history {
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-top: 1px solid #222;
+  padding: 2rem;
 }
 
 .xp--cards {
@@ -45,11 +148,13 @@
 }
 
 .xp-card {
-  border: 1px solid rgba(0, 0, 0, 1);
+  color: #6F615E;
+  /* border: 1px solid rgba(0, 0, 0, .1); */
   /* background-color: #E4E1E1; */
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#f2f2f2, #f2f2f2);
   padding: 2.25rem;
   border-radius: 18px;
-  max-height: 210px;
+  height: 25rem;
 }
 
 .rol {
@@ -61,8 +166,7 @@
 .carousel--wrapper .xp--carousel {
   display: grid;
   grid-auto-flow: column;
-  /* grid-auto-columns: calc((100% / 3) - 1rem); */
-  grid-auto-columns: calc((100% / 4) - 1rem);
+  grid-auto-columns: calc((100% / 3) + 3rem);
   gap: 1.5rem;
   overflow: hidden;
   scroll-behavior: smooth;
@@ -84,62 +188,55 @@
   scroll-snap-align: start;
 }
 
-/* Intro */
-#about-page h1 {
-  -webkit-text-stroke: 1px #f2f2f2 !important;
-  color: #242424;
-  font-size: 7rem;
-  line-height: 1;
+/* HISTORY */
+.history {
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#d4e1f2, #d4e1f2);
+  background-position: 0 0, 0 0;
+  background-size: auto, auto;
+  box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
-.about--intro {
-  font-size: 24px;
-  padding: 3rem;
-  display: flex;
-  justify-content: space-around;
-}
-
-.about--intro .info {
-  z-index: 1;
-  display: flex;
-  gap: 1.25rem;
-  flex-direction: column;
-  max-width: 500px;
-}
-
-.about--intro img {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  right: 0;
-}
-
-.about--intro .info h2 {
-  /* color: rgba(255,211,59, 1); */
-  color: rgba(81, 159, 170, 1);
-  text-transform: uppercase;
-}
-
-.portrait {
-  position: relative;
-}
-
-/* Story */
 .story {
-  padding: 2rem 0;
+  display: grid;
+  font-size: 20px;
+}
+
+/* .story>div {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+} */
+
+.story img {
+  width: 15rem;
+  height: auto;
+}
+
+.story p {
+  width: 50%;
+}
+
+#pc,
+#um,
+#rc {
+  display: flex;
 }
 
 /* Rubik Cube */
 .rubik-container {
+  align-items: center;
+  background-color: #efefef;
+  border: 3px double #000;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 350px;
+  min-height: 380px;
+  min-width: 310px;
 }
 
 .rubik-cube {
-  width: 230px;
-  height: 230px;
+  width: 180px;
+  height: 180px;
   transform-style: preserve-3d;
   position: relative;
   transform: rotateX(0deg) rotateY(0deg);
@@ -152,8 +249,8 @@
 
 .face {
   position: absolute;
-  width: 230px;
-  height: 230px;
+  width: 180px;
+  height: 180px;
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -161,37 +258,37 @@
 }
 
 .top {
-  transform: translateZ(115px) rotateY(0deg);
+  transform: translateZ(90px) rotateY(0deg);
   background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/4_bjkgci.png');
   background-size: cover;
 }
 
 .bottom {
-  transform: translateZ(-115px) rotateY(180deg);
+  transform: translateZ(-90px) rotateY(180deg);
   background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/4_bjkgci.png');
   background-size: cover;
 }
 
 .left {
-  transform: translateX(-115px) rotateY(-90deg);
+  transform: translateX(-90px) rotateY(-90deg);
   background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/2_teyfzm.png');
   background-size: cover;
 }
 
 .right {
-  transform: translateX(115px) rotateY(90deg);
+  transform: translateX(90px) rotateY(90deg);
   background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134307/Portafolio/1_lb3rlc.png');
   background-size: cover;
 }
 
 .front {
-  transform: translateY(-115px) rotateX(90deg);
+  transform: translateY(-90px) rotateX(90deg);
   background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/5_ajq59e.png');
   background-size: cover;
 }
 
 .back {
-  transform: translateY(115px) rotateX(-90deg);
+  transform: translateY(90px) rotateX(-90deg);
   background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/3_amibcy.png');
   background-size: cover;
 }
@@ -207,9 +304,10 @@
 }
 
 /* medias queries */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1037px) {
   #about-page {
-    padding: 0rem 2.5rem 2.5rem 2.5rem;
+    max-width: 1400px;
+    display: block;
   }
 
   .carousel--wrapper .xp--carousel {
@@ -217,52 +315,71 @@
   }
 
   #about-page h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     ;
   }
 
   .about--intro {
-    flex-direction: column;
-    padding: 3rem 0;
+    flex-direction: column-reverse;
+    padding: 0 2.5rem;
+    gap: .75rem;
+  }
+
+  .xp,
+  .history {
+    padding: 2.5rem;
+  }
+
+  .xp--header {
+    flex-wrap: wrap;
   }
 
   .carousel--wrapper .xp--carousel {
     gap: 1rem;
   }
 
+  .rubik-container {
+    min-height: 300px;
+    min-width: 230px;
+  }
+
   .rubik-cube,
   .face {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
   }
 
   .top {
-    transform: translateZ(90px) rotateY(0deg);
+    transform: translateZ(75px) rotateY(0deg);
   }
 
   .bottom {
-    transform: translateZ(-90px) rotateY(180deg);
+    transform: translateZ(-75px) rotateY(180deg);
   }
 
   .left {
-    transform: translateX(-90px) rotateY(-90deg);
+    transform: translateX(-75px) rotateY(-90deg);
   }
 
   .right {
-    transform: translateX(90px) rotateY(90deg);
+    transform: translateX(75px) rotateY(90deg);
   }
 
   .front {
-    transform: translateY(-90px) rotateX(90deg);
+    transform: translateY(-75px) rotateX(90deg);
   }
 
   .back {
-    transform: translateY(90px) rotateX(-90deg);
+    transform: translateY(75px) rotateX(-90deg);
   }
 }
 
 @media screen and (max-width: 600px) {
   .carousel--wrapper .xp--carousel {
     grid-auto-columns: 100%;
+  }
+
+  #about-page h2 {
+    font-size: 3rem;
   }
 }

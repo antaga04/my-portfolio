@@ -3,7 +3,7 @@ import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
 import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
-import { handleNavColor } from '../utils/animations';
+import { handlePageStyles } from '../utils/animations';
 
 const links = document.querySelectorAll('.nav-link');
 
@@ -40,7 +40,7 @@ const isHomeOrRoot = (href) => {
 
 const handleLocation = () => {
   const pathname = window.location.pathname;
-  handleNavColor(links, pathname);
+  handlePageStyles(links, pathname);
   switch (pathname) {
     case '/':
     case '/home':
