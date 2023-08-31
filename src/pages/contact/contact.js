@@ -14,6 +14,12 @@ export const initContact = () => {
           your <span style="color: #519FAA">vision</span>?</h2>
         </div>
 
+        <p>
+          My aim is to be part of a company
+          where I can contribute to the business
+          while enhancing my skills as a developer.
+        </p>
+
         <div>
           <img class="contact-hero-corner" src="https://res.cloudinary.com/drsfru9lj/image/upload/v1692129677/Portafolio/rayas-honduladas_lx0ifq.svg" loading="lazy" alt="Decoration-1">
         </div>

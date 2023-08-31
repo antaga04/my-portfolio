@@ -1,5 +1,6 @@
 :root {
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --dark: #1c1f33;
 }
 
 * {
@@ -29,7 +30,7 @@ body {
   background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#F4F7F7, #F4F7F7);
   background-position: 0 0, 0 0;
   background-size: auto, auto;
-  color: #1c1f33;
+  color: var(--dark);
 }
 
 #app {

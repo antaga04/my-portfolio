@@ -1,225 +1,145 @@
 import './about.css';
-import '../home/home.css'
 
 export const initAbout = () => {
   const app = document.querySelector('#app');
 
   app.innerHTML = '';
   app.innerHTML += `
-    <section id="about-page">
-      <img class="hero-right-corner"
-        src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687363880/Portafolio/s3-1_ym06e1.svg" loading="lazy"
-        alt="Decoration-1">
-      <img class="hero-left-corner"
-        src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687363880/Portafolio/adorno_vnh5je.svg" loading="lazy"
-        alt="Decoration-2">
-      <section class="about--intro">
-        <div class="rubik-container">
-          <div class="rubik-cube">
-            <div class="face top"></div>
-            <div class="face bottom"></div>
-            <div class="face left"></div>
-            <div class="face right"></div>
-            <div class="face front"></div>
-            <div class="face back"></div>
+    <div class="about__wrapper">
+      <section id="about-page">
+        <h1>The Daily About</h1>
+        <aside>
+          <div>
+            <div class="issue">Issue #1 </div>
+            <div class="date">Tuesday, 05 Sep, 2023</div>
+            <div class="edition">Retro Edition</div>
           </div>
-        </div>
-        <div class="info">
-          <h1>Driven by Learning, Defined by Detail</h1>
-          <p style="font-size: 25px;"><strong>
-              <sapn class="drop-cap">W</sapn>elcome! I'm a future Full-Stack maestro with a current focus on front-end, and
-              a dedicated Software
-              Engineering student.
-            </strong></p>
-          <p>As Leonardo da Vinci put it, <q>Learning never exhausts the mind</q>.</p>
-          <p style="margin-top: 1rem">A perfectionist who believes details truly matter. I believe great development is
-            about more than just writing
+        </aside>
+        <h2 class="title--large main-title">Driven by Learning, Defined by Detail</h2>
+        <div class="main-text multi-column">
+          <p>
+            <sapn class="drop-cap">W</sapn>elcome! My name is Adrian, a future Full-Stack maestro with a current focus on
+            front-end, and a
+            dedicated Software Engineering student.
+          </p>
+          <p>A perfectionist who believes details truly matter. I believe great development is about more than just writing
             code. It's about understanding the end user, empathizing with their needs, and anticipating how they'll interact
             with the final product.</p>
         </div>
-      </section>
 
-      <section class="xp">
-        <div class="xp--header">
-          <h2>Experience</h2>
-          <div class="controls">
-            <button id="left-ctrl">
-              <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
-                version="1.1">
-                <g class="layer">
-                  <title>Layer 1</title>
-                  <path
-                    d="m24,8l-18.52,0c5.01,-2.91 6.35,-7.31 6.42,-7.55l-1.92,-0.55c-0.08,0.26 -1.95,6.31 -10.05,8.12l0.22,0.98l-0.22,0.98c8.1,1.81 9.97,7.86 10.05,8.12l1.92,-0.55c-0.07,-0.24 -1.41,-4.64 -6.42,-7.55l18.52,0l0,-2z"
-                    fill="currentColor" id="svg_1" />
-                </g>
-              </svg>
-            </button>
-            <button id="right-ctrl">
-              <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
-                version="1.1">
-                <g class="layer">
-                  <title>Layer 1</title>
-                  <path
-                    d="m24,8l-18.52,0c5.01,-2.91 6.35,-7.31 6.42,-7.55l-1.92,-0.55c-0.08,0.26 -1.95,6.31 -10.05,8.12l0.22,0.98l-0.22,0.98c8.1,1.81 9.97,7.86 10.05,8.12l1.92,-0.55c-0.07,-0.24 -1.41,-4.64 -6.42,-7.55l18.52,0l0,-2z"
-                    fill="currentColor" id="svg_1" />
-                </g>
-              </svg>
-            </button>
-          </div>
+        <div class="terrarium">
+          <figure>
+            <div class="rubik-container">
+              <div class="rubik-cube">
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face front"></div>
+                <div class="face back"></div>
+              </div>
+            </div>
+          </figure>
+          <figcaption>Rotating Rubik Cube</figcaption>
         </div>
 
-        <div class="carousel--wrapper">
-          <ul class="xp--carousel">
-            <li class="xp-card">
-              <p>Date 1</p>
-              <h3>Company Name</h3>
-              <div class="rol">
-                <h4>Rol 1</h4>
-                <h4>Rol 2</h4>
-              </div>
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            </li>
+        <div class="item-with-image plan span--32 border--botton">
+          <h4>How it all started?</h4>
+          <div class="multi-column">
+            <p>It all started back in high school during an IT class. Our mission? Build a video game using Python. I was
+              instantly hooked. Classes were slow, so I went solo, learning the ropes from YouTube tutorials. Before long, I
+              knew what I wanted: a Pac-Man clone. Pretty tough for a beginner, but I wasn't fazed. The end result wasn't
+              perfect, but it was a great learning experience.</p>
+          </div>
+        </div>
+        <div class="pacman--img">
+          <figure>
+            <img
+              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501076/Portafolio/Captura_de_pantalla_2023-08-27_a_las_20.57.10_w96haa.png">
+          </figure>
+        </div>
 
-            <li class="xp-card">
-              <p>Date 2</p>
-              <h3>Company Name</h3>
-              <div class="rol">
-                <h4>Rol 1</h4>
-                <h4>Rol 2</h4>
-              </div>
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            </li>
+        <div class="item-with-image plan span--2">
+          <h4>My next stage</h4>
+          <div class="multi-column">
+            <p>Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third
+              year). Somewhere along this path, I joined forces with a team called Uvigo MotorSport—an exclusive Galician
+              Formula Student team—eager to embrace a fresh experience. Yet, my time there was brief, as it didn't ignite my
+              true passion.</p>
+          </div>
+        </div>
+        <div class="umCar--img">
+          <figure>
+            <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693497167/Portafolio/um-car-min_by9r3h.png">
+          </figure>
+        </div>
 
-            <li class="xp-card">
-              <p>Date 3</p>
-              <h3>Company Name</h3>
-              <div class="rol">
-                <h4>Rol 1</h4>
-                <h4>Rol 2</h4>
-              </div>
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            </li>
+        <div class="item-with-image cssgrid-collection">
+          <a class="img--flex cssgrid-collection__image" href="https://www.thepowermba.com/es/bootcamp-fullstack" target="_blank">
+            <img
+              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png">
+          </a>
+          <div class="cssgrid-collection__content">
+            <h4>My web developer path</h4>
+            <div class="multi-column-3">
+              <p>Soon thereafter, a new revelation dawned—I stumbled upon the world of web development. The decision was
+                clear: I enrolled in a bootcamp to expedite my mastery and secure a tangible certification. Today, I find
+                myself midway through the program, brimming with anticipation to conclude and embark on a journey into the
+                professional realm.</p>
+            </div>
+          </div>
 
-            <li class="xp-card">
-              <p>Date 4</p>
-              <h3>Company Name</h3>
-              <div class="rol">
-                <h4>Rol 1</h4>
-                <h4>Rol 2</h4>
-              </div>
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            </li>
+          <a class="cssgrid-collection__image" href="https://www.rockthecode.es/new/" target="_blank">
+            <img
+              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693505547/Portafolio/rock-the-code-tech_ufgnqt.png">
+          </a>
+        </div>
 
-            <li class="xp-card">
-              <p>Date5 </p>
-              <h3>Company Name</h3>
-              <div class="rol">
-                <h4>Rol 1</h4>
-                <h4>Rol 2</h4>
+        <div class="sidebar">
+          <h3 class="title--big">Cool Tools to know</h3>
+          <ul>
+              <li>
+                <a href="https://huemint.com/" target="_blank">
+                  <h5>Color Palette Generator</h5>
+                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://shots.so/" target="_blank">
+                  <h5>Amazing Mockups</h5>
+                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+                </a>
+              </li>
+              <div class="hogwarts">
+                <div class="hogwarts__title">
+                  50% OFF Best Websites for inspiration
+                </div>
               </div>
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            </li>
-
-            <li class="xp-card">
-              <p>Date 6</p>
-              <h3>Company Name</h3>
-              <div class="rol">
-                <h4>Rol 1</h4>
-                <h4>Rol 2</h4>
-              </div>
-              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-            </li>
-
+              <li>
+                <a href="https://animista.net/" target="_blank">
+                  <h5>CSS Animations Library</h5>
+                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://easings.net/en" target="_blank">
+                  <h5>Easing functions Sheet</h5>
+                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+                </a>
+              </li>
+          </ul>
+          
+          <h3 class="title--big">Thing I like</h3>
+          <ul>
+              <li>Puzzles</li>
+              <li>Rubik's cube</li>
+              <li>Back To The Future</li>
+              <li>The Fresh Prince of Bel-Air</li>
+              <li>Rock</li>
+              <li>Workout</li>
           </ul>
         </div>
       </section>
-
-      <section class="about--section">
-        <div class="history">
-          <h2>HISTORY</h2>
-          <div class="story">
-            <div id="pc">
-              <p>It all started back in high school during an IT class. Our mission? Build a video game using Python.
-                I was instantly hooked. Classes were slow, so I decided to learn on my on.
-                Before long, I knew what I wanted: a Pac-Man clone. Pretty tough for a beginner but great for learning.
-                The end result wasn't perfect, but it was a good experience.</p>
-              <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693389831/Portafolio/pacman-preview_dtwoi9.png"
-                alt="Pacman Clon">
-            </div>
-            <div id="um">
-              <p>Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third
-                year).
-                Somewhere along this path, I joined forces with a team called Uvigo MotorSport—an exclusive Galician Formula
-                Student
-                team—eager to embrace a fresh experience. Yet, my time there was brief, as it didn't ignite my true passion.
-              </p>
-              <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693164251/Portafolio/559shots_so_etchlb.png"
-                alt="Uvigo MotorSport car">
-            </div>
-            <div id="rc">
-              <p>Soon thereafter, a new revelation dawned—I stumbled upon the world of web development. The decision was
-                clear:
-                I enrolled in a bootcamp to expedite my mastery and secure a tangible certification. Today, I find myself
-                midway
-                through the program, brimming with anticipation to conclude and embark on a journey into the professional
-                realm.</p>
-              <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693390322/Portafolio/848shots_so_cxqe1b.png"
-                alt="RockTheCode logo & technologies">
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
+    </div>
   `;
-
-  /* slider */
-  const carousel = document.querySelector('.xp--carousel');
-  const controlers = document.querySelectorAll('.controls button');
-  const cardWidth = document.querySelector('.xp-card').offsetWidth;
-
-  let screenWidth =
-    window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-  let isDragging = false,
-    isScrolling = false,
-    startX,
-    startScrollLeft;
-
-  controlers.forEach((ctrl) => {
-    ctrl.addEventListener('click', () => {
-      if (isScrolling) return;
-      isScrolling = true;
-
-      let fowardPixels = screenWidth <= 600 ? cardWidth * 1 + 16 : cardWidth * 1.25;
-
-      carousel.scrollLeft += ctrl.id === 'left-ctrl' ? -fowardPixels : fowardPixels;
-
-      setTimeout(() => {
-        isScrolling = false;
-      }, 450);
-    });
-  });
-
-  const dragStart = (e) => {
-    if (isScrolling) return;
-    isDragging = true;
-    carousel.classList.add('dragging');
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
-  };
-
-  const dragging = (e) => {
-    if (!isDragging) return;
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-  };
-
-  const dragStop = () => {
-    isDragging = false;
-    carousel.classList.remove('dragging');
-  };
-
-  carousel.addEventListener('mousedown', dragStart);
-  document.addEventListener('mousemove', dragging);
-  document.addEventListener('mouseup', dragStop);
-  carousel.addEventListener('mouseleave', dragStop);
 };
