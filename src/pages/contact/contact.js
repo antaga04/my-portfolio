@@ -7,18 +7,20 @@ export const initContact = () => {
   app.innerHTML += `
     <section id="contact-page">
       <div class="contact-wrapper">
-        <div class="contact-question">
-          <h2>
-          Ready<br>
-          to build<br>
-          your <span style="color: #519FAA">vision</span>?</h2>
-        </div>
 
-        <p>
-          My aim is to be part of a company
-          where I can contribute to the business
-          while enhancing my skills as a developer.
-        </p>
+        <div class="contact__header">
+          <div class="contact-question">
+            <h2>
+            Ready<br>
+            to build<br>
+            your <span style="color: #519FAA">vision</span>?</h2>
+          </div>
+          <p class="contact-coment">
+            My aim is to <u>be part of a company</u>
+            where I can <u>contribute to the business</u>
+            while enhancing my skills as a developer.
+          </p>
+        </div>
 
         <div>
           <img class="contact-hero-corner" src="https://res.cloudinary.com/drsfru9lj/image/upload/v1692129677/Portafolio/rayas-honduladas_lx0ifq.svg" loading="lazy" alt="Decoration-1">
@@ -26,7 +28,7 @@ export const initContact = () => {
 
         <div class="message-container">
           <p class="contact-coment">
-            Feel free to reach out if you<br>
+            <u>Feel free to reach out</u> if you<br>
             wanna collaborate with me,<br>
             or simply have a chat.
           </p>

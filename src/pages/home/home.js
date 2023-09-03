@@ -27,10 +27,15 @@ export const initHome = () => {
             </div>
           </div>
 
-          <div class="game-btn">
-            <button>CHECK MY WORK</button>
-            <button>PLAY THE GAME</button>
+          <div class="home__btns">
+            <a href="#" class="ticket__link">
+              <div class="home__btn page__link">CHECK MY WORK</div>
+            </a>
+            <a href="#" class="ticket__link">
+              <div class="home__btn page__link">PLAY A GAME</div>
+            </a>
           </div>
+
           <div class="line">
             <p>Don't be shy! Hit me up!</p>
           </div>
@@ -172,4 +177,3 @@ export const initHome = () => {
     </div>
   `;
 };
-

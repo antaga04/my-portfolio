@@ -6,6 +6,8 @@ const menuNav = document.querySelector('.menu-nav');
 const body = document.querySelector('body');
 
 const menuLinks = document.querySelectorAll('.menu-slider a');
+const nib = document.querySelector('.pen-nib__gear');
+const magicMenu = document.querySelector('.magic-menu')
 
 menuBtn.addEventListener('click', () => {
   body.classList.toggle('blur');
@@ -19,4 +21,9 @@ menuLinks.forEach((link) => {
   link.addEventListener('click', (ev) => {
     menuBtn.click();
   });
+});
+
+nib.addEventListener('click', () => {
+  console.log('magic');
+  magicMenu.classList.toggle('hidden');
 });

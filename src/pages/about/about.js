@@ -6,25 +6,26 @@ export const initAbout = () => {
   app.innerHTML = '';
   app.innerHTML += `
     <div class="about__wrapper">
-      <section id="about-page">
+      <section class="about-page">
         <h1>The Daily About</h1>
         <aside>
           <div>
             <div class="issue">Issue #1 </div>
             <div class="date">Tuesday, 05 Sep, 2023</div>
-            <div class="edition">Retro Edition</div>
+            <div class="edition">Price 5 cents</div>
           </div>
         </aside>
         <h2 class="title--large main-title">Driven by Learning, Defined by Detail</h2>
         <div class="main-text multi-column">
           <p>
-            <sapn class="drop-cap">W</sapn>elcome! My name is Adrian, a future Full-Stack maestro with a current focus on
+            <sapn class="drop-cap">W</sapn>elcome! My name is Adrian, a future Full Stack maestro with a current focus on
             front-end, and a
             dedicated Software Engineering student.
           </p>
           <p>A perfectionist who believes details truly matter. I believe great development is about more than just writing
             code. It's about understanding the end user, empathizing with their needs, and anticipating how they'll interact
             with the final product.</p>
+          <p>My ultimate goal is to be a valuable asset to a company, where I can contribute meaningfully to its growth while elevating my skills as a developer</p>
         </div>
 
         <div class="terrarium">
@@ -96,18 +97,29 @@ export const initAbout = () => {
         </div>
 
         <div class="sidebar">
-          <h3 class="title--big">Cool Tools to know</h3>
+          <div>
+            <h3 class="title--big">Thing I like</h3>
+            <ul>
+                <li>Puzzles</li>
+                <li>Rubik's cube</li>
+                <li>Back To The Future</li>
+                <li>The Fresh Prince of Bel-Air</li>
+                <li>Work out</li>
+                <li>Rock</li>
+            </ul>
+          </div>
+
           <ul>
-              <li>
+              <li class="sidebar-item with-border">
                 <a href="https://huemint.com/" target="_blank">
                   <h5>Color Palette Generator</h5>
                   <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
                 </a>
               </li>
-              <li>
+              <li class="sidebar-item with-border">
                 <a href="https://shots.so/" target="_blank">
                   <h5>Amazing Mockups</h5>
-                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+                  <p>For developers in search of impressive mockups, <em>Shots</em> is the ultimate choice.</p>
                 </a>
               </li>
               <div class="hogwarts">
@@ -115,28 +127,24 @@ export const initAbout = () => {
                   50% OFF Best Websites for inspiration
                 </div>
               </div>
-              <li>
+              <li class="sidebar-item separation-null">
                 <a href="https://animista.net/" target="_blank">
                   <h5>CSS Animations Library</h5>
-                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+                  <p>Elevate user experiences with <em>Animista</em>, a CSS animation library for developers.</p>
                 </a>
               </li>
-              <li>
+              <li class="sidebar-item with-border">
                 <a href="https://easings.net/en" target="_blank">
                   <h5>Easing functions Sheet</h5>
-                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+                  <p>Achieve seamless animations with ease using <em>Easings</em>, your go-to resource for easing functions.</p>
                 </a>
               </li>
-          </ul>
-          
-          <h3 class="title--big">Thing I like</h3>
-          <ul>
-              <li>Puzzles</li>
-              <li>Rubik's cube</li>
-              <li>Back To The Future</li>
-              <li>The Fresh Prince of Bel-Air</li>
-              <li>Rock</li>
-              <li>Workout</li>
+              <li class="sidebar-item with-border">
+                <a href="https://cubic-bezier.com/" target="_blank">
+                  <h5>Cubic-bezier Easing</h5>
+                  <p>And if you want to test cubic-bezier transformation, <em>Cubic-Bezier</em> makes it effortless.</p>
+                </a>
+              </li>
           </ul>
         </div>
       </section>

@@ -25,7 +25,7 @@ const isHomeOrRoot = (href) => {
   return href === '/' || href === '/home';
 };
 
-const handleLocation = () => {
+export const handleLocation = () => {
   const pathname = window.location.pathname;
   handlePageStyles(links, pathname);
   switch (pathname) {

@@ -19,6 +19,10 @@ ul {
   list-style: none;
 }
 
+u {
+  text-decoration-color: #519FAA;
+}
+
 ::selection {
   background-color: #519FAA;
   color: #fff;
@@ -31,6 +35,9 @@ body {
   background-position: 0 0, 0 0;
   background-size: auto, auto;
   color: var(--dark);
+  background-attachment: fixed;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -232,7 +239,122 @@ footer {
   gap: 1rem;
 }
 
+.header__extra {
+  display: flex;
+  align-items: center;
+}
+
+.pen-nib__gear {
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-radius: 100%; */
+  cursor: pointer;
+  padding: .5rem;
+  position: absolute;
+  right: 5%;
+}
+
+.pen-nib__gear span {
+  /* width: fit-content; */
+  font: 10px "Playfair Display", serif;
+  position: absolute;
+  left: -410%;
+  background-color: rgba(23, 23, 23, .98);
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 1vw;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .7s cubic-bezier(.23, 1, .32, 1);
+}
+
+.special-border {
+  background-color: var(--dark);
+  border: 1px solid #F4F7F7;
+  box-shadow: inset 0 0 0 1px var(--black);
+  outline: 2px solid var(--black);
+}
+
+.magic-menu {
+  /* background-color: rgba(23, 23, 23, .98); */
+  top: 100%;
+  opacity: 1;
+  padding: 0rem .5rem;
+  pointer-events: auto;
+  position: absolute;
+  right: auto;
+  margin-top: .4rem;
+  transition: opacity .7s cubic-bezier(.23, 1, .32, 1);
+  z-index: 111;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.magic-menu li {
+  font: 16px "Playfair Display", serif;
+  width: max-content;
+}
+
+.magic-menu a {
+  padding: 0;
+}
+
+.magic-menu.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.ink {
+  display: flex;
+  width: max-content;
+}
+
+@media screen and (max-width: 1100px) {
+  .pen-nib__gear span {
+    bottom: -150%;
+    width: max-content;
+    left: -100%;
+  }
+}
+
+/* .pen-nib__gear:hover span {
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+.pen-nib__gear * {
+  cursor: pointer;
+}
+
+.pen-nib__gear .nib-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  height: 21px;
+}
+
 @media screen and (max-width: 768px) {
+  .pen-nib__gear {
+    position: unset;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .pen-nib__gear .nib-btn {
+    color: var(--dark);
+  }
+
   .menu {
     display: block;
   }
@@ -334,6 +456,6 @@ footer {
 
 @media screen and (max-width: 500px) {
   #app {
-    min-height: 80.5vh;
+    min-height: 81.5vh;
   }
 }

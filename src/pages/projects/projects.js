@@ -1,3 +1,7 @@
+import { cardTemplate } from '../../components/card/card';
+import { gridTemplate } from '../../components/grid/grid';
+import { listTemplate } from '../../components/list/list';
+import { projectsData as data } from '../../utils/projectsData';
 import './projects.css';
 
 export const initProjects = () => {
@@ -5,15 +9,11 @@ export const initProjects = () => {
 
   app.innerHTML = '';
   app.innerHTML += `
-    <section id="projects-page">
-      <div class="wrapper">
-        <ul class="carousel">
-          <li class="card"></li>
-          <li class="card"></li>
-          <li class="card"></li>
-          <li class="card"></li>
-        </ul>
-      </div>
-    </section>
+    <div class="page__wrapper">
+      <section class="page">
+        ${listTemplate(data)}
+        ${gridTemplate(data)}
+      </section>
+    </div>
   `;
 };
