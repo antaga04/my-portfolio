@@ -1,13 +1,3 @@
-:root {
-  --font: "EB Garamond", serif;
-  --font-title: "Playfair Display", serif;
-  --font-sans-serif: "Manrope", sans-serif;
-  --black: #1c1f33;
-  --black--acc: #222;
-  --gray: #eee;
-  --gray-1: #ededed;
-}
-
 .about__wrapper {
   max-width: 1000px;
   margin: auto;
@@ -80,7 +70,7 @@
 .about-page aside {
   text-align: center;
   padding: 3px 0;
-  border: solid var(--dark);
+  border: solid var(--color);
   border-width: 2px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -96,7 +86,7 @@
 .about-page aside>div {
   display: flex;
   align-items: center;
-  border: solid var(--dark);
+  border: solid var(--color);
   border-width: 1px 0;
 }
 
@@ -105,8 +95,11 @@
   padding: 8px;
 }
 
-.about-page p {
+.about__wrapper.justify-text .about-page p {
   text-align: justify;
+}
+
+.about-page p {
   font-size: 18px;
 }
 
@@ -163,7 +156,7 @@ figure {
   width: 100%;
   filter: grayscale(95%);
   margin-bottom: 0.5rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--color);
   transition: 0.3s ease;
 }
 
@@ -187,7 +180,7 @@ figure {
 
 .item-with-image:hover h4 {
   color: white !important;
-  background: var(--black);
+  background: var(--color);
 }
 
 .cssgrid-collection {
@@ -375,7 +368,7 @@ figure {
 
 .sidebar-item:hover h5 {
   transition: 0.3s ease;
-  background: var(--black);
+  background: var(--color);
   color: #fff;
 }
 
@@ -383,9 +376,9 @@ figure {
   /* border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem; */
   border: 2px solid transparent;
-  box-shadow: inset 0 0 0 1px var(--black);
+  box-shadow: inset 0 0 0 1px var(--color);
   margin: .9rem auto;
-  outline: 3px solid var(--black);
+  outline: 3px solid var(--color);
   overflow: hidden;
   text-align: center;
   width: calc(100% - 4px);
@@ -395,7 +388,7 @@ figure {
 .hogwarts__title {
   font: 800 24px/1 var(--font-sans-serif);
   text-transform: uppercase;
-  background: var(--black);
+  background: var(--color);
   color: var(--gray);
   padding: 0.8rem 0.8rem 0.9rem;
   transition: 0.2s ease;
@@ -403,7 +396,7 @@ figure {
 
 .hogwarts:hover .hogwarts__title {
   background: transparent;
-  color: var(--black);
+  color: var(--color);
 }
 
 /* -------------------------------- */
@@ -522,8 +515,8 @@ figure {
   /* border: 3px double #000; */
 
   border: 2px solid transparent;
-  outline: 3px solid var(--dark);
-  box-shadow: inset 0 0 0 1px var(--dark);
+  outline: 3px solid var(--color);
+  box-shadow: inset 0 0 0 1px var(--color);
 
   display: flex;
   justify-content: center;
@@ -536,7 +529,7 @@ figure {
   }
 
   .about-page p {
-    text-align: unset;
+    text-align: unset !important;
     font-size: 18px;
   }
 

@@ -5,7 +5,7 @@ export const initAbout = () => {
 
   app.innerHTML = '';
   app.innerHTML += `
-    <div class="about__wrapper">
+    <div class="about__wrapper justify-text">
       <section class="about-page">
         <h1>The Daily About</h1>
         <aside>

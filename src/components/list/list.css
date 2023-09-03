@@ -20,7 +20,7 @@
 }
 
 .name {
-  border: 1px solid var(--dark);
+  border: 1px solid var(--color);
   width: fit-content;
   padding: .1rem 1rem;
   cursor: pointer;
@@ -29,6 +29,6 @@
 }
 
 .name.active {
-  background-color: var(--dark)!important;
+  background-color: var(--color)!important;
   color: #fff;
 }
