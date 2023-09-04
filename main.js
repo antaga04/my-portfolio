@@ -14,6 +14,9 @@ const magicMenu = document.querySelector('.magic-menu');
 const textAlign = document.querySelector('#text-align');
 const theme = document.querySelector('#theme');
 
+const moon = document.querySelector('.fa-moon');
+const sun = document.querySelector('.fa-sun');
+
 menuBtn.addEventListener('click', () => {
   body.classList.toggle('no-overflow');
   menuBtn.classList.toggle('menu-mode');
@@ -45,6 +48,15 @@ textAlign.addEventListener('click', () => {
   textAlign.classList.toggle('applied');
 });
 
+// theme.addEventListener('click', () => {});
+
+const rootElement = document.documentElement;
+
 theme.addEventListener('click', () => {
-  
+  rootElement.classList.toggle('dark-theme');
+  if (theme.textContent === '☀️') {
+    theme.textContent = '🌙';
+  } else {
+    theme.textContent = '☀️';
+  }
 });

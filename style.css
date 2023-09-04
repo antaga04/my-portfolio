@@ -63,6 +63,31 @@
   }
 }
 
+.dark-theme {
+  --color: #f4f7f7;
+  --ink: #519FAA;
+  --error: linear-gradient(#222, #444);
+  --stone: rgb(230, 230, 230);
+  --invert: invert(1);
+
+  & ::selection {
+    background-color: var(--shiraz) !important;
+    color: #000 !important;
+  }
+
+  & body {
+    background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 97.75%, #010314 47.41%, #63e 69.27%, #fff 100%) !important;
+  }
+}
+
+.fa-sun.hidden {
+  display: none;
+}
+
+.fa-moon.hidden {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -92,7 +117,7 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   background-image: var(--crisp), linear-gradient(var(--background), var(--background));
-  background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 87.75%, #e8e3da  47.41%, #E2D7C1 69.27%, #fff 100%);
+  background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 87.75%, #e8e3da 47.41%, #E2D7C1 69.27%, #fff 100%);
   /* background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 97.75%, #010314 47.41%,#63e 69.27%,#fff 100%); */
   background-position: 0 0, 0 0;
   background-size: auto, auto;
