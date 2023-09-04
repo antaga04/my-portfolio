@@ -2,8 +2,7 @@
   width: 100%;
   position: absolute;
   top: 0;
-  /* background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#adc9ea, #adc9ea); */
-  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#FFD33B, #FFAE00);
+  background-image: var(--crisp), var(--error);
   padding: 10rem 5rem 5rem 5rem;
   display: flex;
   justify-content: center;
@@ -20,28 +19,31 @@
 }
 
 .lost-container h1 {
-  font-size: 3rem;
+  color: var(--hippie);
+  font-size: 5em;
 }
 
 .lost-container h2 {
-  color: rgb(27, 27, 27, .8);
+  color: var(--color);
+  font-size: 2.4em;
 }
 
 .lost-container p {
-  font-size: 18px;
-  color: rgb(27, 27, 27, 1);
+  font-size: 1.4em;
+  color: var(--stone);
 }
 
 .not-found-gif {
   width: 20rem;
   height: auto;
+  object-fit: scale-down;
 }
 
 #lost-btn {
   border: 1px solid #000;
   border-radius: 1rem;
   padding: .5rem;
-  background-color: #519FAA;
+  background-color: var(--hippie);
   text-transform: uppercase;
 }
 

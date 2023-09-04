@@ -150,30 +150,35 @@ export const initHome = () => {
           </span>
         </div>
       </div>
-      
-      <section class="qualities">
-        <article class="flex-center">
-          <div class="container">
-            <h2>The devil is in the details, and so am I.</h2>
-            <h5>Don't waste more time looking for a developer.</p>
-          </div>
 
-          <div class="qualities-list">
-            <div class="card-block flex-center">
-              <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/devil_js9kvz.webp" alt="Devil card">
-              <p>Focused on every detail to ensure precision and excellence.</p>
+
+      <div class="qualities__wrapper">
+        <section class="qualities">
+          <article class="flex-center">
+            <div class="container">
+              <h2>The devil is in the details, and so am I.</h2>
+              <h5>Don't waste more time looking for a developer.</p>
             </div>
-            <div class="card-block flex-center">
-              <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/stength_ldbxsi.webp" alt="Strength card">
-              <p>Transform complex problems into innovative solutions.</p>
+
+            <div class="qualities-list">
+              <div class="card-block flex-center">
+                <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/devil_js9kvz.webp" alt="Devil card">
+                <p>Focused on every detail to ensure precision and excellence.</p>
+              </div>
+              <div class="card-block flex-center">
+                <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/stength_ldbxsi.webp" alt="Strength card">
+                <p>Transform complex problems into innovative solutions.</p>
+              </div>
+              <div class="card-block flex-center">
+                <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/star_feyntg.webp" alt="Star card">
+                <p>Constantly learning to keep up with the ever-evolving world.</p>
+              </div>
             </div>
-            <div class="card-block flex-center">
-              <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/star_feyntg.webp" alt="Star card">
-              <p>Constantly learning to keep up with the ever-evolving world.</p>
-            </div>
-          </div>
-        </article>
-      </section>
+          </article>
+        </section>
+      </div>
+
+
     </div>
   `;
 };

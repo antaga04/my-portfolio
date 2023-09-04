@@ -95,10 +95,6 @@
   padding: 8px;
 }
 
-.about__wrapper.justify-text .about-page p {
-  text-align: justify;
-}
-
 .about-page p {
   font-size: 18px;
 }
@@ -113,7 +109,6 @@
 
 figcaption {
   font-style: italic;
-  /* font-size: 90%; */
 }
 
 .terrarium {
@@ -123,16 +118,6 @@ figcaption {
 figure {
   height: 100%;
 }
-
-/* .terrarium figure {
-  height: 100%;
-}
-
-.terrarium img {
-  height: 96%;
-  object-fit: cover;
-  object-position: right;
-} */
 
 .main-text.multi-column {
   margin: 0;
@@ -148,11 +133,7 @@ figure {
   column-gap: 1.3rem;
 }
 
-.about-page img
-
-/* ,
-.about-page .face */
-  {
+.about-page img {
   width: 100%;
   filter: grayscale(95%);
   margin-bottom: 0.5rem;
@@ -180,7 +161,7 @@ figure {
 
 .item-with-image:hover h4 {
   color: white !important;
-  background: var(--color);
+  background: var(--ink);
 }
 
 .cssgrid-collection {
@@ -368,7 +349,7 @@ figure {
 
 .sidebar-item:hover h5 {
   transition: 0.3s ease;
-  background: var(--color);
+  background: var(--ink);
   color: #fff;
 }
 
@@ -376,9 +357,9 @@ figure {
   /* border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem; */
   border: 2px solid transparent;
-  box-shadow: inset 0 0 0 1px var(--color);
+  box-shadow: inset 0 0 0 1px var(--ink);
   margin: .9rem auto;
-  outline: 3px solid var(--color);
+  outline: 3px solid var(--ink);
   overflow: hidden;
   text-align: center;
   width: calc(100% - 4px);
@@ -388,7 +369,7 @@ figure {
 .hogwarts__title {
   font: 800 24px/1 var(--font-sans-serif);
   text-transform: uppercase;
-  background: var(--color);
+  background: var(--ink);
   color: var(--gray);
   padding: 0.8rem 0.8rem 0.9rem;
   transition: 0.2s ease;
@@ -396,7 +377,7 @@ figure {
 
 .hogwarts:hover .hogwarts__title {
   background: transparent;
-  color: var(--color);
+  color: var(--ink);
 }
 
 /* -------------------------------- */
@@ -478,7 +459,7 @@ figure {
   line-height: .75;
   font-size: 2.7rem;
   font-style: normal;
-  border: 2px solid #000;
+  border: 2px solid var(--color);
   padding: 0.4em 0.45em;
   min-width: 4.3rem;
   min-height: 5.9rem;
@@ -488,7 +469,7 @@ figure {
 .drop-cap:after,
 .drop-cap:before {
   content: "";
-  background-color: #000;
+  background-color: var(--color);
   position: absolute;
 }
 
@@ -511,12 +492,12 @@ figure {
 /* RUBIK CUBE */
 .rubik-container {
   align-items: center;
-  background-color: #efefef;
+  /* background-color: #efefef; */
   /* border: 3px double #000; */
 
   border: 2px solid transparent;
-  outline: 3px solid var(--color);
-  box-shadow: inset 0 0 0 1px var(--color);
+  outline: 3px solid var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
 
   display: flex;
   justify-content: center;

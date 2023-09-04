@@ -1,3 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  .qualities {
+    background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png),
+      radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%) !important;
+  }
+}
+
 #hand {
   width: 2rem;
   transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-20deg) skew(0deg, 0deg);
@@ -28,19 +35,10 @@
   gap: 1rem;
   justify-content: center;
   margin-bottom: 10px;
+}
 
-  /*  &:hover>.hand-container {
-    transform: translate3d(0px, -0.8rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(35deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-  }
-
-  &:hover>h2 {
-    transform: translateY(-10px);
-  } */
-
-  &>h2 {
-    transition: transform 0.3s ease;
-  }
+.first-line h2 {
+  transition: transform 0.3s ease;
 }
 
 .hero-section {
@@ -55,11 +53,6 @@
   & h2 {
     font-weight: 400;
   }
-
-  /* & h4, .line {
-    color: #222222;
-    margin-inline-start: 8%;
-  } */
 }
 
 .container {
@@ -101,8 +94,8 @@
 
 /* marquee */
 #marquee-section {
-  border-top: 2px solid #3F6689;
-  border-bottom: 2px solid #3F6689;
+  /* border-top: 1px solid var(--stone);
+  border-bottom: 1px solid var(--stone); */
   text-transform: uppercase;
   overflow: hidden;
   width: 100%;
@@ -110,7 +103,7 @@
 
 .marquee {
   display: flex;
-  background-color: #222222;
+  background-color: #000;
   color: #fff;
   padding: 2rem;
   font-size: 1.2rem;
@@ -149,7 +142,6 @@
     transform: translateX(-100%);
   }
 }
-
 
 .marque {
   width: 100%;
@@ -208,8 +200,8 @@
 
 .home__btns .ticket__link {
   border: 2px solid transparent;
-  box-shadow: inset 0 0 0 1px var(--color);
-  outline: 3px solid var(--color);
+  box-shadow: inset 0 0 0 1px var(--ink);
+  outline: 3px solid var(--ink);
   overflow: hidden;
   text-align: center;
   display: block;
@@ -218,7 +210,7 @@
 }
 
 .home__btn {
-  font: 800 11px/1 var(--font-sans-serif);
+  font: 800 12px/1 var(--font-sans-serif);
   background: transparent;
   color: var(--color);
   text-transform: uppercase;
@@ -232,7 +224,7 @@
 }
 
 .ticket__link:hover .home__btn {
-  background: var(--color) !important;
+  background: var(--ink) !important;
   color: var(--gray) !important;
 }
 
@@ -242,8 +234,19 @@
 }
 
 /* QUALITIES */
+.qualities__wrapper {
+  width: 100%;
+  background-color: #010314;
+}
+
 .qualities {
-  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png), linear-gradient(#e1eaf4, #e1eaf4);
+  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png),
+    linear-gradient(var(--squeeze), var(--squeeze));
+  /* background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%); */
+  /* background: radial-gradient(131.66% 109.77% at 50% 97.75%,transparent 37.41%,#63e 69.27%,#fff 100%); */
+
+
+  /* background-color: #e1eaf4; */
   width: 100%;
   padding: 4rem;
   padding-bottom: 5rem;
