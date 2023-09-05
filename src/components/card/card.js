@@ -6,9 +6,15 @@ export const cardTemplate = (prop) => {
 
   if (project) {
     return `
-    <div id="${project.name}" class="clipping">
-      <h1 class="">${project.name}</h1>
-    </div>
+      <div id="${project.name}" class="clipping">
+        <div class="preview">
+          <img src="${project.cover}" alt="${project.name} desktop">
+        </div>
+        <h1 class="">${project.name}</h1>
+        <div class="preview">
+          ${project.mobile === '' ? '' : `<img src="${project.mobile}" alt="${project.name} mobile">`}
+        </div>
+      </div>
   `;
   } else {
     return `<div class="error-message">Proyecto no encontrado</div>`;

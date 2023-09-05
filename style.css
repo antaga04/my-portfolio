@@ -488,6 +488,7 @@ footer {
 
   .nav-2 {
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     background-color: transparent;
     border-radius: 0;
     border: none;
