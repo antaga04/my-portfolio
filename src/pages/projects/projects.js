@@ -12,8 +12,21 @@ export const initProjects = () => {
     <div class="page__wrapper">
       <section class="page">
         ${listTemplate(data)}
-        ${gridTemplate(data)}
+        <article id="right-side" class="projects__wrapper right-side">
+          ${gridTemplate(data)}
+        </aritcle>
       </section>
     </div>
   `;
+
+  const tags = document.querySelectorAll('.project-list li');
+  const rightSide = document.querySelector('#right-side');
+
+  tags.forEach((tag) => {
+    tag.addEventListener('click', () => {
+      tag.id === 'all'
+        ? (rightSide.innerHTML = gridTemplate(data))
+        : (rightSide.innerHTML = cardTemplate(tag));
+    });
+  });
 };

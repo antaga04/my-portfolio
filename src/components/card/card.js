@@ -1,9 +1,16 @@
+import { projectsData as data } from '../../utils/projectsData';
 import './card.css';
 
 export const cardTemplate = (prop) => {
-  return `
-    <article id="${prop.name}" class="clipping">
-      <h2 class="">${prop.name}</h2>
-    </article>
+  const project = data.find((item) => item.id == prop.id);
+
+  if (project) {
+    return `
+    <div id="${project.name}" class="clipping">
+      <h1 class="">${project.name}</h1>
+    </div>
   `;
+  } else {
+    return `<div class="error-message">Proyecto no encontrado</div>`;
+  }
 };

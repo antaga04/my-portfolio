@@ -45,7 +45,7 @@ export const initAbout = () => {
         </div>
 
         <div class="item-with-image plan span--32 border--botton">
-          <h4>How it all started?</h4>
+          <h4>The beginning</h4>
           <div class="multi-column">
             <p>It all started back in high school during an IT class. Our mission? Build a video game using Python. I was
               instantly hooked. Classes were slow, so I went solo, learning the ropes from YouTube tutorials. Before long, I
@@ -61,7 +61,7 @@ export const initAbout = () => {
         </div>
 
         <div class="item-with-image plan span--2">
-          <h4>My next stage</h4>
+          <h4>Next stage</h4>
           <div class="multi-column">
             <p>Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third
               year). Somewhere along this path, I joined forces with a team called Uvigo MotorSport—an exclusive Galician
@@ -81,7 +81,7 @@ export const initAbout = () => {
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png">
           </a>
           <div class="cssgrid-collection__content">
-            <h4>My web developer path</h4>
+            <h4>Web developer path</h4>
             <div class="multi-column-3">
               <p>Soon thereafter, a new revelation dawned—I stumbled upon the world of web development. The decision was
                 clear: I enrolled in a bootcamp to expedite my mastery and secure a tangible certification. Today, I find

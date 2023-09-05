@@ -36,10 +36,14 @@
   margin-bottom: 40px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .preview-box {
     background-color: rgb(27, 27, 27, .4);
   }
+}
+ */
+.dark-theme .preview-box {
+  background-color: rgb(27, 27, 27, .4);
 }
 
 @media screen and (min-width: 903px) {

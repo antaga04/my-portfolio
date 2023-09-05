@@ -1,4 +1,5 @@
 :root {
+  --theme: light;
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   /* FONTS */
   --font: "EB Garamond", serif;
@@ -37,20 +38,51 @@
   --crisp: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png);
   --logo: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1692092677/Portafolio/cubo-rubik-green_nwbsyc.png);
   --brush__circule: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1692129677/Portafolio/circulo-green_aznxxl.svg);
+  --specks: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1693336872/Portafolio/background-motitas_lu8s4g.png);
 }
 
-@media (prefers-color-scheme: dark) {
+.light-theme {
+  /* COLORS */
+  --color: #1c1f33;
+  --ink: #1c1f33;
+  --background: #F4F7F7;
+  --havelock__blue: #5190d9;
+  --hippie: #519Faa;
+  --neptune: #7AC3B2;
+  --guay-con-neptuno: #c3eae4;
+  --lightGray: rgba(255, 255, 255, .17);
+  --black: #000;
+  --stone: rgb(27, 27, 27, .8);
+  --white: #fff;
+  --mine__shaft: #222;
+  --gray: #eee;
+  --prim: #eddde8;
+  --shiraz: #ca0541;
+  --error: linear-gradient(#FFD33B, #FFAE00);
+  --blue: #3F6689;
+  --squeeze: #e1eaf4;
+  --moon__raker: #edc0f4;
+  --french__lilac: #eddaf4;
+  --perfume: #efaaf4;
+  --deco: #d0d884;
+  --link__water: #d0d8f4;
+  --athens__gray: #f0eff4;
+
+  --invert: invert(0);
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color: #f4f7f7;
-    /* --background: #191d27; */
-    /* --background: #010314; */
-    --ink: #519FAA;
     --error: linear-gradient(#222, #444);
-    --stone: rgb(230, 230, 230);
+    --ink: #519FAA;
     --invert: invert(1);
-    /* --squeeze: #160C3E; */
+    --stone: rgb(230, 230, 230);
 
-    /* --crisp: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1693336872/Portafolio/background-motitas_lu8s4g.png); */
+    --background: #010314;
+    --background: #191d27;
+    --crisp: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1693336872/Portafolio/background-motitas_lu8s4g.png);
+    --squeeze: #160C3E;
   }
 
   ::selection {
@@ -61,7 +93,7 @@
   body {
     background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 97.75%, #010314 47.41%, #63e 69.27%, #fff 100%) !important;
   }
-}
+} */
 
 .dark-theme {
   --color: #f4f7f7;

@@ -2,6 +2,8 @@ import './style.css';
 
 const body = document.querySelector('body');
 const main = document.querySelector('#app');
+const rootElement = document.documentElement;
+
 /* menu */
 const menuBtn = document.querySelector('.menu-btn');
 const menuSlider = document.querySelector('.menu-slider');
@@ -12,8 +14,7 @@ const nib = document.querySelector('.nib-btn');
 const magicMenu = document.querySelector('.magic-menu');
 /* gear */
 const textAlign = document.querySelector('#text-align');
-const theme = document.querySelector('#theme');
-
+const themeBtn = document.querySelector('#theme');
 const moon = document.querySelector('.fa-moon');
 const sun = document.querySelector('.fa-sun');
 
@@ -48,15 +49,41 @@ textAlign.addEventListener('click', () => {
   textAlign.classList.toggle('applied');
 });
 
-// theme.addEventListener('click', () => {});
+const saveTheme = (modo) => {
+  localStorage.setItem('modoPreferido', modo);
+};
 
-const rootElement = document.documentElement;
-
-theme.addEventListener('click', () => {
-  rootElement.classList.toggle('dark-theme');
-  if (theme.textContent === '☀️') {
-    theme.textContent = '🌙';
+const setTheme = (modo) => {
+  if (modo === 'dark') {
+    themeBtn.textContent = '☀️';
+    rootElement.classList.remove('light-theme');
+    rootElement.classList.add('dark-theme');
   } else {
-    theme.textContent = '☀️';
+    themeBtn.textContent = '🌙';
+    rootElement.classList.remove('dark-theme');
+    rootElement.classList.add('light-theme');
   }
+};
+
+themeBtn.addEventListener('click', () => {
+  const actualTheme = rootElement.classList.contains('dark-theme') ? 'dark' : 'light';
+  const newTheme = actualTheme === 'dark' ? 'light' : 'dark';
+
+  setTheme(newTheme);
+  saveTheme(newTheme);
 });
+
+const cargarModoPreferido = () => {
+  const storagedTheme = localStorage.getItem('modoPreferido');
+  if (storagedTheme) {
+    setTheme(storagedTheme);
+  } else {
+    const defaultTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+    setTheme(defaultTheme);
+    saveTheme(defaultTheme);
+  }
+};
+
+cargarModoPreferido();

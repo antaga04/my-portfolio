@@ -1,8 +1,9 @@
 export const projectsData = [
   {
+    id: '0',
     name: 'Responsive website',
     date: '01.09.23',
-    cover: 'https://replit.com/public/images/featured-repls/ironcladdev/cover.png',
+    cover: 'src/assets/landing-page.png',
     status: 'deployed',
     techs: ['HTML', 'CSS'],
     demo: 'https://landing-page-adrian-anta.netlify.app/',
@@ -13,9 +14,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '1',
     name: 'Dynamic store',
     date: '01.09.23',
-    cover: 'https://res.cloudinary.com/drsfru9lj/image/upload/v1693677773/Portafolio/solid-sounds_i7fnzs.jpg',
+    cover: 'src/assets/dynamic-store.png',
     status: 'deployed',
     techs: ['HTML', 'CSS', 'JS'],
     demo: 'https://rocksolidsounds.netlify.app/',
@@ -26,9 +28,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '2',
     name: 'Portfolio',
     date: '01.09.23',
-    cover: 'https://replit.com/public/images/featured-repls/david/cover.jpg',
+    cover: 'src/assets/portfolio.png',
     status: 'deployed',
     techs: ['HTML', 'CSS', 'JS'],
     demo: '',
@@ -39,10 +42,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '3',
     name: 'Nasa app',
     date: '01.09.23',
-    cover:
-      'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZXNwYWNpb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    cover: 'src/assets/nasa.png',
     status: 'comming soon',
     techs: ['JS', 'React'],
     demo: '',
@@ -53,9 +56,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '4',
     name: 'Weather app',
     date: '01.09.23',
-    cover: 'https://replit.com/public/images/featured-repls/eriks/cover.jpg',
+    cover: 'src/assets/future-project.png',
     status: 'future project',
     techs: ['JS', 'React'],
     demo: '',
@@ -66,10 +70,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '5',
     name: 'Games hub',
     date: '01.09.23',
-    cover:
-      'https://images.unsplash.com/photo-1682687220067-dced9a881b56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    cover: 'src/assets/future-project.png',
     status: 'future project',
     techs: ['JS', 'React', 'Testing'],
     demo: '',
@@ -80,9 +84,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '6',
     name: 'Rest API',
     date: '01.09.23',
-    cover: 'https://replit.com/public/images/featured-repls/eriks/cover.jpg',
+    cover: 'src/assets/future-project.png',
     status: 'future project',
     techs: ['Node', 'Express', 'noSQL'],
     demo: '',
@@ -93,9 +98,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '7',
     name: 'Relational modeling',
     date: '01.09.23',
-    cover: 'https://replit.com/public/images/featured-repls/eriks/cover.jpg',
+    cover: 'src/assets/future-project.png',
     status: 'future project',
     techs: ['Node', 'Express', 'noSQL'],
     demo: '',
@@ -106,9 +112,10 @@ export const projectsData = [
     Sed nec arcu condimentum nisl dapibus suscipit. Aliquam hendrerit.`,
   },
   {
+    id: '8',
     name: 'Fulll server',
     date: '01.09.23',
-    cover: 'https://replit.com/public/images/featured-repls/eriks/cover.jpg',
+    cover: 'src/assets/future-project.png',
     status: 'future project',
     techs: ['Node', 'Express', 'noSQL', 'Testing'],
     demo: '',
