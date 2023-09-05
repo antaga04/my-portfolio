@@ -393,7 +393,8 @@ footer {
   /* width: fit-content; */
   font: 10px "Playfair Display", serif;
   position: absolute;
-  left: -410%;
+  right: 200%;
+  width: max-content;
   background-color: rgba(23, 23, 23, .98);
   padding: 14px 20px;
   border-radius: 10px;
@@ -449,14 +450,6 @@ footer {
   opacity: 0 !important;
 }
 
-@media screen and (max-width: 1100px) {
-  .pen-nib__gear span {
-    bottom: -150%;
-    width: max-content;
-    left: -100%;
-  }
-}
-
 .pen-nib__gear * {
   cursor: pointer;
 }
@@ -475,11 +468,10 @@ footer {
 @media screen and (max-width: 768px) {
   .pen-nib__gear {
     position: relative;
-    /* padding: 0;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    box-shadow: none; */
+  }
+
+  .pen-nib__gear span {
+    display: none;
   }
 
   .menu {
