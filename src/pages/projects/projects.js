@@ -24,6 +24,10 @@ export const initProjects = () => {
 
   tags.forEach((tag) => {
     tag.addEventListener('click', () => {
+      tags.forEach((otherTag) => {
+        otherTag.classList.remove('activeTag');
+      });
+      tag.classList.add('activeTag');
       tag.id === 'all'
         ? (rightSide.innerHTML = gridTemplate(data))
         : (rightSide.innerHTML = cardTemplate(tag));

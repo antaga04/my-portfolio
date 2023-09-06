@@ -10,6 +10,11 @@
 
   .project-list {
     margin: .75rem 0;
+    font-size: 20px;
+  }
+
+  .left-side h2 {
+    font-size: 30px;
   }
 }
 
@@ -21,6 +26,7 @@
 
 .name {
   border: 1px solid var(--color);
+  border-radius: .5rem;
   width: fit-content;
   padding: .1rem 1rem;
   cursor: pointer;
@@ -28,7 +34,12 @@
   display: inline-block;
 }
 
-.name.active {
-  background-color: var(--color)!important;
-  color: #fff;
+.name:hover {
+  background-color: var(--color);
+  color: var(--oposite);
+}
+
+.activeTag {
+  background-color: var(--color);
+  color: var(--oposite);
 }

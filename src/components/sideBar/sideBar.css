@@ -1,0 +1,91 @@
+.sidebar {
+  margin-top: 3rem;
+}
+
+.sidebar-item {
+  margin-top: .9rem;
+}
+
+.sidebar-item h5 {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.sidebar-item p {
+  margin-top: 1rem;
+}
+
+.sidebar-item:hover h5 {
+  transition: 0.3s ease;
+  background: var(--ink);
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    border-top: 1px dashed;
+    padding-top: 1rem;
+    margin: 1rem 0;
+  }
+
+  .sidebar-item h5 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 900px) {
+  .interests ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .sidebar {
+    border-top: 1px dashed;
+    padding-top: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 700px) {
+  main .sidebar {
+    grid-column: 1/-1;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .sidebar h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar>a {
+    flex: 0 1 48%;
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+
+  .sidebar .slack-ui {
+    border-top: 0;
+  }
+
+  .sidebar .pie {
+    order: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .sidebar {
+    grid-row: 3/8;
+    grid-column: 5/6;
+  }
+
+  .sidebar {
+    display: block;
+    border-left: 1px solid;
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+}

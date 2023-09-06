@@ -1,3 +1,5 @@
+import { rubikCube } from '../../components/rubikCube/rubikCube';
+import sideBar from '../../components/sideBar/sideBar';
 import './about.css';
 
 export const initAbout = () => {
@@ -15,6 +17,7 @@ export const initAbout = () => {
             <div class="edition">Price 5 cents</div>
           </div>
         </aside>
+        
         <h2 class="title--large main-title">Driven by Learning, Defined by Detail</h2>
         <div class="main-text multi-column">
           <p>
@@ -28,21 +31,7 @@ export const initAbout = () => {
           <p>My ultimate goal is to be a valuable asset to a company, where I can contribute meaningfully to its growth while elevating my skills as a developer</p>
         </div>
 
-        <div class="terrarium">
-          <figure>
-            <div class="rubik-container">
-              <div class="rubik-cube">
-                <div class="face top"></div>
-                <div class="face bottom"></div>
-                <div class="face left"></div>
-                <div class="face right"></div>
-                <div class="face front"></div>
-                <div class="face back"></div>
-              </div>
-            </div>
-          </figure>
-          <figcaption>Rotating Rubik Cube</figcaption>
-        </div>
+        ${rubikCube()}
 
         <div class="item-with-image plan span--32 border--botton">
           <h4>The beginning</h4>
@@ -95,58 +84,8 @@ export const initAbout = () => {
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693505547/Portafolio/rock-the-code-tech_ufgnqt.png">
           </a>
         </div>
-
-        <div class="sidebar">
-          <div>
-            <h3 class="title--big">Thing I like</h3>
-            <ul>
-                <li>Puzzles</li>
-                <li>Rubik's cube</li>
-                <li>Back To The Future</li>
-                <li>The Fresh Prince of Bel-Air</li>
-                <li>Work out</li>
-                <li>Rock</li>
-            </ul>
-          </div>
-
-          <ul>
-              <li class="sidebar-item with-border">
-                <a href="https://huemint.com/" target="_blank">
-                  <h5>Color Palette Generator</h5>
-                  <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
-                </a>
-              </li>
-              <li class="sidebar-item with-border">
-                <a href="https://shots.so/" target="_blank">
-                  <h5>Amazing Mockups</h5>
-                  <p>For developers in search of impressive mockups, <em>Shots</em> is the ultimate choice.</p>
-                </a>
-              </li>
-              <div class="hogwarts">
-                <div class="hogwarts__title">
-                  50% OFF Best Websites for inspiration
-                </div>
-              </div>
-              <li class="sidebar-item separation-null">
-                <a href="https://animista.net/" target="_blank">
-                  <h5>CSS Animations Library</h5>
-                  <p>Elevate user experiences with <em>Animista</em>, a CSS animation library for developers.</p>
-                </a>
-              </li>
-              <li class="sidebar-item with-border">
-                <a href="https://easings.net/en" target="_blank">
-                  <h5>Easing functions Sheet</h5>
-                  <p>Achieve seamless animations with ease using <em>Easings</em>, your go-to resource for easing functions.</p>
-                </a>
-              </li>
-              <li class="sidebar-item with-border">
-                <a href="https://cubic-bezier.com/" target="_blank">
-                  <h5>Cubic-bezier Easing</h5>
-                  <p>And if you want to test cubic-bezier transformation, <em>Cubic-Bezier</em> makes it effortless.</p>
-                </a>
-              </li>
-          </ul>
-        </div>
+        
+        ${sideBar()}
       </section>
     </div>
   `;

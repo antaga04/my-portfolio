@@ -95,8 +95,13 @@
 .project-links a {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 1.5rem;
+  transition: color .2s ease-in-out;
+}
+
+.project-links a:hover {
+  color: var(--hippie);
 }
 
 .project-links span {

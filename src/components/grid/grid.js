@@ -33,6 +33,7 @@ export const gridTemplate = (propList) => {
 };
 
 /* 
+<i class="fa-solid fa-circle-info"></i>
 <li class="preview-box">
 <div class="box__header">
 <h2>${prop.name}</h2>

@@ -6,7 +6,7 @@ export const listTemplate = (propList) => {
       <div>
         <h2>Projects List</h2>
         <ul class="project-list">
-          <li id="all" class="name">All Projects</li>
+          <li id="all" class="name activeTag">All Projects</li>
           ${propList.map((prop) => `<li id="${prop.id}" class="name">${prop.name}</li>`).join('')}
         </ul>
       </div>

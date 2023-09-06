@@ -1,0 +1,106 @@
+.rubik-container {
+  align-items: center;
+  border: 2px solid transparent;
+  box-shadow: inset 0 0 0 1px var(--ink);
+  display: flex;
+  height: 98%;
+  justify-content: center;
+  outline: 3px solid var(--ink);
+}
+
+.rubik__container {
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .rubik__container {
+    grid-column: 1/-1;
+    min-height: 270px;
+  }
+}
+
+@media (min-width: 700px) {
+  .rubik__container {
+    margin: 0 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rubik__container {
+    grid-column: 3/span 2;
+  }
+}
+
+.rubik__container:hover img {
+  filter: grayscale(0);
+}
+
+/* ######################### */
+.rubik-cube {
+  animation: rotate 10s infinite linear;
+  height: 140px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  width: 140px;
+}
+
+.rubik-cube:hover {
+  animation-play-state: paused;
+}
+
+.face {
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 140px;
+  position: absolute;
+  width: 140px;
+}
+
+.top {
+  transform: translateZ(70px) rotateY(0deg);
+  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/4_bjkgci.png');
+  background-size: cover;
+}
+
+.bottom {
+  transform: translateZ(-70px) rotateY(180deg);
+  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/4_bjkgci.png');
+  background-size: cover;
+}
+
+.left {
+  transform: translateX(-70px) rotateY(-90deg);
+  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/2_teyfzm.png');
+  background-size: cover;
+}
+
+.right {
+  transform: translateX(70px) rotateY(90deg);
+  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134307/Portafolio/1_lb3rlc.png');
+  background-size: cover;
+}
+
+.front {
+  transform: translateY(-70px) rotateX(90deg);
+  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/5_ajq59e.png');
+  background-size: cover;
+}
+
+.back {
+  transform: translateY(70px) rotateX(-90deg);
+  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/3_amibcy.png');
+  background-size: cover;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
