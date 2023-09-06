@@ -65,11 +65,11 @@ export const initAbout = () => {
         </div>
 
         <div class="item-with-image cssgrid-collection">
-          <a class="img--flex cssgrid-collection__image" href="https://www.thepowermba.com/es/bootcamp-fullstack" target="_blank">
+          <a class="img--flex cssgrid-collection__image rc-titulo" href="https://www.thepowermba.com/es/bootcamp-fullstack" target="_blank">
             <img
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png">
           </a>
-          <div class="cssgrid-collection__content">
+          <div class="cssgrid-collection__content rc-text">
             <h4>Web developer path</h4>
             <div class="multi-column-3">
               <p>Soon thereafter, a new revelation dawned—I stumbled upon the world of web development. The decision was
@@ -79,7 +79,7 @@ export const initAbout = () => {
             </div>
           </div>
 
-          <a class="cssgrid-collection__image" href="https://www.rockthecode.es/new/" target="_blank">
+          <a class="cssgrid-collection__image rc-tech" href="https://www.rockthecode.es/new/" target="_blank">
             <img
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693505547/Portafolio/rock-the-code-tech_ufgnqt.png">
           </a>

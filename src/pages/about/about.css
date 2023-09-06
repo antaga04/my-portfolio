@@ -280,7 +280,7 @@ figure {
 }
 
 /* ######################## MEDIAS QUERIES ######################## */
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .about-page {
     display: grid;
     grid-template-columns: repeat(4, 1fr) 23%;
@@ -303,15 +303,15 @@ figure {
   }
 
   .about-page .main-title {
-    grid-column: 1/-1;
+    grid-column: 1/span 4;
   }
 
   .about-page .main-text {
-    grid-column: span 5;
+    grid-column: span 2;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .about__wrapper {
     padding-bottom: 0;
   }
@@ -360,49 +360,6 @@ figure {
   }
 }
 
-@media (max-width: 900px) {
-  .interests ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-}
-
-@media (min-width: 700px) and (max-width: 1024px) {
-  .about-page {
-    padding: 0 1.25rem;
-  }
-
-  .about-page .plan {
-    grid-column: 1/-1;
-    margin: 0;
-  }
-
-  .plan {
-    grid-column: span 3;
-    margin: 0 0 1.5rem;
-  }
-
-  .pacman--img {
-    grid-row: unset;
-  }
-
-  .umCar--img {
-    grid-row: unset;
-  }
-
-  .about-page .cssgrid-collection {
-    grid-row: unset;
-  }
-
-  .interests {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 @media (min-width: 1024px) {
   .border--botton {
     border-bottom: 1px solid;
@@ -414,5 +371,37 @@ figure {
 
   .about-page .main-text {
     grid-column: span 2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-page {
+    padding: 0 1.25rem;
+  }
+
+  .about-page .cssgrid-collection {
+    display: grid;
+    grid-row: unset;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.2rem;
+  }
+
+  .ticket__title {
+    font: 800 18px/1 var(--font-sans-serif);
+  }
+
+  .rc-titulo {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+
+  .rc-text {
+    grid-column: 1;
+  }
+
+  .rc-tech {
+    grid-row: 1;
+    grid-column: 2/-1;
   }
 }
