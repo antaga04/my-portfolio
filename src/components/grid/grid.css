@@ -1,7 +1,8 @@
 .projects__wrapper {
   border-left: 1px solid var(--color);
   border-right: 1px solid var(--color);
-  margin-left: 21%;
+  /* margin-left: 21%; */
+  margin-left: 19svw;
   margin-top: 0;
   padding: .5rem 2rem;
   width: 100%;

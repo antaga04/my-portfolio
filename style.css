@@ -242,13 +242,14 @@ header a {
 
 /* FOOTER */
 footer {
-  background-image: var(--crisp), linear-gradient(#2b2b2b, #111);
+  max-width: 1600px;
+  margin: 0 auto;
+  /* background-image: var(--crisp), linear-gradient(#2b2b2b, #111); */
   height: fit-content;
   display: flex;
   align-items: center;
   padding: 1.4rem 4rem;
-  background-color: #000;
-  color: #868686;
+  color: var(--color);
   justify-content: space-between;
 
   & p {
@@ -270,6 +271,7 @@ footer {
   display: flex;
 
   border-color: rgb(234, 234, 234, 0.4);
+  border-color: var(--color);
   border-radius: 1000rem;
   background-color: rgb(234, 234, 234, 0.1);
 

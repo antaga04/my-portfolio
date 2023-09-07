@@ -91,9 +91,10 @@
 .contact-hero-corner {
   bottom: auto;
   position: absolute;
-  top: 15.75%;
+  top: 16.1%;
   z-index: -1;
-  width: 49.35rem;
+  /* width: 49.35rem; */
+  height: 67.1svh;
   left: auto;
   right: -6%;
   transform: rotate(90deg);
