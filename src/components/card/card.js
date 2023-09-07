@@ -7,12 +7,27 @@ export const cardTemplate = (prop) => {
   if (project) {
     return `
       <div id="${project.name}" class="clipping">
-        <div class="preview">
+        <div class="preview desktop ticket">
           <img src="${project.cover}" alt="${project.name} desktop">
         </div>
-        <h1 class="">${project.name}</h1>
-        <div class="preview">
+        <div class="preview mobile">
           ${project.mobile === '' ? '' : `<img src="${project.mobile}" alt="${project.name} mobile">`}
+        </div>
+        
+        <h1 class="">${project.name}</h1>
+        <p class="description">${project.info}</p>
+        <div class="others">
+          <div class="released">
+            <p class="pill-wrapper">${project.status}</p>
+            <p class="pill-wrapper">${project.date}</p>
+          </div>
+          <div class="card-techs">
+            ${project.techs.map((tech) => `<p class="pill-wrapper">${tech}</p>`).join('')}
+          </div>
+          <div class="project-links">
+            ${prop.github === "" ? "" : `<a class="ticket" href="${prop.github}" target="_blank"><div class="ticket__title card-links">code <i class="fa-solid fa-code"></i></div></a>`}
+            ${prop.demo === "" ? "" : `<a class="ticket" href="${prop.demo}" target="_blank"><div class="ticket__title card-links">demo <i class="fa-solid fa-share"></i></div></a>`}
+          </div>
         </div>
       </div>
   `;

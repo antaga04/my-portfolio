@@ -71,7 +71,6 @@ u {
   --oposite: #fff;
   --color: #1c1f33;
   --ink: #1c1f33;
-  --guay-con-neptuno: #c3eae4;
   --stone: rgb(27, 27, 27, .8);
   --error: linear-gradient(#FFD33B, #FFAE00);
   --invert: invert(0);
@@ -183,8 +182,8 @@ header a {
 }
 
 .nav-3 {
-  border-left: 1px solid #7AC3B2;
-  border-right: 1px solid #7AC3B2;
+  border-left: 1px solid var(--neptune);
+  border-right: 1px solid var(--neptune);
   border-radius: 90px;
 
   display: flex;

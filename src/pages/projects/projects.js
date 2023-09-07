@@ -13,7 +13,7 @@ export const initProjects = () => {
       <section class="page">
         ${listTemplate(data)}
         <article id="right-side" class="projects__wrapper right-side">
-          ${gridTemplate(data)}
+        ${gridTemplate(data)}
         </aritcle>
       </section>
     </div>

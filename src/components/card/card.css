@@ -2,3 +2,101 @@
   width: 100%;
   height: auto;
 }
+
+.clipping h1 {
+  font-family: var(--font-title);
+  font-size: 44px;
+  margin: .75rem 0;
+}
+
+.desktop {
+  padding: .25rem;
+}
+
+.mobile img {
+  height: 20em;
+  object-fit: cover;
+}
+
+.others {
+  /* border: 1px solid var(--color); */
+  align-items: flex-start;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: space-evenly;
+  padding: .5rem;
+}
+
+.released {
+  margin-bottom: .5rem;
+  justify-content: space-between;
+}
+
+
+.card-techs,
+.released {
+  display: flex;
+  gap: .75rem;
+  width: 100%;
+}
+
+.card-links {
+  background-color: transparent !important;
+  color: var(--color) !important;
+}
+
+.ticket:hover .card-links {
+  background-color: var(--ink) !important;
+  color: var(--oposite) !important;
+}
+
+@media (min-width: 1024px) {
+  .clipping {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+
+  .desktop {
+    grid-column: span 4;
+    grid-row: span 3;
+    backdrop-filter: blur(5px);
+  }
+
+  .mobile {
+    grid-column: span 2;
+    grid-row: span 4;
+  }
+
+  .mobile img {
+    height: 100%;
+  }
+
+  .clipping h1 {
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+
+  .description {
+    padding: .5rem;
+    grid-column: span 4;
+    font-size: 20px;
+  }
+
+  .others {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .clipping {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .others {
+    margin: 1rem 0;
+  }
+}

@@ -28,11 +28,8 @@ export const initHome = () => {
           </div>
 
           <div class="home__btns">
-            <a href="#" class="ticket__link">
-              <div class="home__btn page__link">CHECK MY WORK</div>
-            </a>
-            <a href="#" class="ticket__link">
-              <div class="home__btn page__link">PLAY A GAME</div>
+            <a href="#" class="ticket">
+              <div class="home__btn page__link ticket__title">CHECK MY WORK</div>
             </a>
           </div>
 

@@ -218,12 +218,12 @@ figure {
   border-bottom-right-radius: 1rem; */
   border: 2px solid transparent;
   box-shadow: inset 0 0 0 1px var(--ink);
+  display: block;
   margin: .9rem auto;
   outline: 3px solid var(--ink);
   overflow: hidden;
   text-align: center;
   width: calc(100% - 4px);
-  display: block;
 }
 
 .ticket__title {
