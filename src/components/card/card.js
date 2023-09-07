@@ -8,10 +8,16 @@ export const cardTemplate = (prop) => {
     return `
       <div id="${project.name}" class="clipping">
         <div class="preview desktop ticket">
-          <img src="${project.cover}" alt="${project.name} desktop">
+          <img src="${project.desktop === '' ? project.cover : project.desktop}" alt="${
+      project.name
+    } desktop">
         </div>
         <div class="preview mobile">
-          ${project.mobile === '' ? '' : `<img src="${project.mobile}" alt="${project.name} mobile">`}
+          ${
+            project.mobile === ''
+              ? ''
+              : `<img src="${project.mobile}" alt="${project.name} mobile">`
+          }
         </div>
         
         <h1 class="">${project.name}</h1>
@@ -25,8 +31,16 @@ export const cardTemplate = (prop) => {
             ${project.techs.map((tech) => `<p class="pill-wrapper">${tech}</p>`).join('')}
           </div>
           <div class="project-links">
-            ${prop.github === "" ? "" : `<a class="ticket" href="${prop.github}" target="_blank"><div class="ticket__title card-links">code <i class="fa-solid fa-code"></i></div></a>`}
-            ${prop.demo === "" ? "" : `<a class="ticket" href="${prop.demo}" target="_blank"><div class="ticket__title card-links">demo <i class="fa-solid fa-share"></i></div></a>`}
+            ${
+              project.github === ''
+                ? ''
+                : `<a class="ticket" href="${project.github}" target="_blank"><div class="ticket__title card-links">code <i class="fa-solid fa-code"></i></div></a>`
+            }
+            ${
+              project.demo === ''
+                ? ''
+                : `<a class="ticket" href="${project.demo}" target="_blank"><div class="ticket__title card-links">demo <i class="fa-solid fa-share"></i></div></a>`
+            }
           </div>
         </div>
       </div>

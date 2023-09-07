@@ -72,6 +72,7 @@ u {
   --color: #1c1f33;
   --ink: #1c1f33;
   --stone: rgb(27, 27, 27, .8);
+  --shadow: rgba(61, 61, 61, 0.1);
   --error: linear-gradient(#FFD33B, #FFAE00);
   --invert: invert(0);
 }
@@ -80,6 +81,7 @@ u {
   --oposite: #000;
   --color: #f4f7f7;
   --ink: #519FAA;
+  --shadow: rgb(234, 234, 234, 0.2);
   --error: linear-gradient(#222, #444);
   --stone: rgb(230, 230, 230);
   --invert: invert(1);
@@ -275,13 +277,15 @@ footer {
   border-radius: 1000rem;
   background-color: rgb(234, 234, 234, 0.1);
 
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.15);
+  transition: all 0.25s ease-in-out;
+  transform: scale(1);
 }
 
 .footer-icons>li>a:hover {
-  background-color: rgb(234, 234, 234, 0.2);
-  color: #cdcdcd;
+  /* background-color: rgb(234, 234, 234, 0.2); */
+  /* color: #cdcdcd; */
+  background-color: var(--shadow);
+  color: var(--hippie);
 }
 
 /* ---------------------------------------------- */
