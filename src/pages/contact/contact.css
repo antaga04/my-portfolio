@@ -48,7 +48,7 @@
   width: fit-content;
 }
 
-.dev-email>.arrow {
+.arrow {
   transition: all .3s ease-in-out;
   height: 1.75rem;
   filter: var(--invert);
