@@ -3,7 +3,9 @@ import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
 import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
-import { handlePageStyles } from '../utils/functions';
+import { handleLinkStyle, handlePageStyles } from '../utils/functions';
+
+const links = document.querySelectorAll('.nav-link');
 
 const routes = {
   '/': initHome,
@@ -14,6 +16,7 @@ const routes = {
 };
 
 function handleNavigation(pathname) {
+  handleLinkStyle(links);
   const initPage = routes[pathname] || initNotFound;
   initPage();
 }
@@ -33,15 +36,28 @@ window.addEventListener('popstate', () => {
   handleNavigation(pathname);
 });
 
-const Linker = () => {
-  const links = document.querySelectorAll('a[data-path]');
+function menuLinker() {
+  const links = document.querySelectorAll('a[nav-path]');
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      const pathname = link.getAttribute('data-path');
+      const pathname = link.getAttribute('nav-path');
+      if (pathname !== window.location.pathname) {
+        navigateTo(pathname);
+      }
+    });
+  });
+}
+
+function Linker() {
+  const links = document.querySelectorAll('a[link-path]');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const pathname = link.getAttribute('link-path');
       navigateTo(pathname);
     });
   });
-};
+}
 
-export { initializeApp, Linker };
+export { initializeApp, menuLinker, Linker, navigateTo };
