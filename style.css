@@ -85,16 +85,17 @@ u {
   --error: linear-gradient(#222, #444);
   --stone: rgb(230, 230, 230);
   --invert: invert(1);
-
-  & ::selection {
-    background-color: var(--shiraz) !important;
-    color: #000 !important;
-  }
-
-  & body {
-    background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 97.75%, #010314 47.41%, #63e 69.27%, #fff 100%) !important;
-  }
 }
+
+.dark-theme ::selection {
+  background-color: var(--shiraz) !important;
+  color: #000 !important;
+}
+
+.dark-theme body {
+  background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 97.75%, #010314 47.41%, #63e 69.27%, #fff 100%) !important;
+}
+
 
 .fa-sun.hidden {
   display: none;
@@ -253,10 +254,10 @@ footer {
   padding: 1.4rem 4rem;
   color: var(--color);
   justify-content: space-between;
+}
 
-  & p {
-    letter-spacing: 1px;
-  }
+footer p {
+  letter-spacing: 1px;
 }
 
 .footer-icons {
