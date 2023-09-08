@@ -1,5 +1,4 @@
-import { initializeApp } from './src/router/router';
-import { navigateTo } from './src/router/router';
+import { Linker, initializeApp } from './src/router/router';
 import './style.css';
 
 const body = document.querySelector('body');
@@ -23,26 +22,10 @@ const sun = document.querySelector('.fa-sun');
 /* router */
 document.addEventListener('DOMContentLoaded', () => {
   initializeApp();
+  Linker();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('a[data-path]');
-  links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const pathname = link.getAttribute('data-path');
-      navigateTo(pathname);
-    });
-  });
-});
-
-menuBtn.addEventListener('click', () => {
-  body.classList.toggle('no-overflow');
-  menuBtn.classList.toggle('menu-mode');
-  menuSlider.classList.toggle('menu-mode');
-  menuSlider.classList.toggle('hidden');
-  menuNav.classList.toggle('hidden');
-});
+/* MENU */
 menuLinks.forEach((link) => {
   link.addEventListener('click', (ev) => {
     menuBtn.click();

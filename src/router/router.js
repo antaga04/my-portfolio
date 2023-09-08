@@ -33,4 +33,15 @@ window.addEventListener('popstate', () => {
   handleNavigation(pathname);
 });
 
-export { navigateTo, initializeApp };
+const Linker = () => {
+  const links = document.querySelectorAll('a[data-path]');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const pathname = link.getAttribute('data-path');
+      navigateTo(pathname);
+    });
+  });
+};
+
+export { initializeApp, Linker };

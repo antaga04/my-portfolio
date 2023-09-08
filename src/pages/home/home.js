@@ -1,3 +1,4 @@
+import { Linker } from '../../router/router';
 import './home.css';
 
 export const initHome = () => {
@@ -178,4 +179,6 @@ export const initHome = () => {
 
     </div>
   `;
+
+  Linker();
 };
