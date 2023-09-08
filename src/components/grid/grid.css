@@ -91,6 +91,10 @@
   min-height: 74px;
 }
 
+.project-links>* {
+  overflow: unset;
+}
+
 .project-links a:hover {
   color: var(--hippie);
 }
