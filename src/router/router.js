@@ -7,57 +7,52 @@ import { handleLinkStyle } from '../utils/functions';
 
 const links = document.querySelectorAll('.nav-link');
 
-const routes = {
-  '/': initHome,
-  '/home': initHome,
-  '/projects': initProjects,
-  '/contact': initContact,
-  '/about': initAbout,
+export const handleLocation = (pathname) => {
+  handleLinkStyle(links, pathname);
+  switch (pathname) {
+    case '/':
+    case '/home':
+      initHome();
+      break;
+    case '/projects':
+      initProjects();
+      break;
+    case '/contact':
+      initContact();
+      break;
+    case '/about':
+      initAbout();
+      break;
+    default:
+      initNotFound();
+  }
 };
 
-function handleNavigation(pathname) {
-  handleLinkStyle(links);
-  const initPage = routes[pathname] || initNotFound;
-  initPage();
-}
-
-function navigateTo(pathname) {
-  window.history.pushState({}, '', pathname);
-  handleNavigation(pathname);
-}
-
-function initializeApp() {
-  const pathname = window.location.pathname;
-  handleNavigation(pathname);
-}
-
-window.addEventListener('popstate', () => {
-  const pathname = window.location.pathname;
-  handleNavigation(pathname);
-});
-
-function menuLinker() {
-  const links = document.querySelectorAll('a[nav-path]');
+export const Linker = (links) => {
   links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const pathname = link.getAttribute('nav-path');
-      if (pathname !== window.location.pathname) {
-        navigateTo(pathname);
+    link.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      console.log(ev.target);
+
+      const targetHref = ev.target.getAttribute('href');
+      const currentHref = window.location.href;
+
+      if (targetHref !== currentHref) {
+        window.history.pushState({}, '', targetHref);
+        handleLocation(targetHref);
       }
     });
   });
-}
-
-function Linker() {
-  const links = document.querySelectorAll('a[link-path]');
-  links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const pathname = link.getAttribute('link-path');
-      navigateTo(pathname);
-    });
+  window.addEventListener('popstate', () => {
+    const pathname = window.location.pathname;
+    handleLocation(pathname);
   });
+};
+
+function initializeApp() {
+  const pathname = window.location.pathname;
+  handleLocation(pathname);
 }
 
-export { initializeApp, menuLinker, Linker, navigateTo };
+initializeApp();
+Linker(links);

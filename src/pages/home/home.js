@@ -29,8 +29,8 @@ export const initHome = () => {
           </div>
 
           <div class="home__btns">
-            <a href="/projects" link-path="/projects" class="ticket">
-              <div class="home__btn ticket__title">CHECK MY WORK</div>
+            <a href="/projects" link-path="/projects" class="">
+              CHECK MY WORK
             </a>
           </div>
 
@@ -180,5 +180,8 @@ export const initHome = () => {
     </div>
   `;
 
-  Linker();
+  const links = document.querySelectorAll('a[link-path]');
+  console.log(links);
+  Linker(links);
 };
+/* <div class="home__btn ticket__title"></div> */
