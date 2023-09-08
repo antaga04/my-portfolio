@@ -1,6 +1,5 @@
 export const handlePageStyles = (links, pathname) => {
   const navLogo = document.querySelector('.nav-logo');
-  const body = document.querySelector('body');
 
   if (pathname === '/home' || pathname === '/') {
     navLogo.classList.add('active-home');

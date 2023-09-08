@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('a[data-path]');
-
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();

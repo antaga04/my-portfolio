@@ -5,9 +5,6 @@ import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
 import { handlePageStyles } from '../utils/functions';
 
-const mainContent = document.querySelector('main');
-
-// En tu archivo router.js, agrega una función para inicializar la página de inicio cuando se carga la página.
 const routes = {
   '/': initHome,
   '/home': initHome,
@@ -26,7 +23,6 @@ function navigateTo(pathname) {
   handleNavigation(pathname);
 }
 
-// Agrega esta función para inicializar la página de inicio cuando se carga la página.
 function initializeApp() {
   const pathname = window.location.pathname;
   handleNavigation(pathname);

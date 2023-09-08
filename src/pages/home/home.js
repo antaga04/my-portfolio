@@ -27,11 +27,11 @@ export const initHome = () => {
             </div>
           </div>
 
-          <div class="home__btns">
-            <a href="/projects" data-path="/projects" class="ticket page__link">
-              <div class="home__btn ticket__title">CHECK MY WORK</div>
+
+            <a href="/projects" data-path="/projects">
+              hola
             </a>
-          </div>
+
 
           <div class="line">
             <p>Don't be shy! Hit me up!</p>
