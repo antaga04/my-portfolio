@@ -21,7 +21,6 @@ export const gridTemplate = (propList) => {
 
             <div class="project-links">
               ${prop.github === "" && prop.demo === "" ? `<span class="pill-wrapper">${prop.status}</span>` : ""}
-              ${prop.github === "" && prop.demo === "" ? "" : `<button class="ticket more-btn"><div class="ticket__title more">see more</div></button>`}
               ${prop.github === "" ? "" : `<a class="ticket" href="${prop.github}" target="_blank"><div class="ticket__title">code <i class="fa-solid fa-code"></i></div></a>`}
               ${prop.demo === "" ? "" : `<a class="ticket" href="${prop.demo}" target="_blank"><div class="ticket__title">demo <i class="fa-solid fa-share"></i></div></a>`}
             </div>
@@ -32,3 +31,5 @@ export const gridTemplate = (propList) => {
     </ul>
   `;
 };
+
+/* ${prop.github === "" && prop.demo === "" ? "" : `<button class="ticket more-btn"><div class="ticket__title more">see more</div></button>`} */
