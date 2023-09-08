@@ -5,46 +5,36 @@ import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
 import { handlePageStyles } from '../utils/functions';
 
-const links = document.querySelectorAll('.nav-link');
+const mainContent = document.querySelector('main');
 
-export const handleLocation = () => {
+// En tu archivo router.js, agrega una función para inicializar la página de inicio cuando se carga la página.
+const routes = {
+  '/': initHome,
+  '/home': initHome,
+  '/projects': initProjects,
+  '/contact': initContact,
+  '/about': initAbout,
+};
+
+function handleNavigation(pathname) {
+  const initPage = routes[pathname] || initNotFound;
+  initPage();
+}
+
+function navigateTo(pathname) {
+  window.history.pushState({}, '', pathname);
+  handleNavigation(pathname);
+}
+
+// Agrega esta función para inicializar la página de inicio cuando se carga la página.
+function initializeApp() {
   const pathname = window.location.pathname;
-  handlePageStyles(links, pathname);
-  switch (pathname) {
-    case '/':
-    case '/home':
-      initHome();
-      break;
-    case '/projects':
-      initProjects();
-      break;
-    case '/contact':
-      initContact();
-      break;
-    case '/about':
-      initAbout();
-      break;
-    default:
-      initNotFound();
-  }
-};
+  handleNavigation(pathname);
+}
 
-export const Linker = (links) => {
-  links.forEach((link) => {
-    link.addEventListener('click', (ev) => {
-      ev.preventDefault();
+window.addEventListener('popstate', () => {
+  const pathname = window.location.pathname;
+  handleNavigation(pathname);
+});
 
-      const targetHref = ev.target.getAttribute('href');
-      const currentHref = window.location.href;
-
-      if (targetHref !== currentHref) {
-        window.history.pushState({}, '', targetHref);
-        handleLocation();
-      }
-    });
-  });
-  window.onpopstate = handleLocation;
-};
-
-Linker(links);
-handleLocation();
+export { navigateTo, initializeApp };

@@ -1,3 +1,5 @@
+import { initializeApp } from './src/router/router';
+import { navigateTo } from './src/router/router';
 import './style.css';
 
 const body = document.querySelector('body');
@@ -17,6 +19,23 @@ const textAlign = document.querySelector('#text-align');
 const themeBtn = document.querySelector('#theme');
 const moon = document.querySelector('.fa-moon');
 const sun = document.querySelector('.fa-sun');
+
+/* router */
+document.addEventListener('DOMContentLoaded', () => {
+  initializeApp();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('a[data-path]');
+
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const pathname = link.getAttribute('data-path');
+      navigateTo(pathname);
+    });
+  });
+});
 
 menuBtn.addEventListener('click', () => {
   body.classList.toggle('no-overflow');

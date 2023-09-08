@@ -1,4 +1,3 @@
-import { Linker, handleLocation } from '../../router/router';
 import './home.css';
 
 export const initHome = () => {
@@ -29,7 +28,7 @@ export const initHome = () => {
           </div>
 
           <div class="home__btns">
-            <a href="#" class="ticket page__link">
+            <a href="/projects" data-path="/projects" class="ticket page__link">
               <div class="home__btn ticket__title">CHECK MY WORK</div>
             </a>
           </div>
