@@ -1,6 +1,7 @@
 import { saveTheme, setTheme } from './functions';
 
 const rootElement = document.documentElement;
+const body = document.querySelector('body');
 const main = document.querySelector('#app');
 const themeBtn = document.querySelector('#theme');
 /* menu */
@@ -14,6 +15,16 @@ const nib = document.querySelector('.nib-btn');
 const textAlign = document.querySelector('#text-align');
 
 let unfolded = false;
+
+function menuToggle() {
+  menuBtn.addEventListener('click', () => {
+    body.classList.toggle('no-overflow');
+    menuBtn.classList.toggle('menu-mode');
+    menuSlider.classList.toggle('menu-mode');
+    menuSlider.classList.toggle('hidden');
+    menuNav.classList.toggle('hidden');
+  });
+}
 
 function handleMenuSliderClick() {
   console.log('handleMenuSliderClick');
@@ -59,6 +70,7 @@ function themeListener() {
 
 function Listeners() {
   console.log('LISTENERS');
+  menuToggle();
   handleMenuSliderClick();
   magicMenuListener();
   killJustifyText();
