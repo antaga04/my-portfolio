@@ -16,17 +16,22 @@ const routes = {
 };
 
 function handleNavigation(pathname) {
+  console.log('handleNavigation');
+
   handleLinkStyle(links);
   const initPage = routes[pathname] || initNotFound;
   initPage();
 }
 
 function navigateTo(pathname) {
+  console.log('navigateTo');
   window.history.pushState({}, '', pathname);
   handleNavigation(pathname);
 }
 
 function initializeApp() {
+  console.log('initializeApp');
+
   const pathname = window.location.pathname;
   handleNavigation(pathname);
 }
@@ -37,6 +42,7 @@ window.addEventListener('popstate', () => {
 });
 
 function menuLinker() {
+  console.log('menuLinker');
   const links = document.querySelectorAll('a[nav-path]');
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -50,6 +56,7 @@ function menuLinker() {
 }
 
 function Linker() {
+  console.log(`Linker`);
   const links = document.querySelectorAll('a[link-path]');
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
