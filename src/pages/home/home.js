@@ -1,4 +1,4 @@
-import { Linker, handleLocation } from '../../router/router';
+import { Linker } from '../../router/router';
 import './home.css';
 
 export const initHome = () => {
@@ -29,7 +29,7 @@ export const initHome = () => {
           </div>
 
           <div class="home__btns">
-            <a href="#" class="ticket page__link">
+            <a href="/projects" link-path="/projects" class="ticket">
               <div class="home__btn ticket__title">CHECK MY WORK</div>
             </a>
           </div>
@@ -179,4 +179,6 @@ export const initHome = () => {
 
     </div>
   `;
+
+  Linker();
 };

@@ -3,52 +3,68 @@ import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
 import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
-import { handlePageStyles } from '../utils/functions';
+import { handleLinkStyle, handlePageStyles } from '../utils/functions';
 
 const links = document.querySelectorAll('.nav-link');
 
-export const handleLocation = () => {
-  const pathname = window.location.pathname;
-  handlePageStyles(links, pathname);
-  switch (pathname) {
-    case '/':
-      initHome();
-      break;
-    case '/home':
-      initHome();
-      break;
-    case '/projects':
-      initProjects();
-      break;
-    case '/contact':
-      initContact();
-      break;
-    case '/about':
-      initAbout();
-      break;
-    default:
-      initNotFound();
-      break;
-  }
+const routes = {
+  '/': initHome,
+  '/home': initHome,
+  '/projects': initProjects,
+  '/contact': initContact,
+  '/about': initAbout,
 };
 
-export const Linker = (links) => {
+function handleNavigation(pathname) {
+  console.log('handleNavigation');
+
+  handleLinkStyle(links);
+  const initPage = routes[pathname] || initNotFound;
+  initPage();
+}
+
+function navigateTo(pathname) {
+  console.log('navigateTo');
+  window.history.pushState({}, '', pathname);
+  handleNavigation(pathname);
+}
+
+function initializeApp() {
+  console.log('initializeApp');
+
+  const pathname = window.location.pathname;
+  handleNavigation(pathname);
+}
+
+window.addEventListener('popstate', () => {
+  const pathname = window.location.pathname;
+  handleNavigation(pathname);
+});
+
+function menuLinker() {
+  console.log('menuLinker');
+  const links = document.querySelectorAll('a[nav-path]');
   links.forEach((link) => {
-    link.addEventListener('click', (ev) => {
-      ev.preventDefault();
-
-      const targetHref = ev.target.getAttribute('href');
-      const currentHref = window.location.href;
-
-      if (targetHref !== currentHref) {
-        window.history.pushState({}, '', targetHref);
-        handleLocation();
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const pathname = link.getAttribute('nav-path');
+      if (pathname !== window.location.pathname) {
+        navigateTo(pathname);
       }
     });
   });
-};
+}
 
-window.onpopstate = handleLocation;
+function Linker() {
+  console.log(`Linker`);
+  const links = document.querySelectorAll('a[link-path]');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const pathname = link.getAttribute('link-path');
+      navigateTo(pathname);
+    });
+  });
+}
 
-Linker(links);
-handleLocation();
+export { initializeApp, menuLinker, Linker, navigateTo };
