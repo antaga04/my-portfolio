@@ -1,4 +1,4 @@
-import { cardTemplate } from '../../components/card/card';
+import { initProject } from '../../components/card/card';
 import { gridTemplate } from '../../components/grid/grid';
 import { listTemplate } from '../../components/list/list';
 import { projectsData as data } from '../../utils/projectsData';
@@ -30,7 +30,7 @@ export const initProjects = () => {
       tag.classList.add('activeTag');
       tag.id === 'all'
         ? (rightSide.innerHTML = gridTemplate(data))
-        : (rightSide.innerHTML = cardTemplate(tag));
+        : (rightSide.innerHTML = initProject(tag));
     });
   });
 };

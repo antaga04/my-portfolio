@@ -1,7 +1,7 @@
 import { projectsData as data } from '../../utils/projectsData';
 import './card.css';
 
-export const cardTemplate = (prop) => {
+export const initProject = (prop) => {
   const project = data.find((item) => item.id == prop.id);
 
   if (project) {
