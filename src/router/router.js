@@ -12,6 +12,8 @@ export const handleLocation = () => {
   handlePageStyles(links, pathname);
   switch (pathname) {
     case '/':
+      initHome();
+      break;
     case '/home':
       initHome();
       break;
@@ -26,6 +28,7 @@ export const handleLocation = () => {
       break;
     default:
       initNotFound();
+      break;
   }
 };
 
@@ -43,8 +46,9 @@ export const Linker = (links) => {
       }
     });
   });
-  window.onpopstate = handleLocation;
 };
+
+window.onpopstate = handleLocation;
 
 Linker(links);
 handleLocation();
