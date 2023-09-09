@@ -90,7 +90,7 @@ figure {
   height: 100%;
 }
 
-.title--large {
+.title--heading {
   font-family: "Playfair Display", serif;
   font-size: 32px;
   font-style: italic;
@@ -112,34 +112,31 @@ figure {
   column-gap: 1.3rem;
 }
 
-.item-with-image {
+.paragraph {
   margin-top: 1.5rem;
 }
 
-.item-with-image h4 {
+.paragraph h4 {
   font-size: 24px;
   text-align: left;
   margin-bottom: 0.5rem;
   transition: 0.2s ease;
 }
 
-.item-with-image:hover h4 {
+.paragraph:hover h4 {
   color: white !important;
   background: var(--ink);
 }
 
-.cssgrid-collection {
+.web-developer {
   display: flex;
   border-top: 1px solid;
   padding-top: 1rem;
-}
-
-.about-page .cssgrid-collection {
   grid-column: 1/-1;
   grid-row: 8;
 }
 
-.cssgrid-collection h4 {
+.web-developer h4 {
   margin: 0 0 0.8rem;
 }
 
@@ -147,31 +144,31 @@ figure {
   flex: 0 0 40%;
 }
 
-.cssgrid-collection__content {
+.web-developer__content {
   flex: 0 0 30%;
   padding: 0 1rem;
 }
 
-.cssgrid-collection img {
+.web-developer img {
   height: 100%;
   object-fit: cover;
 }
 
-.cssgrid-collection p a {
+.web-developer p a {
   border-bottom: 1px dashed;
 }
 
-.cssgrid-collection p a:hover {
+.web-developer p a:hover {
   border-bottom: 1px solid;
 }
 
-.plan {
+.bottom-space {
   padding-bottom: 1rem;
 }
 
 .about-page .umCar--img:hover img,
 .about-page .pacman--img:hover img,
-.about-page .cssgrid-collection__image:hover img {
+.about-page .web-developer__image:hover img {
   filter: grayscale(0);
 }
 
@@ -185,16 +182,12 @@ figure {
   padding: 0 !important;
 }
 
-.span--2 {
+.column--2 {
   grid-column: span 2;
 }
 
-.span--32 {
+.column--32 {
   grid-column: 3/span 2;
-}
-
-.long--2 {
-  grid-row: 1/span 2;
 }
 
 .pacman--img {
@@ -214,8 +207,6 @@ figure {
 }
 
 .ticket {
-  /* border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem; */
   border: 2px solid transparent;
   box-shadow: inset 0 0 0 1px var(--ink);
   display: block;
@@ -292,17 +283,14 @@ figure {
     margin: 0;
   }
 
-  .item-with-image {
+  .paragraph {
     margin: 0;
   }
 
 
-  .title--large {
+  .title--heading {
     font-size: 42px;
     margin: 0;
-  }
-
-  .about-page .main-title {
     grid-column: 1/span 4;
   }
 
@@ -333,11 +321,11 @@ figure {
     flex: none;
   }
 
-  .cssgrid-collection {
+  .web-developer {
     flex-direction: column;
   }
 
-  .cssgrid-collection__content {
+  .web-developer__content {
     padding: 1rem 0;
     flex: none;
   }
@@ -365,7 +353,7 @@ figure {
     border-bottom: 1px solid;
   }
 
-  .about-page .main-title {
+  .title--heading {
     grid-column: 1/-2;
   }
 
@@ -379,7 +367,7 @@ figure {
     padding: 0 1.25rem;
   }
 
-  .about-page .cssgrid-collection {
+  .about-page .web-developer {
     display: grid;
     grid-row: unset;
     grid-template-columns: repeat(3, 1fr);

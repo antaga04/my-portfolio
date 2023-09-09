@@ -18,7 +18,7 @@ export const initAbout = () => {
           </div>
         </aside>
         
-        <h2 class="title--large main-title">Driven by Learning, Defined by Detail</h2>
+        <h2 class="title--heading">Driven by Learning, Defined by Detail</h2>
         <div class="main-text multi-column">
           <p>
             <sapn class="drop-cap">W</sapn>elcome! My name is Adrian, a future Full Stack maestro with a current focus on
@@ -33,7 +33,7 @@ export const initAbout = () => {
 
         ${rubikCube()}
 
-        <div class="item-with-image plan span--32 border--botton">
+        <div class="paragraph bottom-space column--32 border--botton">
           <h4>The beginning</h4>
           <div class="multi-column">
             <p>It all started back in high school during an IT class. Our mission? Build a video game using Python. I was
@@ -49,7 +49,7 @@ export const initAbout = () => {
           </figure>
         </div>
 
-        <div class="item-with-image plan span--2">
+        <div class="paragraph bottom-space column--2">
           <h4>Next stage</h4>
           <div class="multi-column">
             <p>Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third
@@ -64,12 +64,12 @@ export const initAbout = () => {
           </figure>
         </div>
 
-        <div class="item-with-image cssgrid-collection">
-          <a class="img--flex cssgrid-collection__image rc-titulo" href="https://www.thepowermba.com/es/bootcamp-fullstack" target="_blank">
+        <div class="paragraph web-developer">
+          <a class="img--flex web-developer__image rc-titulo" href="https://www.thepowermba.com/es/bootcamp-fullstack" target="_blank">
             <img
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png">
           </a>
-          <div class="cssgrid-collection__content rc-text">
+          <div class="web-developer__content rc-text">
             <h4>Web developer path</h4>
             <div class="multi-column-3">
               <p>Soon thereafter, a new revelation dawned—I stumbled upon the world of web development. The decision was
@@ -79,7 +79,7 @@ export const initAbout = () => {
             </div>
           </div>
 
-          <a class="cssgrid-collection__image rc-tech" href="https://www.rockthecode.es/new/" target="_blank">
+          <a class="web-developer__image rc-tech" href="https://www.rockthecode.es/new/" target="_blank">
             <img
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693505547/Portafolio/rock-the-code-tech_ufgnqt.png">
           </a>
