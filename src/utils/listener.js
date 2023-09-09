@@ -16,7 +16,6 @@ const textAlign = document.querySelector('#text-align');
 let unfolded = false;
 
 function handleMenuSliderClick() {
-  console.log('handleMenuSliderClick');
   menuLinks.forEach((link) => {
     link.addEventListener('click', (ev) => {
       menuBtn.click();
@@ -25,7 +24,6 @@ function handleMenuSliderClick() {
 }
 
 function magicMenuListener() {
-  console.log('magicMenuListener');
   nib.addEventListener('click', () => {
     if (!unfolded) {
       magicMenu.style.maxHeight = '150px';
@@ -39,7 +37,6 @@ function magicMenuListener() {
 }
 
 function killJustifyText() {
-  console.log('killJustifyText');
   textAlign.addEventListener('click', () => {
     main.classList.toggle('justify-text');
     textAlign.classList.toggle('applied');
@@ -47,7 +44,6 @@ function killJustifyText() {
 }
 
 function themeListener() {
-  console.log('themeListener');
   themeBtn.addEventListener('click', () => {
     const actualTheme = rootElement.classList.contains('dark-theme') ? 'dark' : 'light';
     const newTheme = actualTheme === 'dark' ? 'light' : 'dark';
@@ -58,7 +54,6 @@ function themeListener() {
 }
 
 function Listeners() {
-  console.log('LISTENERS');
   handleMenuSliderClick();
   magicMenuListener();
   killJustifyText();

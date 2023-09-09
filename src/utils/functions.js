@@ -2,14 +2,10 @@ const rootElement = document.documentElement;
 const themeBtn = document.querySelector('#theme');
 
 const saveTheme = (mode) => {
-  console.log('saveTheme');
-
   localStorage.setItem('preferredMode', mode);
 };
 
 const setTheme = (mode) => {
-  console.log('setTheme');
-
   if (mode === 'dark') {
     themeBtn.textContent = '☀️';
     rootElement.classList.remove('light-theme');
@@ -22,8 +18,6 @@ const setTheme = (mode) => {
 };
 
 const loadPreferredMode = () => {
-  console.log('loadPreferredMode');
-
   const storagedTheme = localStorage.getItem('preferredMode');
   if (storagedTheme) {
     setTheme(storagedTheme);
@@ -37,8 +31,6 @@ const loadPreferredMode = () => {
 };
 
 const handlePageStyles = (links, pathname) => {
-  console.log('handlePageStyles');
-
   const navLogo = document.querySelector('.nav-logo');
 
   if (pathname === '/home' || pathname === '/') {
@@ -57,8 +49,6 @@ const handlePageStyles = (links, pathname) => {
 };
 
 const handleLinkStyle = (links) => {
-  console.log('handleLinkStyle');
-
   const pathname = window.location.pathname;
 
   links.forEach((link) => {

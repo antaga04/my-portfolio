@@ -1,6 +1,7 @@
 import { initProject } from '../../components/card/card';
 import { gridTemplate } from '../../components/grid/grid';
 import { listTemplate } from '../../components/list/list';
+import { Linker } from '../../router/router';
 import { projectsData as data } from '../../utils/projectsData';
 import './projects.css';
 
@@ -19,7 +20,9 @@ export const initProjects = () => {
     </div>
   `;
 
-  const tags = document.querySelectorAll('.project-list li');
+  Linker();
+
+  /* const tags = document.querySelectorAll('.project-list li');
   const rightSide = document.querySelector('#right-side');
 
   tags.forEach((tag) => {
@@ -32,5 +35,5 @@ export const initProjects = () => {
         ? (rightSide.innerHTML = gridTemplate(data))
         : (rightSide.innerHTML = initProject(tag));
     });
-  });
+  }); */
 };

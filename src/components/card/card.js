@@ -1,11 +1,16 @@
+import { Linker } from '../../router/router';
 import { projectsData as data } from '../../utils/projectsData';
+import { listTemplate } from '../list/list';
 import './card.css';
 
 export const initProject = (prop) => {
-  const project = data.find((item) => item.id == prop.id);
+  // const pathname = window.location.pathname;
+  const project = data.find((item) => item.id == prop);
+  const app = document.querySelector('#app');
+  let side = '';
 
   if (project) {
-    return `
+    side = `
       <div id="${project.name}" class="clipping">
         <div class="preview desktop ticket">
           <img src="${project.desktop === '' ? project.cover : project.desktop}" alt="${
@@ -46,6 +51,20 @@ export const initProject = (prop) => {
       </div>
   `;
   } else {
-    return `<div class="error-message">Proyecto no encontrado</div>`;
+    side = `<div class="error-message">Proyecto no encontrado</div>`;
   }
+
+  app.innerHTML = '';
+  app.innerHTML += `
+    <div class="page__wrapper">
+      <section class="page">
+        ${listTemplate(data)}
+        <article id="right-side" class="projects__wrapper right-side">
+          ${side}
+        </aritcle>
+      </section>
+    </div>
+  `;
+
+  Linker();
 };

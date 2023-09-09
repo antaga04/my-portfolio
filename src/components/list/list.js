@@ -1,3 +1,4 @@
+import { Linker } from '../../router/router';
 import './list.css';
 
 export const listTemplate = (propList) => {
@@ -6,8 +7,8 @@ export const listTemplate = (propList) => {
       <div>
         <h2>Projects List</h2>
         <ul class="project-list">
-          <li id="all" class="name activeTag">All Projects</li>
-          ${propList.map((prop) => `<li id="${prop.id}" class="name">${prop.name}</li>`).join('')}
+          <li id="all" class="name activeTag"><a href="/projects" link-path="/projects">All Projects</a></li>
+          ${propList.map((prop) => `<li id="${prop.id}" class="name"><a href="/projects/${prop.id}" link-path="/projects/${prop.id}">${prop.name}</a></li>`).join('')}
         </ul>
       </div>
       <p><u>Click a tag to see more of a project.</u></p>
