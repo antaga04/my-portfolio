@@ -28,11 +28,11 @@ const sideBar = () => {
               <p>For developers in search of impressive mockups, <em>Shots</em> is the ultimate choice.</p>
             </a>
           </li>
-          <div class="ticket">
+          <a class="ticket" href="https://github.com/Evavic44/portfolio-ideas/blob/main/README.md" target="_blank">
             <div class="ticket__title">
               50% OFF Best Websites for inspiration
             </div>
-          </div>
+          </a>
           <li class="sidebar-item separation-null">
             <a href="https://animista.net/" target="_blank">
               <h5>CSS Animations Library</h5>
