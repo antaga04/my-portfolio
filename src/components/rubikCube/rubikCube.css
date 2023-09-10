@@ -57,6 +57,7 @@
   height: 140px;
   position: absolute;
   width: 140px;
+  z-index: 1;
 }
 
 .top {
