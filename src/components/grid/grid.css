@@ -80,7 +80,7 @@
   gap: .5rem;
   justify-content: center;
   margin-top: 1rem;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .project-links {

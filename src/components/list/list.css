@@ -3,7 +3,7 @@
     max-width: 16%;
     /* min-width: 158px; */
     position: fixed;
-    height: 545px;
+    max-height: 66svh;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;
@@ -33,10 +33,19 @@
   }
 }
 
+.left-side ::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.left-side ::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}
+
 .left-side h2,
 .left-side p {
   margin: 0.2rem;
 }
+
 .name {
   border: 1px solid var(--color);
   border-radius: .5rem;

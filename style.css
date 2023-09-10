@@ -296,6 +296,7 @@ footer p {
 .menu-btn {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .no-overflow {
@@ -527,3 +528,30 @@ footer p {
     gap: .5rem;
   }
 }
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #010314;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+} */
+
+
+/* ::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+} */
