@@ -11,7 +11,7 @@ export const listTemplate = (propList) => {
           ${propList.map((prop) => `<li id="${prop.id}" class="name"><a href="/projects/${prop.id}" link-path="/projects/${prop.id}">${prop.name}</a></li>`).join('')}
         </ul>
       </div>
-      <p><u>Click a tag to see more of a project.</u></p>
+      <p><u>Click a tag to read more.</u></p>
     </div>
   `;
 };

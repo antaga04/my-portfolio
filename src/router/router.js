@@ -14,7 +14,7 @@ const routes = {
   '/projects': initProjects,
   '/contact': initContact,
   '/about': initAbout,
-  '/project/:projectId': initProject,
+  // '/project/:projectId': initProject,
 };
 
 /* function handleNavigation(pathname) {
@@ -27,41 +27,31 @@ const routes = {
 
 function handleNavigation() {
   const pathname = window.location.pathname;
-  console.log(`
-  PATHNAME
-
-
-  `,pathname);
-  
-  if (pathname === '/' || pathname === '/home') {
-    initHome();
-  } else if (pathname === '/projects') {
-    initProjects();
-  } else if (pathname === '/projects/0') {
-    // Aquí debes extraer el projectId de la URL y luego llamar a initProject con él.
-    const parts = pathname.split('/');
-    console.log(parts);
-    if (parts.length === 3) {
-      const projectId = parts[2];
-      console.log(projectId);
-      initProject(projectId);
-    } else {
-      initNotFound();
-    }
-  } else if (pathname === '/contact') {
-    initContact();
-  } else if (pathname === '/about') {
-    initAbout();
-  } else {
-    initNotFound();
-  }
+  console.log('handleNavigation', pathname);
 
   handleLinkStyle(links);
+
+  let initPage = initNotFound;
+
+  for (const route in routes) {
+    const routeRegex = new RegExp(`^${route.replace(/:[^\s/]+/g, '([^/]+)')}$`);
+    const match = pathname.match(routeRegex);
+
+    if (match) {
+      initPage = routes[route];
+      if (route.includes(':projectId')) {
+        const projectId = match[1]; // Captura el valor de :projectId
+        initPage(projectId);
+      } else {
+        initPage();
+      }
+      break;
+    }
+  }
 }
 
-
 function navigateTo(pathname) {
-  // console.log('navigateTo');
+  console.log(pathname);
   window.history.pushState({}, '', pathname);
   handleNavigation(pathname);
 }
@@ -93,9 +83,7 @@ function menuLinker() {
 
 function Linker() {
   const links = document.querySelectorAll('a[link-path]');
-  console.log(
-    `estos son los links`, links
-  );
+  console.log(`estos son los links`, links);
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();

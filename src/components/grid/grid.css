@@ -35,7 +35,7 @@
   background-color: rgb(27, 27, 27, .4);
 }
 
-@media screen and (min-width: 903px) {
+@media screen and (min-width: 768px) {
   .preview-box {
     width: calc(100%/2.1);
   }
@@ -80,7 +80,7 @@
   gap: .5rem;
   justify-content: center;
   margin-top: 1rem;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .project-links {
@@ -126,7 +126,7 @@
   background: transparent;
 }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 1023px) {
   .projects__wrapper {
     margin: 0 auto;
     padding: 0.5rem 1rem;
