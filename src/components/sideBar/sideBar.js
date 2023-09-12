@@ -35,7 +35,7 @@ const sideBar = () => {
           </a>
           <li class="sidebar-item separation-null">
             <a href="https://animista.net/" target="_blank">
-              <h5>CSS Animations Library</h5>
+              <h5>Animations Library</h5>
               <p>Elevate user experiences with <em>Animista</em>, a CSS animation library for developers.</p>
             </a>
           </li>
@@ -50,6 +50,17 @@ const sideBar = () => {
               <h5>Cubic-bezier Easing</h5>
               <p>And if you want to test cubic-bezier transformation, <em>Cubic-Bezier</em> makes it effortless.</p>
             </a>
+          </li>
+          <li class="sidebar-item with-border">
+            <h5>Special Mention</h5>
+            <div class="space-btwn">
+              <a href="https://midu.dev" target="_blank">
+                Midudev
+              </a>
+              <a href="https://github.com/Corocottax" target="_blank">
+                Corocottax
+              </a>
+            </div>
           </li>
       </ul>
     </div>

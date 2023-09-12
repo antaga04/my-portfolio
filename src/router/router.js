@@ -5,6 +5,7 @@ import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
 import { handleLinkStyle } from '../utils/functions';
 import { initProject } from '../components/card/card';
+import initSecret from '../pages/secret/secret';
 
 const links = document.querySelectorAll('.nav-link');
 
@@ -15,6 +16,7 @@ const routes = {
   '/contact': initContact,
   '/about': initAbout,
   '/projects/:projectId': initProject,
+  '/secret': initSecret,
 };
 
 function handleNavigation(pathname) {

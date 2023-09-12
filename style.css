@@ -135,6 +135,11 @@ body {
   justify-content: center;
 }
 
+.space-btwn {
+  display: flex;
+  justify-content: space-between;
+}
+
 header {
   display: inline-block;
   left: 0%;
