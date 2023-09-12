@@ -11,7 +11,6 @@
   --oposite: #fff;
   --color: #1c1f33;
   --ink: #1c1f33;
-  --background: #F4F7F7;
   --hippie: #519Faa;
   --neptune: #7AC3B2;
   --lightGray: rgba(255, 255, 255, .17);
@@ -64,6 +63,8 @@ u {
   --shadow: rgba(61, 61, 61, 0.1);
   --error: linear-gradient(#FFD33B, #FFAE00);
   --invert: invert(0);
+
+  --background: #e8e3da;
 }
 
 .dark-theme {
@@ -74,6 +75,8 @@ u {
   --error: linear-gradient(#222, #444);
   --stone: rgb(230, 230, 230);
   --invert: invert(1);
+
+  --background: #010314;
 }
 
 .dark-theme ::selection {
@@ -103,7 +106,7 @@ body {
   background-attachment: fixed;
   overscroll-behavior: none;
   scroll-behavior: smooth;
-  background-color: var(--hippie);
+  background-color: var(--background);
 }
 
 #app {
