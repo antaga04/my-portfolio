@@ -103,6 +103,7 @@ body {
   background-attachment: fixed;
   overscroll-behavior: none;
   scroll-behavior: smooth;
+  background-color: var(--hippie);
 }
 
 #app {

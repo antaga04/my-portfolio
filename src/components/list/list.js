@@ -20,17 +20,14 @@ export const listTemplate = (propList) => {
         <ul class="project-list">
           <li id="all" class="name ${status}"><a href="/projects" link-path="/projects">All Projects</a></li>
           ${propList
-            .map((prop) => {
-              if (prop.id === projectId) {
-                return `<li id="${prop.id}" class="name activeTag"> 
-                  <a href="/projects/${prop.id}" link-path="/projects/${prop.id}">${prop.name}</a>
-                </li>`;
-              } else {
-                return `<li id="${prop.id}" class="name"> 
-                  <a href="/projects/${prop.id}" link-path="/projects/${prop.id}">${prop.name}</a>
-                </li>`;
-              }
-            })
+            .map(
+              (prop) =>
+                `<li id="${prop.id}" class="name ${
+                  prop.id === projectId ? 'activeTag' : ''
+                }"> <a href="/projects/${prop.id}" link-path="/projects/${prop.id}">${
+                  prop.name
+                }</a></li>`
+            )
             .join('')}
         </ul>
       </div>
