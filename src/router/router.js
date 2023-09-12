@@ -3,7 +3,7 @@ import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
 import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
-import { handleLinkStyle, handlePageStyles } from '../utils/functions';
+import { handleLinkStyle } from '../utils/functions';
 import { initProject } from '../components/card/card';
 
 const links = document.querySelectorAll('.nav-link');
@@ -14,44 +14,27 @@ const routes = {
   '/projects': initProjects,
   '/contact': initContact,
   '/about': initAbout,
-  // '/project/:projectId': initProject,
+  '/projects/:projectId': initProject,
 };
 
-/* function handleNavigation(pathname) {
-  console.log('handleNavigation');
-
+function handleNavigation(pathname) {
   handleLinkStyle(links);
-  const initPage = routes[pathname] || initNotFound;
-  initPage();
-} */
-
-function handleNavigation() {
-  const pathname = window.location.pathname;
-  console.log('handleNavigation', pathname);
-
-  handleLinkStyle(links);
-
-  let initPage = initNotFound;
-
-  for (const route in routes) {
-    const routeRegex = new RegExp(`^${route.replace(/:[^\s/]+/g, '([^/]+)')}$`);
-    const match = pathname.match(routeRegex);
-
-    if (match) {
-      initPage = routes[route];
-      if (route.includes(':projectId')) {
-        const projectId = match[1]; // Captura el valor de :projectId
-        initPage(projectId);
-      } else {
-        initPage();
-      }
-      break;
+  if (pathname.includes('/projects/')) {
+    const parts = pathname.split('/projects/');
+    if (parts.length === 2) {
+      const projectId = parts[1];
+      initProject(projectId);
+    } else {
+      initNotFound();
     }
+  } else {
+    const initPage = routes[pathname] || initNotFound;
+    initPage();
   }
 }
 
 function navigateTo(pathname) {
-  console.log(pathname);
+  // console.log(pathname);
   window.history.pushState({}, '', pathname);
   handleNavigation(pathname);
 }
@@ -83,7 +66,7 @@ function menuLinker() {
 
 function Linker() {
   const links = document.querySelectorAll('a[link-path]');
-  console.log(`estos son los links`, links);
+  // console.log(`estos son los links`, links);
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();

@@ -30,24 +30,6 @@ const loadPreferredMode = () => {
   }
 };
 
-const handlePageStyles = (links, pathname) => {
-  const navLogo = document.querySelector('.nav-logo');
-
-  if (pathname === '/home' || pathname === '/') {
-    navLogo.classList.add('active-home');
-  } else {
-    navLogo.classList.remove('active-home');
-  }
-
-  links.forEach((link) => {
-    if (link.getAttribute('href') === pathname && pathname !== '/home' && pathname !== '') {
-      link.classList.add('active-link');
-    } else {
-      link.classList.remove('active-link');
-    }
-  });
-};
-
 const handleLinkStyle = (links) => {
   const pathname = window.location.pathname;
 
@@ -60,4 +42,4 @@ const handleLinkStyle = (links) => {
   });
 };
 
-export { handlePageStyles, handleLinkStyle, loadPreferredMode, saveTheme, setTheme };
+export { handleLinkStyle, loadPreferredMode, saveTheme, setTheme };

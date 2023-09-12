@@ -1,4 +1,3 @@
-import { initProject } from '../../components/card/card';
 import { gridTemplate } from '../../components/grid/grid';
 import { listTemplate } from '../../components/list/list';
 import { Linker } from '../../router/router';
@@ -21,19 +20,4 @@ export const initProjects = () => {
   `;
 
   Linker();
-
-  /* const tags = document.querySelectorAll('.project-list li');
-  const rightSide = document.querySelector('#right-side');
-
-  tags.forEach((tag) => {
-    tag.addEventListener('click', () => {
-      tags.forEach((otherTag) => {
-        otherTag.classList.remove('activeTag');
-      });
-      tag.classList.add('activeTag');
-      tag.id === 'all'
-        ? (rightSide.innerHTML = gridTemplate(data))
-        : (rightSide.innerHTML = initProject(tag));
-    });
-  }); */
 };

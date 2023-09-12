@@ -4,7 +4,6 @@ import { listTemplate } from '../list/list';
 import './card.css';
 
 export const initProject = (prop) => {
-  // const pathname = window.location.pathname;
   const project = data.find((item) => item.id == prop);
   const app = document.querySelector('#app');
   let side = '';

@@ -65,7 +65,6 @@ function themeListener() {
 }
 
 function Listeners() {
-  console.log('LISTENERS');
   menuToggle();
   handleMenuSliderClick();
   magicMenuListener();
