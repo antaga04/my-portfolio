@@ -112,17 +112,12 @@ export const projectsData = [
     techs: ['Node', 'Express', 'noSQL'],
     demo: '',
     github: '',
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed ut ipsum a mauris tempor rutrum. Maecenas in libero ultrices 
-    metus tempus congue sed quis mi. Fusce at justo turpis. Ut et 
-    sapien eu odio scelerisque maximus ut quis mauris. Proin ac lectus 
-    ex. Nullam nulla arcu, ornare ac sem vitae, fermentum suscipit velit. 
-    Quisque accumsan urna ac ultricies fermentum. Cras ornare dolor at 
-    massa interdum molestie. Cras et pellentesque justo. Praesent at velit 
-    enim. Donec auctor auctor mauris, eget congue augue imperdiet ut. Etiam 
-    pulvinar tempus enim, at efficitur nisl lacinia vel. Duis commodo lobortis 
-    porttitor. Class aptent taciti sociosqu ad litora torquent per conubia 
-    nostra, per inceptos himenaeos.`,
+    info: `In this project, I'll be creating my first Node, Express, and MongoDB server. 
+    I'll set up the server to run on port 4001 and connect to a local MongoDB on port 27017. 
+    The goal is to create a RESTful API with endpoints for retrieving, creating, updating, 
+    and deleting documents in a collection of my choice, with a model containing at least 
+    four distinct keys. I'll also implement error handling and ensure proper HTTP response 
+    codes.`,
   },
   {
     id: '7',
@@ -135,17 +130,11 @@ export const projectsData = [
     techs: ['Node', 'Express', 'noSQL'],
     demo: '',
     github: '',
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed ut ipsum a mauris tempor rutrum. Maecenas in libero ultrices 
-    metus tempus congue sed quis mi. Fusce at justo turpis. Ut et 
-    sapien eu odio scelerisque maximus ut quis mauris. Proin ac lectus 
-    ex. Nullam nulla arcu, ornare ac sem vitae, fermentum suscipit velit. 
-    Quisque accumsan urna ac ultricies fermentum. Cras ornare dolor at 
-    massa interdum molestie. Cras et pellentesque justo. Praesent at velit 
-    enim. Donec auctor auctor mauris, eget congue augue imperdiet ut. Etiam 
-    pulvinar tempus enim, at efficitur nisl lacinia vel. Duis commodo lobortis 
-    porttitor. Class aptent taciti sociosqu ad litora torquent per conubia 
-    nostra, per inceptos himenaeos.`,
+    info: `I'll create another server using Node, Express, and MongoDB. I'll be working with 
+    two related data models.  I'll set up the project, ensuring the server listens on port 4001 
+    and connects to MongoDB. The challenge involves creating API endpoints for both data models, 
+    implementing error handling, and maintaining proper HTTP response codes. My goal is to 
+    accomplish the ability to work with related data models and build a robust RESTful API.`,
   },
   {
     id: '8',
@@ -158,16 +147,10 @@ export const projectsData = [
     techs: ['Node', 'Express', 'noSQL', 'Testing'],
     demo: '',
     github: '',
-    info: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed ut ipsum a mauris tempor rutrum. Maecenas in libero ultrices 
-    metus tempus congue sed quis mi. Fusce at justo turpis. Ut et 
-    sapien eu odio scelerisque maximus ut quis mauris. Proin ac lectus 
-    ex. Nullam nulla arcu, ornare ac sem vitae, fermentum suscipit velit. 
-    Quisque accumsan urna ac ultricies fermentum. Cras ornare dolor at 
-    massa interdum molestie. Cras et pellentesque justo. Praesent at velit 
-    enim. Donec auctor auctor mauris, eget congue augue imperdiet ut. Etiam 
-    pulvinar tempus enim, at efficitur nisl lacinia vel. Duis commodo lobortis 
-    porttitor. Class aptent taciti sociosqu ad litora torquent per conubia 
-    nostra, per inceptos himenaeos.`,
+    info: `I'll immersed in crafting a comprehensive API. Thes project will have 
+    elements such as rate limiting, CORS implementation, JWT authentication, 
+    and seamless Cloudinary image uploads. The deployment of MongoDB on Atlas significantly 
+    bolsters the project's robustness. The incorporation of related data models and a specialized 
+    User model marks an essential advancement in my journey.`,
   },
 ];
