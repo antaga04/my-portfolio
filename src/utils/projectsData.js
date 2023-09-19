@@ -57,7 +57,7 @@ export const projectsData = [
     cover: '/nasa.png',
     desktop: '',
     mobile: '',
-    status: 'comming soon',
+    status: 'coming soon',
     techs: ['JS', 'React'],
     demo: '',
     github: '',
