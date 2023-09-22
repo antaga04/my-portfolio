@@ -128,6 +128,11 @@ figure {
   background: var(--ink);
 }
 
+.active-p h4 {
+  color: white !important;
+  background: var(--ink);
+}
+
 .web-developer {
   display: flex;
   border-top: 1px solid;
@@ -170,6 +175,10 @@ figure {
 .about-page .pacman--img:hover img,
 .about-page .web-developer__image:hover img {
   filter: grayscale(0);
+}
+
+.active-img {
+  filter: grayscale(0) !important;
 }
 
 .with-border {
@@ -231,6 +240,11 @@ figure {
   color: var(--ink);
 }
 
+.dark-theme .ticket:hover {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
 /* ######################## DROP CAP ######################## */
 .drop-cap {
   position: relative;
@@ -268,6 +282,10 @@ figure {
   height: 1px;
   left: 0;
   bottom: 0.1em;
+}
+
+.rubik__container {
+  backdrop-filter: blur(10px);
 }
 
 /* ######################## MEDIAS QUERIES ######################## */

@@ -1,5 +1,6 @@
 import { rubikCube } from '../../components/rubikCube/rubikCube';
 import sideBar from '../../components/sideBar/sideBar';
+import { handleAboutStyles } from '../../utils/functions';
 import './about.css';
 
 export const initAbout = () => {
@@ -33,7 +34,7 @@ export const initAbout = () => {
 
         ${rubikCube()}
 
-        <div class="paragraph bottom-space column--32 border--botton">
+        <div id="beginning-p" class="paragraph bottom-space column--32 border--botton">
           <h4>The beginning</h4>
           <div class="multi-column">
             <p>It all started back in high school during an IT class. Our mission? Build a video game using Python. I was
@@ -49,7 +50,7 @@ export const initAbout = () => {
           </figure>
         </div>
 
-        <div class="paragraph bottom-space column--2">
+        <div id="um-p" class="paragraph bottom-space column--2">
           <h4>Next stage</h4>
           <div class="multi-column">
             <p>Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third
@@ -64,7 +65,7 @@ export const initAbout = () => {
           </figure>
         </div>
 
-        <div class="paragraph web-developer">
+        <div id="rc-p" class="paragraph web-developer">
           <a class="img--flex web-developer__image rc-titulo" href="https://www.thepowermba.com/es/bootcamp-fullstack" target="_blank">
             <img
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png">
@@ -89,4 +90,6 @@ export const initAbout = () => {
       </section>
     </div>
   `;
+
+  handleAboutStyles();
 };

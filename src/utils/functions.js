@@ -42,4 +42,39 @@ const handleLinkStyle = (links) => {
   });
 };
 
-export { handleLinkStyle, loadPreferredMode, saveTheme, setTheme };
+// Posible fix for handling the styles when hovering the images or <p> section
+function handleAboutStyles() {
+  const beginningP = document.getElementById('beginning-p');
+  const umP = document.getElementById('um-p');
+  const rcP = document.getElementById('rc-p');
+
+  const beginningImg = document.querySelector('.pacman--img img');
+  const umCarImg = document.querySelector('.umCar--img img');
+  const rcImgs = document.querySelectorAll('.web-developer__image img');
+
+  setAboutStyles(beginningP, beginningImg);
+  setAboutStyles(umP, umCarImg);
+  rcImgs.forEach((rcImg) => {
+    setAboutStyles(rcP, rcImg);
+  });
+}
+
+function setAboutStyles(paragraph, img) {
+  paragraph.addEventListener('mouseenter', () => {
+    img.classList.add('active-img');
+  });
+
+  paragraph.addEventListener('mouseleave', () => {
+    img.classList.remove('active-img');
+  });
+
+  img.addEventListener('mouseenter', () => {
+    paragraph.classList.add('active-p');
+  });
+
+  img.addEventListener('mouseleave', () => {
+    paragraph.classList.remove('active-p');
+  });  
+}
+
+export { handleLinkStyle, loadPreferredMode, saveTheme, setTheme, handleAboutStyles };
