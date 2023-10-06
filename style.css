@@ -21,6 +21,8 @@
   --shiraz: #ca0541;
   --error: linear-gradient(#FFD33B, #FFAE00);
   --squeeze: #e1eaf4;
+
+  --sea: #7ca4ad;
   --invert: invert(0);
 
   /* URLs */
@@ -65,6 +67,7 @@ u {
   --invert: invert(0);
 
   --background: #e8e3da;
+  --accent: #E2D7C1;
 }
 
 .dark-theme {
@@ -77,6 +80,7 @@ u {
   --invert: invert(1);
 
   --background: #010314;
+  --accent: #63e;
 }
 
 .dark-theme ::selection {
@@ -106,7 +110,7 @@ body {
   background-attachment: fixed;
   overscroll-behavior: none;
   scroll-behavior: smooth;
-  background-color: var(--background);
+  background-color: var(--accent);
 }
 
 #app {

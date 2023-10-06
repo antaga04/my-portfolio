@@ -23,6 +23,7 @@
 }
 
 .preview-box {
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 1rem;
   border: 3px solid transparent;

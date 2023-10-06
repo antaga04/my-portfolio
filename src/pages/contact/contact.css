@@ -33,10 +33,12 @@
   padding-left: 10%;
   color: var(--stone);
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .dev-email {
   align-items: center;
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   border-radius: .5rem;
   cursor: pointer;
