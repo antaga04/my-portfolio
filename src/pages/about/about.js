@@ -35,7 +35,7 @@ export const initAbout = () => {
         ${rubikCube()}
 
         <div id="beginning-p" class="paragraph bottom-space column--32 border--botton">
-          <h4>The beginning</h4>
+          <h3>The beginning</h3>
           <div class="multi-column">
             <p>It all started back in high school during an IT class. Our mission? Build a video game using Python. I was
               instantly hooked. But classes were slow, so I decided to learn on my own online. Before long, I
@@ -46,12 +46,13 @@ export const initAbout = () => {
         <div class="pacman--img">
           <figure>
             <img
-              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501076/Portafolio/Captura_de_pantalla_2023-08-27_a_las_20.57.10_w96haa.png">
+              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501076/Portafolio/Captura_de_pantalla_2023-08-27_a_las_20.57.10_w96haa.png"
+              alt="Pacman game clon">
           </figure>
         </div>
 
         <div id="um-p" class="paragraph bottom-space column--2">
-          <h4>Next stage</h4>
+          <h3>Next stage</h3>
           <div class="multi-column">
             <p>Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third
               year). Somewhere along this path, I joined forces with a team called Uvigo MotorSport—an exclusive Galician
@@ -61,17 +62,19 @@ export const initAbout = () => {
         </div>
         <div class="umCar--img">
           <figure>
-            <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693497167/Portafolio/um-car-min_by9r3h.png">
+            <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693497167/Portafolio/um-car-min_by9r3h.png"
+            alt="Uvigo MotorSport 2022 racing car">
           </figure>
         </div>
 
         <div id="rc-p" class="paragraph web-developer">
-          <a class="img--flex web-developer__image rc-titulo" href="https://www.thepowermba.com/es/bootcamp-fullstack" target="_blank">
+          <a class="img--flex web-developer__image rc-titulo" href="https://www.thepowermba.com/es/bootcamp-fullstack" arial-label="ThePower business school" target="_blank">
             <img
-              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png">
+              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png"
+              alt="Certificate from RockTheCode by ThePower business school">
           </a>
           <div class="web-developer__content rc-text">
-            <h4>Web developer path</h4>
+            <h3>Web developer path</h3>
             <div class="multi-column-3">
               <p>Soon thereafter, a new revelation dawned; I stumbled upon the world of web development. The decision was
                 clear: I enrolled in a bootcamp to expedite my mastery and secure a tangible certification. Today, I find
@@ -80,9 +83,10 @@ export const initAbout = () => {
             </div>
           </div>
 
-          <a class="web-developer__image rc-tech" href="https://www.rockthecode.es/new/" target="_blank">
+          <a class="web-developer__image rc-tech" href="https://www.rockthecode.es/new/" arial-label="RockTheCode website"target="_blank">
             <img
-              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693505547/Portafolio/rock-the-code-tech_ufgnqt.png">
+              src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693505547/Portafolio/rock-the-code-tech_ufgnqt.png"
+              alt="Technologies learning in RockTheCode">
           </a>
         </div>
         

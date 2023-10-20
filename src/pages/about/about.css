@@ -27,11 +27,11 @@
   margin-bottom: 1rem;
 }
 
-.about__wrapper h4 {
+.about__wrapper h3 {
   font: 20px/1.2 var(--font-title);
 }
 
-.about__wrapper h5 {
+.about__wrapper h4 {
   font: 700 20px/1 var(--font);
   transition: 0.3s ease;
 }
@@ -116,19 +116,19 @@ figure {
   margin-top: 1.5rem;
 }
 
-.paragraph h4 {
+.paragraph h3 {
   font-size: 24px;
   text-align: left;
   margin-bottom: 0.5rem;
   transition: 0.2s ease;
 }
 
-.paragraph:hover h4 {
+.paragraph:hover h3 {
   color: white !important;
   background: var(--ink);
 }
 
-.active-p h4 {
+.active-p h3 {
   color: white !important;
   background: var(--ink);
 }
@@ -141,7 +141,7 @@ figure {
   grid-row: 8;
 }
 
-.web-developer h4 {
+.web-developer h3 {
   margin: 0 0 0.8rem;
 }
 
