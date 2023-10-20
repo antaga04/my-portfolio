@@ -11,7 +11,8 @@
   --oposite: #fff;
   --color: #1c1f33;
   --ink: #1c1f33;
-  --hippie: #519Faa;
+  --hippie: #61A8AE;
+  --hippieOld: #519Faa;
   --neptune: #7AC3B2;
   --lightGray: rgba(255, 255, 255, .17);
   --black: #000;
@@ -128,8 +129,14 @@ body {
   text-align: justify;
 }
 
-.applied {
-  color: var(--shiraz);
+#text-align>button {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.applied > button{
+  color: var(--shiraz) !important;
 }
 
 .flex-center {
@@ -362,7 +369,7 @@ footer p {
   background-color: rgba(23, 23, 23, .98);
   border-radius: 10px;
   font-size: 1vw;
-  font: 10px "Playfair Display", serif;
+  font: 12px "Playfair Display", serif;
   line-height: 1;
   opacity: 0;
   padding: 14px 20px;
@@ -429,7 +436,7 @@ footer p {
   display: flex;
   font-size: 1.3rem;
   height: 21px;
-  padding: 1rem .5rem;
+  padding: 1rem .35rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -488,9 +495,10 @@ footer p {
   .bar {
     background-color: var(--shiraz);
     width: 2em;
-    height: 0.15em;
+    height: 2px;
     margin-top: 0.3em;
     transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
   }
 
   .menu-slider {
@@ -522,6 +530,7 @@ footer p {
     right: 0;
     top: 0;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     visibility: visible;
     width: 80%;
     z-index: 99;
@@ -529,10 +538,12 @@ footer p {
 
   .menu-btn.menu-mode .bar:nth-child(1) {
     transform: translateY(150%) rotate(45deg);
+    -webkit-transform: translateY(150%) rotate(45deg);
   }
 
   .menu-btn.menu-mode .bar:nth-child(2) {
     transform: translateY(-150%) rotate(-45deg);
+    -webkit-transform: translateY(-150%) rotate(-45deg);
   }
 
   footer {

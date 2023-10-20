@@ -251,7 +251,7 @@
   line-height: 50px;
 }
 
-.qualities h5 {
+.qualities h3 {
   margin-top: .75rem;
   color: #454545;
   font-size: 1.75rem;
@@ -290,6 +290,7 @@
 
 .card-block img {
   width: 8rem;
+  height: auto;
 }
 
 @media screen and (max-width: 899px) {

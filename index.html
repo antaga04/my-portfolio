@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow">
   <title>Adrián Anta | Web Developer</title>
 
   <meta name="author" content="Adrian Anta">
@@ -12,13 +11,12 @@
   <meta name="publisher" content="Adrian Anta">
   <meta name="copyright" content="Copyright © 2023 by Adrian Anta">
   <meta name="language" content="English">
-  <meta name="apple-mobile-web-app-title" content="Adrian Anta">
   <meta name="description" content="Explore the journy of Adrián Anta, web developer based in Galicia, Spain. View the innovative 
     web projects with clean design and functional solutions.">
 
   <meta property="og:title" content="Adrián Anta | Web Developer">
-  <meta property="og:description" content="View my web projects and information about me.
-    ebs funcionales con diseños limpios.">
+  <meta property="og:description" content="Explore the journy of Adrián Anta, web developer based in Galicia, Spain. View the innovative 
+  web projects with clean design and functional solutions. ">
   <meta property="og:image"
     content="https://res.cloudinary.com/drsfru9lj/image/upload/v1697795216/Portafolio/projects/d-portfolio_telozp.png">
   <meta property="og:type" content="website">
@@ -27,6 +25,8 @@
   <meta name="keywords"
     content="Python,Next.js,React,JavaScript,TypeScript,Galicia,España,HTML,Frontend,Desarrollador,Programador,
     Web,Fullstack,adrian,anta,gil,Adrian Anta,Adrian Anta Gil,portafolio,portfolio,projects,Motorsport,Rockthecode,software,engineer">
+
+  <link rel="canonical" href="https://adrian-anta.netlify.app/">
 
   <link rel=" shortcut icon"
     href="https://res.cloudinary.com/drsfru9lj/image/upload/v1692092677/Portafolio/cubo-rubik-green_nwbsyc.png"
@@ -40,8 +40,6 @@
     rel="stylesheet">
 
   <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/v4-shims.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v6.3.0/js/fontawesome.js"> </script>
 </head>
 
 <body>
@@ -50,7 +48,7 @@
       <div class="nav-2">
         <div class="nav-3">
           <div id="nav-logo-section">
-            <a class="nav-link nav-logo" href="/" nav-path="/"></a>
+            <a class="nav-link nav-logo" href="/" nav-path="/" aria-label="Link to home page"></a>
           </div>
 
           <nav id="nav-link-section" class="nav-section">
@@ -70,7 +68,7 @@
 
           <div class="header__extra">
             <div class="menu">
-              <button class="menu-btn">
+              <button class="menu-btn" aria-label="Menu burger">
                 <div class="bars-container">
                   <div class="bar"></div>
                   <div class="bar"></div>
@@ -97,17 +95,15 @@
             </div>
 
             <div class="pen-nib__gear special-border">
-              <span>click for magic</span>
-              <button class="nib-btn">
+              <span>Settings</span>
+              <button class="nib-btn" aria-label="Settings">
                 <i class="fa-solid fa-pen-nib"></i>
               </button>
               <ul class="magic-menu special-border">
-                <li id="theme">🌙</li>
+                <li id="theme"><button aria-label="Theme">🌙</button></li>
                 <li id="text-align" class="applied">
-                  <div></div><i class="fa-solid fa-align-justify"></i>
+                  <button aria-label="Justify content"><i class="fa-solid fa-align-justify"></i></button>
                 </li>
-                <li id="codepen"><a href="https://codepen.io/adranta" target="_blank"><i
-                      class="fa-brands fa-codepen"></i></a></li>
               </ul>
             </div>
           </div>
@@ -125,11 +121,12 @@
     </div>
 
     <ul class="footer-icons">
-      <li><a href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" target="_blank">
+      <li><a href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" aria-label="Explore my LinkedIn"
+          target="_blank">
           <i class="fa-brands fa-linkedin"></i></a></li>
-      <li><a href="https://github.com/antaga04/" rel="noopener" target="_blank">
+      <li><a href="https://github.com/antaga04/" rel="noopener" aria-label="Explore my GitHub" target="_blank">
           <i class="fa-brands fa-github"></i></a></li>
-      <li><a href="https://codepen.io/adranta" target="_blank">
+      <li><a href="https://codepen.io/adranta" aria-label="Explore my Codepen" target="_blank">
           <i class="fa-brands fa-codepen"></i></a></li>
 
     </ul>
