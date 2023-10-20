@@ -24,7 +24,7 @@ export const initHome = () => {
               <h1>Software Engineer & Full Stack Developer</h1>
             </div>
             <div>
-              <h3>based in Galicia, Spain</h3>
+              <h2>based in Galicia, Spain</h2>
             </div>
           </div>
 

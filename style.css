@@ -74,7 +74,7 @@ u {
 .dark-theme {
   --oposite: #000;
   --color: #f4f7f7;
-  --ink: #519FAA;
+  --ink: #61A8AE;
   --shadow: rgb(234, 234, 234, 0.2);
   --error: linear-gradient(#222, #444);
   --stone: rgb(230, 230, 230);
