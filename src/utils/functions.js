@@ -1,5 +1,5 @@
 const rootElement = document.documentElement;
-const themeBtn = document.querySelector('#theme');
+const themeBtn = document.querySelector('#theme button');
 
 const saveTheme = (mode) => {
   localStorage.setItem('preferredMode', mode);

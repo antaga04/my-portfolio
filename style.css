@@ -129,13 +129,14 @@ body {
   text-align: justify;
 }
 
-#text-align>button {
+#text-align>button,
+#theme>button {
   background: transparent;
   border: none;
   color: #fff;
 }
 
-.applied > button{
+.applied>button {
   color: var(--shiraz) !important;
 }
 
@@ -394,7 +395,7 @@ footer p {
   margin-top: .4rem;
   max-height: 0;
   overflow: hidden;
-  padding: 0.1rem .5rem;
+  padding: 0.1rem .555rem;
   pointer-events: auto;
   position: absolute;
   right: auto;
