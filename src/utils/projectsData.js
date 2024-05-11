@@ -70,7 +70,7 @@ export const projectsData = [
   {
     id: '4',
     name: 'Weather app',
-    date: '23.10.23',
+    date: '10.05.24',
     cover: '/weather-preview.png',
     desktop: '/d-weatherdelta.png',
     mobile: '/m-weatherdelta.png',
@@ -88,7 +88,7 @@ export const projectsData = [
   {
     id: '5',
     name: 'Games hub',
-    date: 'unset',
+    date: '31.05.24',
     cover: '/future-project.png',
     desktop: '',
     mobile: '',
@@ -104,7 +104,7 @@ export const projectsData = [
   {
     id: '6',
     name: 'Rest API',
-    date: 'unset',
+    date: '09.02.24',
     cover: '/nodejs+express.png',
     desktop: '/portfolios-api.png',
     mobile: '',
@@ -122,9 +122,9 @@ export const projectsData = [
   {
     id: '7',
     name: 'Relational modeling',
-    date: 'unset',
+    date: '14.04.24',
     cover: '/nodejs+express.png',
-    desktop: '/public/gameshub-api.png',
+    desktop: '/gameshub-api.png',
     mobile: '',
     status: 'deployed',
     techs: ['Node', 'Express', 'noSQL'],
@@ -139,7 +139,7 @@ export const projectsData = [
   {
     id: '8',
     name: 'Full server',
-    date: 'unset',
+    date: '09.04.24',
     cover: '/nodejs+express.png',
     desktop: '/books-api.png',
     mobile: '',
