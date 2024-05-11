@@ -1,6 +1,6 @@
 .dark-theme .qualities {
   background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png),
-    radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%) !important;
+    radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, var(--violet) 69.27%, #fff 100%) !important;
 
 }
 
@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.presentation-block:hover>.first-line>h2 {
+.presentation-block:hover>.first-line>p {
   transform: translateY(-10px);
 }
 
@@ -36,7 +36,7 @@
   margin-bottom: 10px;
 }
 
-.first-line h2 {
+.first-line p {
   transition: transform 0.3s ease;
 }
 
@@ -50,8 +50,9 @@
   line-height: 5rem;
 }
 
-.hero-section h2 {
+.hero-section p {
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -105,7 +106,7 @@
   color: #fff;
   padding: 2rem;
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .marquee:before,
@@ -223,6 +224,10 @@
   margin-top: 1.5rem;
 }
 
+.line p {
+  font-size: 1.25rem;
+}
+
 /* QUALITIES */
 .qualities__wrapper {
   width: 100%;
@@ -234,8 +239,8 @@
 }
 
 .qualities {
-  /* background: radial-gradient(131.66% 109.77% at 50% 97.75%,transparent 37.41%,#63e 69.27%,#fff 100%); */
-  /* background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #63e 69.27%, #fff 100%); */
+  /* background: radial-gradient(131.66% 109.77% at 50% 97.75%,transparent 37.41%,var(--violet) 69.27%,#fff 100%); */
+  /* background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, var(--violet) 69.27%, #fff 100%); */
   background-image: var(--crisp), linear-gradient(var(--squeeze), var(--squeeze));
   border-bottom-left-radius: 2.75rem;
   border-bottom-right-radius: 2.75rem;
@@ -244,19 +249,33 @@
   width: 100%;
 }
 
-.qualities h2 {
+.qualities .container p:nth-child(1) {
   font-size: 2.9rem;
+  font-weight: bold;
   letter-spacing: .5px;
   max-width: 450px;
   line-height: 50px;
 }
 
-.qualities h3 {
+.qualities .container p:nth-child(2) {
   margin-top: .75rem;
   color: #454545;
   font-size: 1.75rem;
   font-weight: 300;
   max-width: 450px;
+}
+
+.devil-detail {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(to right,
+      var(--violet),
+      var(--violet2),
+      var(--violet3),
+      var(--violet));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
 
 .qualities p {
@@ -339,5 +358,15 @@
 
   .container {
     padding: 1rem;
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
   }
 }

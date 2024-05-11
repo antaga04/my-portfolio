@@ -66,14 +66,15 @@
 }
 
 .project__img {
-  height: 10em;
+  /* height: 10em; */
   overflow: hidden;
 }
 
 .preview-box img {
   width: 100%;
   object-fit: cover;
-  min-height: 10em;
+  min-height: 153.6px;
+  /* min-height: 10em; */
   object-position: top;
   transition: scale .3s ease-in-out;
 }

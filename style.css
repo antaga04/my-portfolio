@@ -7,6 +7,9 @@
   --font-sans-serif: "Manrope", sans-serif;
   --font1: 'Teko', sans-serif;
   /* COLORS */
+  --violet: #6633ee;
+  --violet2:  #7d56ec;
+  --violet3: #9479e9;
   --blueCharcoal: #010314;
   --oposite: #fff;
   --color: #1c1f33;
@@ -90,7 +93,7 @@ u {
 }
 
 .dark-theme body {
-  background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 97.75%, var(--blueCharcoal) 47.41%, #63e 69.27%, #fff 100%) !important;
+  background-image: var(--crisp), radial-gradient(131.66% 120.77% at 50% 97.75%, var(--blueCharcoal) 47.41%, var(--violet) 69.27%, #fff 100%) !important;
 }
 
 .fa-sun.hidden {

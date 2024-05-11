@@ -18,13 +18,13 @@ export const initHome = () => {
                   </path>
                 </svg>
               </div>
-              <h2>Hi, my name is Adrián</h2>
+              <p>Hi, my name is Adrián</p>
             </div>
             <div>
               <h1>Software Engineer & Full Stack Developer</h1>
             </div>
             <div>
-              <h2>based in Galicia, Spain</h2>
+              <p>based in Galicia, Spain</p>
             </div>
           </div>
 
@@ -49,25 +49,25 @@ export const initHome = () => {
           <div class="marquee">
             <div class="loop__content">
               <div class="call-to-action">
-                <h4>Get in touch</h4>
+                <p>Get in touch</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <h4>Just say Hi</h4>
+                <p>Just say Hi</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <h4>Work together?</h4>
+                <p>Work together?</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <h4>Contact me</h4>
+                <p>Contact me</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
@@ -76,25 +76,25 @@ export const initHome = () => {
 
             <div class="loop__content">
             <div class="call-to-action">
-              <h4>Get in touch</h4>
+              <p>Get in touch</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
             </div>
             <div class="call-to-action">
-              <h4>Just say Hi</h4>
+              <p>Just say Hi</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
             </div>
             <div class="call-to-action">
-              <h4>Work together?</h4>
+              <p>Work together?</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
             </div>
             <div class="call-to-action">
-              <h4>Contact me</h4>
+              <p>Contact me</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
@@ -103,25 +103,25 @@ export const initHome = () => {
 
             <div class="loop__content">
               <div class="call-to-action">
-                <h4>Get in touch</h4>
+                <p>Get in touch</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <h4>Just say Hi</h4>
+                <p>Just say Hi</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <h4>Work together?</h4>
+                <p>Work together?</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <h4>Contact me</h4>
+                <p>Contact me</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
@@ -154,8 +154,8 @@ export const initHome = () => {
         <section class="qualities">
           <article class="flex-center">
             <div class="container">
-              <h2>The devil is in the details, and so am I.</h2>
-              <h3>Don't waste more time looking for a developer.</h3>
+              <p>The devil is in the <span class="devil-detail">details</span>, and so am I.</p>
+              <p>Don't waste more time looking for a developer.</p>
             </div>
 
             <div class="qualities-list">
