@@ -1,0 +1,60 @@
+{
+  "navBar": {
+    "home": {
+      "name": "inicio",
+      "ariaLabel": "Link á páxina inicio"
+    },
+    "about": {
+      "name": "acerca",
+    "ariaLabel": "Link á páxina acerca"
+    },
+    "projects": {
+      "name": "proxectos",
+    "ariaLabel": "Link á páxina proxectos"
+    },
+    "contact": {
+      "name": "contacto",
+    "ariaLabel": "Link á páxina contacto"
+    }
+  },
+  "burgerMenu": "Botón do menú hamburguesa",
+  "magicMenu": {
+    "settings": {
+      "name": "Axustes",
+      "ariaLabel": "Botón de axustes"
+    },
+    "theme": {
+      "name": "Modo",
+      "ariaLabel": "Interruptor del modo claro/oscuro"
+    },
+    "textAlign": {
+      "name_l": "Alineado izquierdo",
+      "name_j": "Alineado xustificado",
+      "ariaLabel": "Botón de alineado do texto"
+    }
+  },
+  "footer": "Diseñado e constriudo por Adrián Anta Gil.",
+  "monthNames": [
+    "Ene",
+    "Feb",
+    "Mar",
+    "Abr",
+    "Mai",
+    "Xuñ",
+    "Xul",
+    "Ago",
+    "Sep",
+    "Out",
+    "Nov",
+    "Dec"
+  ],
+  "dayNames": [
+    "Domingo",
+    "Luns",
+    "Martes",
+    "Mércores",
+    "Xoves",
+    "Venres",
+    "Sábado"
+  ]
+}

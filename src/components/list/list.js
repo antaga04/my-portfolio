@@ -16,7 +16,7 @@ export const listTemplate = (propList) => {
   return `
     <div id="list__container" class="left-side">
       <div>
-        <h2>Projects List</h2>
+        <h1>Projects List</h1>
         <ul class="project-list">
           <li id="all" class="name ${status}"><a href="/projects" link-path="/projects">All Projects</a></li>
           ${propList

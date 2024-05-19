@@ -23,6 +23,17 @@
   color: #fff;
 }
 
+.attributions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.attributions a:hover {
+  color: var(--hippie);
+}
+
 @media (max-width: 767px) {
   .sidebar {
     border-top: 1px dashed;

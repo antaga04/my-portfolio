@@ -1,0 +1,60 @@
+{
+  "h1": "O Diario Sobre Mi",
+  "issue": "NUMERO #1",
+  "price": "PRECIO 5 CENTS",
+  "h2": "Impulsado pola aprendizaxe, definido polo detalle",
+  "p_intro_1": "<span class='drop-cap'>W</span>elcome! My name is Adrian, a future Full Stack maestro with a current focus on front-end, and a dedicated Software Engineering student.",
+  "p_intro_2": "A perfectionist who believes details truly matter. I believe great development is about more than just writing code. It's about understanding the end user, empathizing with their needs, and anticipating how they'll interact with the final product.",
+  "p_intro_3": "My ultimate goal is to be a valuable asset to a company, where I can contribute meaningfully to its growth while elevating my skills as a developer.",
+  "cube_caption": "Rotating Rubik Cube",
+  "h3_1": "The beginning",
+  "h3_2": "Next stage",
+  "h3_3": "Web developer path",
+  "p1": "It all started back in high school during an IT class. Our mission? Build a video game using Python. I was instantly hooked. But classes were slow, so I decided to learn on my own online. Before long, I knew what I wanted: a Pac-Man clone. Pretty tough for a beginner, but I was determined. The end result wasn't perfect, but it was a great learning experience.",
+  "p2": "Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third year). Somewhere along this path, I joined forces with a team called Uvigo MotorSport—an exclusive Galician Formula Student team; eager to embrace a fresh experience. Yet, my time there was brief, as it didn't ignite my true passion.",
+  "p3": "Soon thereafter, a new revelation dawned; I stumbled upon the world of web development. The decision was clear: I enrolled in a bootcamp to expedite my mastery and secure a tangible certification. Today, I find myself almost midway through the program, brimming with anticipation to conclude and embark on a journey into the professional realm.",
+  "aside": {
+    "inspiration_ticket": "50% OFF BEST WEBSITES FOR INSPIRATION",
+    "aside_h3_1": "Thing I like",
+    "aside_h4_2": "Color Palette Generator",
+    "aside_h4_3": "Amazing Mockups",
+    "aside_h4_4": "Animations Library",
+    "aside_h4_5": "Easing functions Sheet",
+    "aside_h4_6": "Cubic-bezier Easing",
+    "aside_h4_7": "Special Mention",
+    "aside_p_1": {
+      "item_1": "Puzzles",
+      "item_2": "Rubik's cube",
+      "item_3": "Back To The Future",
+      "item_4": "The Fresh Prince of Bel-Air",
+      "item_5": "Work out",
+      "item_6": "Rock"
+    },
+    "aside_p_2": "More often than not, we developers find ourselfs in need of insteresting colors for our projests. Huemint is just perfect for that.",
+    "aside_p_3": "For developers in search of impressive mockups, Shots is the ultimate choice.",
+    "aside_p_4": "Elevate user experiences with Animista, a CSS animation library for developers.",
+    "aside_p_5": "Achieve seamless animations with ease using Easings, your go-to resource for easing functions.",
+    "aside_p_6": "And if you want to test cubic-bezier transformation, Cubic-Bezier makes it effortless.",
+    "aside_p_7": {
+      "item_1": {
+        "href": "https://midu.dev",
+        "name": "Midudev",
+        "p": "- Content creator."
+      },
+      "item_2": {
+        "href": "https://github.com/Corocottax",
+        "name": "Corocottax",
+        "p": "- Teacher at RTC."
+      },
+      "item_3": {
+        "href": "https://www.meowlivia.com/",
+        "name": "Olivia Ng",
+        "p": "- About page based on her design."
+      }
+    }
+  },
+  "alt_img_pacman": "Pacman game clon",
+  "alt_img_umc": "Uvigo MotorSport 2022 racing car",
+  "alt_img_certificate": "Certificate from RockTheCode by ThePower business school",
+  "alt_img_rtc": "Technologies taught in RockTheCode"
+}

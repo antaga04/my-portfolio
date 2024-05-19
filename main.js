@@ -1,13 +1,7 @@
-import { Linker, initializeApp, menuLinker } from './src/router/router';
-import { loadPreferredMode } from './src/utils/functions';
-import { Listeners } from './src/utils/listener';
+import { initApp } from './src/app';
 import './style.css';
 
-initializeApp();
-menuLinker();
-
-Listeners();
-loadPreferredMode();
+await initApp();
 
 console.log(`
 Hi there! I'm probably working right now.
@@ -22,3 +16,19 @@ Hi there! I'm probably working right now.
 =(  _____| (_________|
 
 - From ASCII Art Archive`);
+
+const htmlTag = document.querySelector('html');
+const langSelect = document.getElementById('languageSelect');
+
+let browserLanguage = navigator.language || navigator.userLanguage;
+let storedLanguage = localStorage.getItem('language');
+
+if (!storedLanguage) {
+  localStorage.setItem('language', browserLanguage);
+  storedLanguage = browserLanguage;
+}
+
+langSelect.value = storedLanguage;
+
+htmlTag.setAttribute('lang', storedLanguage);
+

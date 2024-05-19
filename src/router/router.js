@@ -3,11 +3,9 @@ import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
 import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
-import { handleLinkStyle } from '../utils/functions';
+import { handleLinkStyle, scrollToTop } from '../utils/functions';
 import { initProject } from '../components/card/card';
 import initSecret from '../pages/secret/secret';
-
-const links = document.querySelectorAll('.nav-link');
 
 const routes = {
   '/': initHome,
@@ -20,8 +18,11 @@ const routes = {
 };
 
 function handleNavigation(pathname) {
+  const links = document.querySelectorAll('.nav-link');
+
   handleLinkStyle(links);
   if (pathname.includes('/projects/')) {
+    console.log(1);
     const parts = pathname.split('/projects/');
     if (parts.length === 2) {
       const projectId = parts[1];
@@ -33,16 +34,16 @@ function handleNavigation(pathname) {
     const initPage = routes[pathname] || initNotFound;
     initPage();
   }
+  scrollToTop();
 }
 
 function navigateTo(pathname) {
-  // console.log(pathname);
   window.history.pushState({}, '', pathname);
   handleNavigation(pathname);
+  scrollToTop();
 }
 
 function initializeApp() {
-  // console.log('initializeApp');
   const pathname = window.location.pathname;
   handleNavigation(pathname);
 }
@@ -68,7 +69,6 @@ function menuLinker() {
 
 function Linker() {
   const links = document.querySelectorAll('a[link-path]');
-  // console.log(`estos son los links`, links);
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();

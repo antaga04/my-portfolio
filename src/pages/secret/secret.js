@@ -1,7 +1,10 @@
+import { loadTranslations } from '../../utils/functions';
 import './secret.css';
 
-const initSecret = () => {
+const initSecret = async () => {
   const app = document.querySelector('#app');
+  const lang = localStorage.getItem('language');
+  const data = await loadTranslations(lang);
 
   app.innerHTML = '';
   app.innerHTML += `

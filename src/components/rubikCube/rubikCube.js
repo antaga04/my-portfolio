@@ -1,6 +1,6 @@
 import './rubikCube.css';
 
-export const rubikCube = () => {
+export const rubikCube = (cube_caption) => {
   return `
     <div class="rubik__container">
       <figure>
@@ -15,7 +15,7 @@ export const rubikCube = () => {
           </div>
         </div>
       </figure>
-      <figcaption>Rotating Rubik Cube</figcaption>
+      <figcaption>${cube_caption}</figcaption>
     </div>
   `;
 };

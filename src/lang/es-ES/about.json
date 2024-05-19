@@ -1,0 +1,60 @@
+{
+  "h1": "El Diario Sobre Mi",
+  "issue": "NÚMERO #1",
+  "price": "PRECIO 5 CENTS",
+  "h2": "Impulsado por el Aprendizaje, Definido por el Detalle",
+  "p_intro_1": "<span class='drop-cap'>B</span>ienvenido! Mi nombre es Adrian, un futuro maestro Full Stack con un enfoque actual en front-end, y un dedicado estudiante de Ingeniería de Software.",
+  "p_intro_2": "Un perfeccionista que cree que los detalles realmente importan. Creo que un gran desarrollo es algo más que escribir código. Se trata de entender al usuario final, empatizar con sus necesidades y anticipar cómo interactuará con el producto final.",
+  "p_intro_3": "Mi objetivo final es ser un activo valioso para una empresa, donde pueda contribuir significativamente a su crecimiento a la vez que elevo mis habilidades como desarrollador.",
+  "cube_caption": "Rotating Rubik Cube",
+  "h3_1": "El comienzo",
+  "h3_2": "Siguiente etapa",
+  "h3_3": "El camino de desarrollo web",
+  "p1": "Todo empezó en el instituto, durante una clase de informática. ¿Nuestra misión? Construir un videojuego con Python. Me enganché al instante. Pero las clases eran lentas, así que decidí aprender por mi cuenta en Internet. En poco tiempo supe lo que quería: un clon de Pac-Man. Bastante difícil para un principiante, pero estaba decidido. El resultado final no fue perfecto, pero fue una gran experiencia de aprendizaje",
+  "p2": "Posteriormente, me aventuré en la universidad, en busca de un título en Ingeniería informática (actualmente terminando). En algún momento de este camino, me uní a un equipo llamado Uvigo MotorSport, un exclusivo equipo gallego de Formula Student; ansioso por abrazar una nueva experiencia. Sin embargo, mi estancia allí fue breve, ya que no encendió mi verdadera pasión",
+  "p3": "Poco después llegó una nueva revelación; me topé con el mundo del desarrollo web. La decisión estaba clara: me matriculé en un bootcamp para acelerar mi aprendizaje y conseguir una certificación tangible. Hoy, me encuentro casi a al final del programa, rebosante de ilusión por concluirlo y embarcarme en un viaje hacia el ámbito profesional",
+  "aside": {
+    "inspiration_ticket": "MEJORES WEBS PARA INSPIRARSE AL 50% DE DESCUENTO",
+    "aside_h3_1": "Cosas que me gustan",
+    "aside_h4_2": "Generador de paletas de colores",
+    "aside_h4_3": "Mockups Increibbles",
+    "aside_h4_4": "Librería de Animaciones",
+    "aside_h4_5": "Hoja de Funciones Easing",
+    "aside_h4_6": "Cubic-bezier Easing",
+    "aside_h4_7": "Mención Especial",
+    "aside_p_1": {
+      "item_1": "Puzzles",
+      "item_2": "Cubo de Rubik",
+      "item_3": "Regreso al Futuro",
+      "item_4": "El Principe de Bel-Air",
+      "item_5": "Entrenar",
+      "item_6": "Rock"
+    },
+    "aside_p_2": "A menudo, los desarrolladores necesitamos colores interesantes para nuestros proyectos. Huemint es perfecto para esto",
+    "aside_p_3": "Para los desarrolladores en busca de mockups impresionantes, Shots es la mejor opción",
+    "aside_p_4": "Eleva las experiencias de usuario con Animista, una biblioteca de animación CSS para desarrolladores",
+    "aside_p_5": "Consigue animaciones fluidas con facilidad gracias a Easings, tu recurso de referencia para las funciones de easing.",
+    "aside_p_6": "Y si quieres probar transformaciones cubic-bezier, Cubic-Bezier lo hace sin esfuerzo",
+    "aside_p_7": {
+      "item_1": {
+        "href": "https://midu.dev",
+        "name": "Midudev",
+        "p": "- Creador de contenido."
+      },
+      "item_2": {
+        "href": "https://github.com/Corocottax",
+        "name": "Corocottax",
+        "p": "- Profesor en RTC."
+      },
+      "item_3": {
+        "href": "https://www.meowlivia.com/",
+        "name": "Olivia Ng",
+        "p": "- Página About basad en su diseño."
+      }
+    }
+  },
+  "alt_img_pacman": "Clon del juego de Pacman",
+  "alt_img_umc": "Coche de carreras de Uvigo MotorSport 2022",
+  "alt_img_certificate": "Certificado de RockTheCode de ThePower business school",
+  "alt_img_rtc": "Tecnologías enseñadas en RockTheCode"
+}

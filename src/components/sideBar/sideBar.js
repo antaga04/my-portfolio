@@ -1,68 +1,70 @@
 import './sideBar.css';
 
-const sideBar = () => {
+const sideBar = (aside) => {
   return `
     <div class="sidebar">
       <div class="interests">
-        <h3 class="title--big">Thing I like</h3>
+        <h3 class="title--big">${aside.aside_h3_1}</h3>
         <ul>
-            <li>Puzzles</li>
-            <li>Rubik's cube</li>
-            <li>Back To The Future</li>
-            <li>The Fresh Prince of Bel-Air</li>
-            <li>Work out</li>
-            <li>Rock</li>
+        ${Object.values(aside.aside_p_1)
+          .map((p) => {
+            return `<li>${p}</li>`;
+          })
+          .join('')}
         </ul>
       </div>
 
       <ul>
           <li class="sidebar-item with-border">
             <a href="https://huemint.com/" target="_blank">
-              <h4>Color Palette Generator</h4>
-              <p>More often than not, we developers find ourselfs in need of insteresting colors for our projests. <em>Huemint</em> is just perfect for that.</p>
+              <h4>${aside.aside_h4_2}</h4>
+              <p>${aside.aside_p_2}</p>
             </a>
           </li>
           <li class="sidebar-item with-border">
             <a href="https://shots.so/" target="_blank">
-              <h4>Amazing Mockups</h4>
-              <p>For developers in search of impressive mockups, <em>Shots</em> is the ultimate choice.</p>
+              <h4>${aside.aside_h4_3}</h4>
+              <p>${aside.aside_p_3}</p>
             </a>
           </li>
           <li>
             <a class="ticket" href="https://github.com/Evavic44/portfolio-ideas/blob/main/README.md" target="_blank">
-              <div class="ticket__title">
-                50% OFF Best Websites for inspiration
-              </div>
+              <div class="ticket__title">${aside.inspiration_ticket}</div>
             </a>
           </li>
           <li class="sidebar-item separation-null">
             <a href="https://animista.net/" target="_blank">
-              <h4>Animations Library</h4>
-              <p>Elevate user experiences with <em>Animista</em>, a CSS animation library for developers.</p>
+              <h4>${aside.aside_h4_4}</h4>
+              <p>${aside.aside_p_4}</p>
             </a>
           </li>
           <li class="sidebar-item with-border">
             <a href="https://easings.net/en" target="_blank">
-              <h4>Easing functions Sheet</h4>
-              <p>Achieve seamless animations with ease using <em>Easings</em>, your go-to resource for easing functions.</p>
+              <h4>${aside.aside_h4_5}</h4>
+              <p>${aside.aside_p_5}</p>
             </a>
           </li>
           <li class="sidebar-item with-border">
             <a href="https://cubic-bezier.com/" target="_blank">
-              <h4>Cubic-bezier Easing</h4>
-              <p>And if you want to test cubic-bezier transformation, <em>Cubic-Bezier</em> makes it effortless.</p>
+              <h4>${aside.aside_h4_6}</h4>
+              <p>${aside.aside_p_6}</p>
             </a>
           </li>
           <li class="sidebar-item with-border">
-            <h4>Special Mention</h4>
-            <div class="space-btwn">
-              <a href="https://midu.dev" target="_blank">
-                Midudev
-              </a>
-              <a href="https://github.com/Corocottax" target="_blank">
-                Corocottax
-              </a>
-            </div>
+            <h4>${aside.aside_h4_7}</h4>
+            <ul class="space-btwn attributions">
+              ${Object.values(aside.aside_p_7)
+                .map((item) => {
+                  return `
+                    <li>
+                      <a href=${item.href} target="_blank">
+                        ${item.name}
+                      </a>
+                      <span>${item.p}</span>
+                    </li>`;
+                })
+                .join('')}
+            </ul>
           </li>
       </ul>
     </div>

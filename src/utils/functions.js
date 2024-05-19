@@ -1,19 +1,36 @@
-const rootElement = document.documentElement;
-const themeBtn = document.querySelector('#theme button');
-
-const saveTheme = (mode) => {
-  localStorage.setItem('preferredMode', mode);
+const saveInLocalStorage = (mode, tag) => {
+  localStorage.setItem(tag, mode);
 };
 
 const setTheme = (mode) => {
+  const rootElement = document.documentElement;
+  const themeBtn = document.querySelector('#theme button span');
+
   if (mode === 'dark') {
-    themeBtn.textContent = '☀️';
+    themeBtn.textContent = '🌙';
     rootElement.classList.remove('light-theme');
     rootElement.classList.add('dark-theme');
   } else {
-    themeBtn.textContent = '🌙';
+    themeBtn.textContent = '☀️';
     rootElement.classList.remove('dark-theme');
     rootElement.classList.add('light-theme');
+  }
+};
+
+const setTextAlign = async (align) => {
+  const PAGE_NAME = 'common';
+
+  const lang = localStorage.getItem('language');
+  const data = await loadTranslations(lang, PAGE_NAME);
+  const textAlign = document.querySelector('#text-align button');
+  const main = document.querySelector('#app');
+
+  if (align === 'justify-text') {
+    textAlign.textContent = data.magicMenu.textAlign.name_j;
+    main.classList.add('justify-text');
+  } else {
+    textAlign.textContent = data.magicMenu.textAlign.name_l;
+    main.classList.remove('justify-text');
   }
 };
 
@@ -26,7 +43,17 @@ const loadPreferredMode = () => {
       ? 'dark'
       : 'light';
     setTheme(defaultTheme);
-    saveTheme(defaultTheme);
+    saveInLocalStorage(defaultTheme, 'preferredMode');
+  }
+};
+
+const loadPreferredTextAlign = () => {
+  const storagedAlign = localStorage.getItem('preferredTextAlign');
+  if (storagedAlign) {
+    setTextAlign(storagedAlign, 'preferredTextAlign');
+  } else {
+    setTextAlign('justify-text');
+    saveInLocalStorage('justify-text', 'preferredTextAlign');
   }
 };
 
@@ -36,13 +63,14 @@ const handleLinkStyle = (links) => {
   links.forEach((link) => {
     if (link.getAttribute('href') === pathname && pathname !== '/home' && pathname !== '') {
       link.classList.add('active-link');
+      updateMenuShape();
     } else {
       link.classList.remove('active-link');
     }
   });
 };
 
-// Posible fix for handling the styles when hovering the images or <p> section
+// Fix for handling the styles when hovering the images or <p> section
 function handleAboutStyles() {
   const beginningP = document.getElementById('beginning-p');
   const umP = document.getElementById('um-p');
@@ -74,7 +102,60 @@ function setAboutStyles(paragraph, img) {
 
   img.addEventListener('mouseleave', () => {
     paragraph.classList.remove('active-p');
-  });  
+  });
 }
 
-export { handleLinkStyle, loadPreferredMode, saveTheme, setTheme, handleAboutStyles };
+function updateMenuShape() {
+  const menuShape = document.querySelector('.menu_shape');
+  const activeLink = document.querySelector('.nav-link.active-link');
+  if (activeLink) {
+    const linkRect = activeLink.getBoundingClientRect();
+    const navRect = activeLink.closest('.nav-3').getBoundingClientRect();
+
+    menuShape.classList.add('moving');
+
+    menuShape.style.left = `${linkRect.left - navRect.left}px`;
+    menuShape.style.width = `7rem`;
+    menuShape.style.opacity = '1';
+
+    setTimeout(() => {
+      menuShape.classList.remove('moving');
+      menuShape.style.width = `100px`;
+    }, 300);
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
+async function loadTranslations(lang, page) {
+  // console.log(`src/lang/${lang}/${page}.json`);
+  const response = await fetch(`src/lang/${lang}/${page}.json`);
+  const data = await response.json();
+  return data;
+}
+
+function getCurrentLanguage() {
+  const supportedLanguages = ['en', 'es-ES', 'gl'];
+  let browserLang = navigator.language;
+  if (!supportedLanguages.includes(browserLang)) {
+    browserLang = 'en';
+  }
+  localStorage.setItem('browserLang', browserLang);
+  return browserLang;
+}
+
+export {
+  handleLinkStyle,
+  loadPreferredMode,
+  saveInLocalStorage,
+  setTheme,
+  handleAboutStyles,
+  updateMenuShape,
+  scrollToTop,
+  loadTranslations,
+  getCurrentLanguage,
+  setTextAlign,
+  loadPreferredTextAlign,
+};

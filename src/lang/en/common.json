@@ -1,0 +1,60 @@
+{
+  "navBar": {
+    "home": {
+      "name": "home",
+      "ariaLabel": "Link to home page"
+    },
+    "about": {
+      "name": "about",
+      "ariaLabel": "Link to about page"
+    },
+    "projects": {
+      "name": "projects",
+      "ariaLabel": "Link to projects page"
+    },
+    "contact": {
+      "name": "contact",
+      "ariaLabel": "Link to contact page"
+    }
+  },
+  "burgerMenu": "Menu burger buttoon",
+  "magicMenu": {
+    "settings": {
+      "name": "Settings",
+      "ariaLabel": "Settings menu button"
+    },
+    "theme": {
+      "name": "Theme",
+      "ariaLabel": "Theme switch"
+    },
+    "textAlign": {
+      "name_l": "Left align",
+      "name_j": "Justify align",
+      "ariaLabel": "Text align button"
+    }
+  },
+  "footer": "Designed and built by <span style='white-space: nowrap;'>Adrián <a href='/secret' link-path='/secret'>Anta</a> Gil.</span>",
+  "monthNames": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
+  "dayNames": [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ]
+}

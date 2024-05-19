@@ -1,14 +1,19 @@
 import { Linker } from '../../router/router';
+import { loadTranslations } from '../../utils/functions';
 import './home.css';
 
-export const initHome = () => {
+const PAGE_NAME = 'home';
+
+export const initHome = async () => {
   const app = document.querySelector('#app');
+  const lang = localStorage.getItem('language');
+  const data = await loadTranslations(lang, PAGE_NAME);
 
   app.innerHTML = '';
   app.innerHTML += `
     <div id="home-page-container">
       <section id="hero" class="hero-section">
-        <article class="container">
+        <article class="container animateChildren">
           <div class="presentation-block">
             <div class="first-line">
               <div class="hand-container">
@@ -18,24 +23,31 @@ export const initHome = () => {
                   </path>
                 </svg>
               </div>
-              <p>Hi, my name is Adrián</p>
+              <p>${data.presentation}</p>
             </div>
             <div>
-              <h1>Software Engineer & Full Stack Developer</h1>
+              <h1>${data.h1}</h1>
             </div>
             <div>
-              <p>based in Galicia, Spain</p>
+              <p>${data.basedIn}</p>
             </div>
           </div>
 
           <div class="home__btns">
-            <a href="/projects" link-path="/projects" class="ticket">
-              <div class="home__btn ticket__title">CHECK MY WORK</div>
+            <a href="https://www.linkedin.com/in/adrian-anta-gil/" aria-label="Explore my LinkedIn" rel="noopener" target="_blank" class="ticket">
+              <div class="home__btn ticket__title">
+                <p>LinkedIn</p><i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </a>
+            <a href="https://github.com/antaga04/" aria-label="Explore my GitHub" rel="noopener" target="_blank" class="ticket">
+              <div class="home__btn ticket__title">
+                <p>GitHub</p><i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
             </a>
           </div>
 
           <div class="line">
-            <p>Don't be shy! Hit me up!</p>
+            <p>${data.call_to_action_01}</p>
           </div>
         </article>
 
@@ -49,25 +61,25 @@ export const initHome = () => {
           <div class="marquee">
             <div class="loop__content">
               <div class="call-to-action">
-                <p>Get in touch</p>
+                <p>${data.get_in_touch}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <p>Just say Hi</p>
+                <p>${data.just_say_hi}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <p>Work together?</p>
+                <p>${data.work_together}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <p>Contact me</p>
+                <p>${data.contact_me}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
@@ -76,25 +88,25 @@ export const initHome = () => {
 
             <div class="loop__content">
             <div class="call-to-action">
-              <p>Get in touch</p>
+              <p>${data.get_in_touch}</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
             </div>
             <div class="call-to-action">
-              <p>Just say Hi</p>
+              <p>${data.just_say_hi}</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
             </div>
             <div class="call-to-action">
-              <p>Work together?</p>
+              <p>${data.work_together}</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
             </div>
             <div class="call-to-action">
-              <p>Contact me</p>
+              <p>${data.contact_me}</p>
               <div class="action-separator">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                   loading="lazy" alt="Separation line"></div>
@@ -103,25 +115,25 @@ export const initHome = () => {
 
             <div class="loop__content">
               <div class="call-to-action">
-                <p>Get in touch</p>
+                <p>${data.get_in_touch}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <p>Just say Hi</p>
+                <p>${data.just_say_hi}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <p>Work together?</p>
+                <p>${data.work_together}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
               </div>
               <div class="call-to-action">
-                <p>Contact me</p>
+                <p>${data.contact_me}</p>
                 <div class="action-separator">
                   <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687451387/Portafolio/tl_oj2udo.webp"
                     loading="lazy" alt="Separation line"></div>
@@ -131,51 +143,31 @@ export const initHome = () => {
         </a>
       </section>
 
-      <div class="marque" style="display: none;">
-        <div>
-          <span class="loop_content">
-            <span>CONTACT ME</span>
-            <span>REACH OUT</span>
-            <span>SAY HELLO</span>
-            <span>GET IN TOUCH</span>
-          </span>
-          
-          <span class="loop_content">
-            <span>CONTACT ME</span>
-            <span>REACH OUT</span>
-            <span>SAY HELLO</span>
-            <span>GET IN TOUCH</span>
-          </span>
-        </div>
-      </div>
-
-
       <div class="qualities__wrapper">
         <section class="qualities">
           <article class="flex-center">
             <div class="container">
-              <p>The devil is in the <span class="devil-detail">details</span>, and so am I.</p>
-              <p>Don't waste more time looking for a developer.</p>
+              <p>${data.quality_title}</p>
+              <p>${data.quality_p}</p>
             </div>
 
             <div class="qualities-list">
               <div class="card-block flex-center">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/devil_js9kvz.webp" alt="Devil card">
-                <p>Focused on every detail to ensure precision and excellence.</p>
+                <p>${data.quality_1}</p>
               </div>
               <div class="card-block flex-center">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/stength_ldbxsi.webp" alt="Strength card">
-                <p>Transform complex problems into innovative solutions.</p>
+                <p>${data.quality_2}</p>
               </div>
               <div class="card-block flex-center">
                 <img src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/star_feyntg.webp" alt="Star card">
-                <p>Constantly learning to keep up with the ever-evolving world.</p>
+                <p>${data.quality_3}</p>
               </div>
             </div>
           </article>
         </section>
       </div>
-
 
     </div>
   `;

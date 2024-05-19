@@ -3,7 +3,7 @@ import { projectsData as data } from '../../utils/projectsData';
 import { listTemplate } from '../list/list';
 import './card.css';
 
-export const initProject = (prop) => {
+export const initProject = async (prop) => {
   const project = data.find((item) => item.id == prop);
   const app = document.querySelector('#app');
   let side = '';

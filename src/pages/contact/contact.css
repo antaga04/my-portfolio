@@ -20,6 +20,7 @@
 .contact-question {
   font-size: 2.75rem;
   line-height: .9;
+  text-align: left !important;
 }
 
 .contact-question h2 {
@@ -31,15 +32,12 @@
   font-size: 1.75rem;
   line-height: 1;
   padding-left: 10%;
-  color: var(--stone);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  color: #fff;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .dev-email {
   align-items: center;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
   border-radius: .5rem;
   cursor: pointer;
   display: flex;
@@ -48,6 +46,10 @@
   height: fit-content;
   position: relative;
   width: fit-content;
+}
+
+.dark-theme .dev-email {
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .dev-email>.arrow {
@@ -88,6 +90,11 @@
 
 .dev-email:hover::after {
   width: 100%;
+}
+
+.contact-hero-wrapper {
+  opacity: 1 !important;
+  animation: none !important;
 }
 
 .contact-hero-corner {
