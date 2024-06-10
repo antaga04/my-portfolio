@@ -17,18 +17,3 @@ Hi there! I'm probably working right now.
 
 - From ASCII Art Archive`);
 
-const htmlTag = document.querySelector('html');
-const langSelect = document.getElementById('languageSelect');
-
-let browserLanguage = navigator.language || navigator.userLanguage;
-let storedLanguage = localStorage.getItem('language');
-
-if (!storedLanguage) {
-  localStorage.setItem('language', browserLanguage);
-  storedLanguage = browserLanguage;
-}
-
-langSelect.value = storedLanguage;
-
-htmlTag.setAttribute('lang', storedLanguage);
-

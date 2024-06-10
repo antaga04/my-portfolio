@@ -33,7 +33,7 @@
       "ariaLabel": "Text align button"
     }
   },
-  "footer": "Designed and built by <span style='white-space: nowrap;'>Adrián <a href='/secret' link-path='/secret'>Anta</a> Gil.</span>",
+  "footer": "Designed and built by <span style='white-space: nowrap;'>Adrián <a href='/secret' nav-path='/secret' class='secretRoute'>Anta</a> Gil.</span>",
   "monthNames": [
     "Jan",
     "Feb",

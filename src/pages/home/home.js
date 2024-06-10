@@ -172,5 +172,5 @@ export const initHome = async () => {
     </div>
   `;
 
-  Linker();
+  
 };

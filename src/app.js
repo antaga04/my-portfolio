@@ -1,11 +1,17 @@
 import { initializeApp, menuLinker } from './router/router';
-import { loadPreferredMode, loadPreferredTextAlign, loadTranslations } from './utils/functions';
+import {
+  loadBrowserLang,
+  loadPreferredMode,
+  loadPreferredTextAlign,
+  loadTranslations,
+} from './utils/functions';
 import { Listeners } from './utils/listeners';
 
 const PAGE_NAME = 'common';
 
 export const initApp = async () => {
   const root = document.querySelector('#root');
+  const storedLanguage = loadBrowserLang();
   const lang = localStorage.getItem('language');
   const data = await loadTranslations(lang, PAGE_NAME);
 
@@ -124,4 +130,6 @@ export const initApp = async () => {
   Listeners();
   loadPreferredMode();
   loadPreferredTextAlign();
+  const langSelect = document.getElementById('languageSelect');
+  langSelect.value = storedLanguage;
 };

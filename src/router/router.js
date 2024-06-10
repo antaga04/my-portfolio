@@ -5,7 +5,7 @@ import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
 import { handleLinkStyle, scrollToTop } from '../utils/functions';
 import { initProject } from '../components/card/card';
-import initSecret from '../pages/secret/secret';
+import { initSecret } from '../pages/secret/secret';
 
 const routes = {
   '/': initHome,
@@ -22,7 +22,6 @@ function handleNavigation(pathname) {
 
   handleLinkStyle(links);
   if (pathname.includes('/projects/')) {
-    console.log(1);
     const parts = pathname.split('/projects/');
     if (parts.length === 2) {
       const projectId = parts[1];
@@ -48,14 +47,11 @@ function initializeApp() {
   handleNavigation(pathname);
 }
 
-window.addEventListener('popstate', () => {
-  const pathname = window.location.pathname;
-  handleNavigation(pathname);
-});
-
 function menuLinker() {
-  // console.log('menuLinker');
   const links = document.querySelectorAll('a[nav-path]');
+  const linksPath = document.querySelectorAll('a[link-path]');
+  console.log(links);
+  console.log(linksPath);
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -69,13 +65,20 @@ function menuLinker() {
 
 function Linker() {
   const links = document.querySelectorAll('a[link-path]');
+  console.log(links);
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
+      console.log(link);
       e.preventDefault();
       const pathname = link.getAttribute('link-path');
       navigateTo(pathname);
     });
   });
 }
+
+window.addEventListener('popstate', () => {
+  const pathname = window.location.pathname;
+  handleNavigation(pathname);
+});
 
 export { initializeApp, menuLinker, Linker, navigateTo };

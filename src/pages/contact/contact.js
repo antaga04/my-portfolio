@@ -1,3 +1,4 @@
+import { Linker } from '../../router/router';
 import { loadTranslations } from '../../utils/functions';
 import './contact.css';
 
@@ -36,4 +37,6 @@ export const initContact = async () => {
       </div>
     </section>
   `;
+
+  
 };

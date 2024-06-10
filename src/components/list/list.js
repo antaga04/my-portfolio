@@ -1,6 +1,14 @@
+import { loadTranslations } from '../../utils/functions';
 import './list.css';
 
-export const listTemplate = (propList) => {
+const DEPLOYED_PROJECT_STATUS = 'deployed';
+const PAGE_NAME = 'projects';
+
+export const listTemplate = async (propList) => {
+  const deployedProjects = propList.filter((prop) => prop.status === DEPLOYED_PROJECT_STATUS);
+  const lang = localStorage.getItem('language');
+  const translations = await loadTranslations(lang, PAGE_NAME);
+
   const pathname = window.location.pathname;
   let status = '';
   let projectId = '';
@@ -16,10 +24,10 @@ export const listTemplate = (propList) => {
   return `
     <div id="list__container" class="left-side">
       <div>
-        <h1>Projects List</h1>
+        <h1>${translations.title}</h1>
         <ul class="project-list">
-          <li id="all" class="name ${status}"><a href="/projects" link-path="/projects">All Projects</a></li>
-          ${propList
+          <li id="all" class="name ${status}"><a href="/projects" link-path="/projects">${translations.all_projects_tag}</a></li>
+          ${deployedProjects
             .map(
               (prop) =>
                 `<li id="${prop.id}" class="name ${
@@ -31,7 +39,7 @@ export const listTemplate = (propList) => {
             .join('')}
         </ul>
       </div>
-      <p><u>Click a tag to read more.</u></p>
+      <p><u>${translations.instruction}</u></p>
     </div>
   `;
 };

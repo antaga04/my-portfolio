@@ -1,10 +1,24 @@
 {
-  "info_4": "In this project, I'll be crafting a weather forecasting web app using React. The app will leverage the Open Weather API, granting users access to real-time weather forecasts based on their location.<br>The app will feature a clean and user-friendly interface, ensuring a seamless experience for users. With a simple location-based search, users can access weather data for their current area or explore forecasts for other locations.",
-  "info_3": "In this project, I'll create a web app using Vite and React. It'll tap into NASA's official APIs, offering users access to the Astronomical Picture of the Day (APOD) and Mars Rover Photos (MRP).<br>The web app will have a simple date picker for choosing the desired photo day and a toggle button to switch between APOD and MRP content.",
-  "info_5": "In this project, I'll be diving into the world of game development with React by creating an engaging Game Hub. Within this hub, users will have the opportunity to enjoy three classic and entertaining games: Tic-Tac-Toe, Hangman, and Sudoku. And maybe more.",
-  "info_6": "In this project, I'll be creating my first Node, Express, and MongoDB server. I'll set up the server to run on port 4001 and connect to a local MongoDB on port 27017. The goal is to create a RESTful API with endpoints for retrieving, creating, updating, and deleting documents in a collection of my choice, with a model containing at least four distinct keys. I'll also implement error handling and ensure proper HTTP response codes.",
-  "info_7": "I'll create another server using Node, Express, and MongoDB. I'll be working with two related data models.  I'll set up the project, ensuring the server listens on port 4001 and connects to MongoDB. The challenge involves creating API endpoints for both data models, implementing error handling, and maintaining proper HTTP response codes. My goal is to accomplish the ability to work with related data models and build a robust RESTful API.",
-  "info_8": "I'll immersed in crafting a comprehensive API. Thes project will have elements such as rate limiting, CORS implementation, JWT authentication, and seamless Cloudinary image uploads. The deployment of MongoDB on Atlas significantly bolsters the project's robustness. The incorporation of related data models and a specialized User model marks an essential advancement in my journey.",
-  "info_1": "In this project, I've created an imaginary Rock CD Shop. It's a platform where music lovers can explore CDs from various rock genres, styles, bands, etc. With user-friendly filters and a search function for finding specific albums.",
-  "info_0": "I'm proud to introduce my inaugural web project, a responsive landing page! Developed with HTML and CSS, this simple yet effective web page showcases my early skills in web development."
+  "info": {
+    "info_4": "In this project, I developed a weather forecasting web app using React. The app leverages the Open Weather API and RapidAPI to provide users with real-time weather forecasts based on their location. It features a clean and user-friendly interface, ensuring a seamless user experience. Users can perform a location-based search to access weather data for their current area or explore forecasts for other locations. Additionally, users can search for a city or select one from a customizable list, where they can add new cities, delete them, or reorder them. Geolocation can also be enabled to automatically display weather information for the user's current location.",
+    "info_3": "In this project, I created a web app using Vite and React. It taps into NASA's official APIs, offering users access to the Astronomical Picture of the Day (APOD) and Mars Rover Photos (MRP).<br>The web has a simple date picker for choosing the desired photo day and shuffle button to generate a random one. You can swith between pages usign the nav bar developed with react-router-dom. I specially love this project for being my first contact with React.",
+    "info_5": "In this project, I'll be diving into the world of game development with React by creating an engaging Game Hub. Within this hub, users will have the opportunity to enjoy three classic and entertaining games: Tic-Tac-Toe, Hangman, and Sudoku. And maybe more.",
+    "info_6": "I developed a RESTful API using Node.js, Express and MongoDB to manage developer portfolios. The API allows full CRUD operations and has authentication and authorization to protect certain routes. In addition, portfolio images are stored in Cloudinary. This project was my introduction to building servers with the MERN stack.",
+    "info_7": "I developed a RESTful API using Node.js, Express, and MongoDB to manage games and scores. The API allows CRUD operations for games and scores, and is protected by authentication and authorization. The images are stored in Cloudinary. This project allowed me to work with related data models and strengthen my skills in creating robust APIs.",
+    "info_8": "I developed a RESTful API using Node.js, Express and MongoDB to manage books and reviews. The API allows to perform CRUD operations for books and reviews, with authentication and authorization to protect certain paths. The images are stored in Cloudinary. This project allowed me to work with related data models and strengthen my skills in developing robust APIs.",
+    "info_1": "This is my secod project of all time. Here, I created an imaginary Rock CD website. It's a platform where music lovers can explore CDs from various rock genres, styles, bands, etc. With user-friendly filters and a search function for finding specific albums.",
+    "info_0": "I'm proud to introduce my first web project, a responsive landing page! Developed with HTML and CSS, this simple yet effective web page showcases my early skills in web development. I have come a long way since then. I like to showcase this project to show how much I have improve."
+  },
+  "title": "Projects List",
+  "all_projects_tag": "All Projects",
+  "instruction": "Click a tag to read more.",
+  "demo": "demo",
+  "code": "code",
+  "status": {
+    "deployed": "deployed",
+    "future": "future project"
+  },
+  "project_not_found": "Project not found",
+  "desktop_img_alt": "Desktop preview image of",
+  "mobile_img_alt": "Mobile preview image of"
 }

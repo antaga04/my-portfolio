@@ -50,7 +50,7 @@
 }
 
 .container {
-  max-width: 703px;
+  max-width: 717px;
   text-align: center;
 }
 
@@ -217,10 +217,6 @@
   font-size: 14px !important;
   font-weight: bold;
   font-family: 'Helvetica' !important;
-  /* --font: "EB Garamond", serif;
-  --font-title: "Playfair Display", serif;
-  --font-sans-serif: "Manrope", sans-serif;
-  --font1: 'Teko', sans-serif; */
 }
 
 .home__btn {
@@ -249,8 +245,6 @@
 }
 
 .qualities {
-  /* background: radial-gradient(131.66% 109.77% at 50% 97.75%,transparent 37.41%,var(--violet) 69.27%,#fff 100%); */
-  /* background: radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, var(--violet) 69.27%, #fff 100%); */
   background-image: var(--crisp), linear-gradient(var(--squeeze), var(--squeeze));
   border-bottom-left-radius: 2.75rem;
   border-bottom-right-radius: 2.75rem;
@@ -258,12 +252,6 @@
   padding: 4rem;
   width: 100%;
 }
-
-/* .light-theme .qualities {
-  background-color: #e8e3da !important;
-  background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png),
-    radial-gradient(140% 107.13% at 50% 10%, transparent 37.41%, #7198be 69.27%, #7a99bb 100%) !important;
-} */
 
 .dark-theme .qualities {
   background-image: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png),
@@ -280,36 +268,11 @@
 
 .qualities .container p:nth-child(2) {
   margin-top: .75rem;
-  color: #454545;
+  color: #807b7b;
+  /* color: #454545; */
   font-size: 1.75rem;
   font-weight: 300;
   max-width: 450px;
-}
-
-.dark-theme .devil-detail {
-  animation: background-pan 3s linear infinite;
-  background: linear-gradient(to right,
-      var(--violet),
-      var(--violet2),
-      var(--violet3),
-      var(--violet));
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-}
-
-.light-theme .devil-detail {
-  animation: background-pan 3s linear infinite;
-  background: linear-gradient(to right,
-      #4b698a,
-      #698cb1,
-      #618bb8,
-      #4b698a);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
 }
 
 .qualities p {
@@ -332,7 +295,8 @@
   min-width: 250px;
   text-align: center;
   gap: 1.5rem;
-  color: #716360;
+  /* color: #716360; */
+  color: #52473c;
   min-height: 315px;
   justify-content: flex-start;
 }

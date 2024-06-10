@@ -33,7 +33,7 @@
       "ariaLabel": "Botón de alineado do texto"
     }
   },
-  "footer": "Diseñado e constriudo por Adrián Anta Gil.",
+  "footer": "Diseñado e constriudo por <span style='white-space: nowrap;'>Adrián <a href='/secret' nav-path='/secret' class='secretRoute'>Anta</a> Gil.</span>",
   "monthNames": [
     "Ene",
     "Feb",

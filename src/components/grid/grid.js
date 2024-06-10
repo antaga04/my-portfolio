@@ -1,9 +1,13 @@
+import { loadTranslations } from '../../utils/functions';
 import './grid.css';
 
 const DEPLOYED_PROJECT_STATUS = 'deployed';
+const PAGE_NAME = 'projects';
 
-export const gridTemplate = (propList) => {
+export const gridTemplate = async (propList) => {
   const deployedProjects = propList.filter((prop) => prop.status === DEPLOYED_PROJECT_STATUS);
+  const lang = localStorage.getItem('language');
+  const translations = await loadTranslations(lang, PAGE_NAME);
 
   return `
     <ul class="projects__list">
@@ -35,12 +39,12 @@ export const gridTemplate = (propList) => {
                 ${
                   prop.github === ''
                     ? ''
-                    : `<a class="ticket" href="${prop.github}" target="_blank"><div class="ticket__title">code <i class="fa-solid fa-code"></i></div></a>`
+                    : `<a class="ticket" href="${prop.github}" target="_blank"><div class="ticket__title">${translations.code} <i class="fa-solid fa-code"></i></div></a>`
                 }
                 ${
                   prop.demo === ''
                     ? ''
-                    : `<a class="ticket" href="${prop.demo}" target="_blank"><div class="ticket__title">demo <i class="fa-solid fa-share"></i></div></a>`
+                    : `<a class="ticket" href="${prop.demo}" target="_blank"><div class="ticket__title">${translations.demo} <i class="fa-solid fa-share"></i></div></a>`
                 }
               </div>
             </li>

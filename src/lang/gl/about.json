@@ -3,58 +3,58 @@
   "issue": "NUMERO #1",
   "price": "PRECIO 5 CENTS",
   "h2": "Impulsado pola aprendizaxe, definido polo detalle",
-  "p_intro_1": "<span class='drop-cap'>W</span>elcome! My name is Adrian, a future Full Stack maestro with a current focus on front-end, and a dedicated Software Engineering student.",
-  "p_intro_2": "A perfectionist who believes details truly matter. I believe great development is about more than just writing code. It's about understanding the end user, empathizing with their needs, and anticipating how they'll interact with the final product.",
-  "p_intro_3": "My ultimate goal is to be a valuable asset to a company, where I can contribute meaningfully to its growth while elevating my skills as a developer.",
-  "cube_caption": "Rotating Rubik Cube",
-  "h3_1": "The beginning",
-  "h3_2": "Next stage",
-  "h3_3": "Web developer path",
-  "p1": "It all started back in high school during an IT class. Our mission? Build a video game using Python. I was instantly hooked. But classes were slow, so I decided to learn on my own online. Before long, I knew what I wanted: a Pac-Man clone. Pretty tough for a beginner, but I was determined. The end result wasn't perfect, but it was a great learning experience.",
-  "p2": "Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third year). Somewhere along this path, I joined forces with a team called Uvigo MotorSport—an exclusive Galician Formula Student team; eager to embrace a fresh experience. Yet, my time there was brief, as it didn't ignite my true passion.",
-  "p3": "Soon thereafter, a new revelation dawned; I stumbled upon the world of web development. The decision was clear: I enrolled in a bootcamp to expedite my mastery and secure a tangible certification. Today, I find myself almost midway through the program, brimming with anticipation to conclude and embark on a journey into the professional realm.",
+  "p_intro_1": "<span class='drop-cap'>B</span>envido! Chámome Adrian, futuro mestre de Full Stack con foco actual no front-end e dedicado estudante de Enxeñaría de Software.",
+  "p_intro_2": "Un perfeccionista que cre que os detalles realmente importan. Creo que un gran desenvolvemento é algo máis que escribir código. Trátase de comprender ao usuario final, empatizar coas súas necesidades e anticipar como interactuará co produto final." ,
+  "p_intro_3": "O meu obxectivo final é ser un activo valioso para unha empresa, onde poida contribuír significativamente ao seu crecemento ao tempo que elevo as miñas habilidades como programador.",
+  "cube_caption": "Cubo Rubik xirando",
+  "h3_1": "O comezo",
+  "h3_2": "Seguinte etapa",
+  "h3_3": "O camino do desarrollo web",
+  "p1": "Todo comezou no instituto durante unha clase de informática. A nosa misión? Construír un videoxogo usando Python. Engancheime ao instante pero as clases eran lentas, así que decidín aprender pola miña conta en liña. En pouco tempo, Sabía o que quería: un clon de Pac-Man; bastante duro para un principiante. O resultado final non foi perfecto, pero foi unha gran experiencia de aprendizaxe.",
+  "p2": "Posteriormente, aventureime na universidade, cursando o grao de Enxeñaría Informáticac (actualmente rematando). Nalgún lugar neste camiño, xuntei forzas cun equipo chamado Uvigo MotorSport, un exclusivo equipo galego de Formula Student e así abrazar unha experiencia fresca. Con todo, o meu tempo alí foi breve, xa que non acendeu a miña verdadeira paixón.",
+  "p3": "Poco despois, xurdiu unha nova revelación; atopeime co mundo do desenvolvemento web. A decisión foi clara: matriculeime nun bootcamp para acelerar o meu dominio e conseguir unha certificación tanxible. Hoxe atópome case ao final do programa, cheo de ganas de rematar e emprender na viaxe do ámbito profesional",
   "aside": {
-    "inspiration_ticket": "50% OFF BEST WEBSITES FOR INSPIRATION",
-    "aside_h3_1": "Thing I like",
-    "aside_h4_2": "Color Palette Generator",
-    "aside_h4_3": "Amazing Mockups",
-    "aside_h4_4": "Animations Library",
-    "aside_h4_5": "Easing functions Sheet",
+    "inspiration_ticket": "MEJORES WEBS PARA INSPIRARSE AO 50% DE DESCUENTO",
+    "aside_h3_1": "Cousa que me gusta",
+    "aside_h4_2": "Xerador de paletas de cores",
+    "aside_h4_3": "Maquetas incribles",
+    "aside_h4_4": "Biblioteca de animacións",
+    "aside_h4_5": "Folla de funcións Easing",
     "aside_h4_6": "Cubic-bezier Easing",
-    "aside_h4_7": "Special Mention",
+    "aside_h4_7": "Mención especial",
     "aside_p_1": {
-      "item_1": "Puzzles",
-      "item_2": "Rubik's cube",
-      "item_3": "Back To The Future",
-      "item_4": "The Fresh Prince of Bel-Air",
-      "item_5": "Work out",
+      "item_1": "Crebacabezas",
+      "item_2": "Cubo de Rubik",
+      "item_3": "Regreso ao futuro",
+      "item_4": "O Príncipe de Bel-Air",
+      "item_5": "Deportes",
       "item_6": "Rock"
     },
-    "aside_p_2": "More often than not, we developers find ourselfs in need of insteresting colors for our projests. Huemint is just perfect for that.",
-    "aside_p_3": "For developers in search of impressive mockups, Shots is the ultimate choice.",
-    "aside_p_4": "Elevate user experiences with Animista, a CSS animation library for developers.",
-    "aside_p_5": "Achieve seamless animations with ease using Easings, your go-to resource for easing functions.",
-    "aside_p_6": "And if you want to test cubic-bezier transformation, Cubic-Bezier makes it effortless.",
+    "aside_p_2": "A maioría das veces, os programadores necesitamos cores interesantes para os nosos proxectos. Huemint é perfecto para iso.",
+    "aside_p_3": "Para os programadores que buscan maquetas impresionantes, Shots é a opción definitiva.",
+    "aside_p_4": "Eleva as experiencias dos usuarios con Animista, unha biblioteca de animación CSS para programadores.",
+    "aside_p_5": "Consigue animacións sen fisuras con facilidade usando Easings, o teu recurso para facilitar as funcións.",
+    "aside_p_6": "E se queres probar a transformación cubic-bezier, Cubic-Bezier faino sen esforzo.",
     "aside_p_7": {
       "item_1": {
         "href": "https://midu.dev",
         "name": "Midudev",
-        "p": "- Content creator."
+        "p": "- Creador de contidos online."
       },
       "item_2": {
         "href": "https://github.com/Corocottax",
         "name": "Corocottax",
-        "p": "- Teacher at RTC."
+        "p": "- Profesor en RTC."
       },
       "item_3": {
         "href": "https://www.meowlivia.com/",
         "name": "Olivia Ng",
-        "p": "- About page based on her design."
+        "p": "- Páxina /acerca baseada no seu deseño."
       }
     }
   },
-  "alt_img_pacman": "Pacman game clon",
-  "alt_img_umc": "Uvigo MotorSport 2022 racing car",
-  "alt_img_certificate": "Certificate from RockTheCode by ThePower business school",
-  "alt_img_rtc": "Technologies taught in RockTheCode"
+  "alt_img_pacman": "Clon do xogo de Pacman",
+  "alt_img_umc": "Coche de carreiras de Uvigo MotorSport 2022",
+  "alt_img_certificate": "Certificado de RockTheCode de ThePower business school",
+  "alt_img_rtc": "Tecnoloxías ensinadas en RockTheCode"
 }

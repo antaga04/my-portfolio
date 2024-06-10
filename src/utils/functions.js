@@ -57,11 +57,29 @@ const loadPreferredTextAlign = () => {
   }
 };
 
+const loadBrowserLang = () => {
+  const htmlTag = document.querySelector('html');
+  let browserLanguage = navigator.language || navigator.userLanguage;
+  let storedLanguage = localStorage.getItem('language');
+
+  if (!storedLanguage) {
+    localStorage.setItem('language', browserLanguage);
+    storedLanguage = browserLanguage;
+  }
+
+  htmlTag.setAttribute('lang', storedLanguage);
+  return storedLanguage;
+};
+
 const handleLinkStyle = (links) => {
   const pathname = window.location.pathname;
+  const dynamicPattern = /^\/projects\/\d+$/;
 
   links.forEach((link) => {
-    if (link.getAttribute('href') === pathname && pathname !== '/home' && pathname !== '') {
+    if (link.getAttribute('href') === pathname && pathname !== '') {
+      link.classList.add('active-link');
+      updateMenuShape();
+    } else if (dynamicPattern.test(pathname) && link.getAttribute('href') === '/projects') {
       link.classList.add('active-link');
       updateMenuShape();
     } else {
@@ -130,10 +148,17 @@ function scrollToTop() {
 }
 
 async function loadTranslations(lang, page) {
-  // console.log(`src/lang/${lang}/${page}.json`);
-  const response = await fetch(`src/lang/${lang}/${page}.json`);
-  const data = await response.json();
-  return data;
+  const url = `/src/lang/${lang}/${page}.json`;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error('Error al cargar el JSON:', err);
+  }
 }
 
 function getCurrentLanguage() {
@@ -158,4 +183,5 @@ export {
   getCurrentLanguage,
   setTextAlign,
   loadPreferredTextAlign,
+  loadBrowserLang,
 };
