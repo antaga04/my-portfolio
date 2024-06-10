@@ -49,9 +49,6 @@ function initializeApp() {
 
 function menuLinker() {
   const links = document.querySelectorAll('a[nav-path]');
-  const linksPath = document.querySelectorAll('a[link-path]');
-  console.log(links);
-  console.log(linksPath);
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -65,10 +62,8 @@ function menuLinker() {
 
 function Linker() {
   const links = document.querySelectorAll('a[link-path]');
-  console.log(links);
   links.forEach((link) => {
     link.addEventListener('click', (e) => {
-      console.log(link);
       e.preventDefault();
       const pathname = link.getAttribute('link-path');
       navigateTo(pathname);

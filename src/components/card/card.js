@@ -13,9 +13,7 @@ export const initProject = async (prop) => {
   const lang = localStorage.getItem('language');
   const translations = await loadTranslations(lang, PAGE_NAME);
   const projectInfo = translations.info[`info_${prop}`];
-  console.log(translations);
-
-  console.log(project.status);
+  
   if (project) {
     side = `
       <div id="${project.name}" class="clipping">
