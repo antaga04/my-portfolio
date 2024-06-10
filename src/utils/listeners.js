@@ -73,7 +73,7 @@ function langListener() {
     let selectedLanguage = event.target.value;
     localStorage.setItem('language', selectedLanguage);
     htmlTag.setAttribute('lang', selectedLanguage);
-    await initApp();
+    initApp();
     const newLangSelect = document.getElementById('languageSelect');
     newLangSelect.value = selectedLanguage;
   });
