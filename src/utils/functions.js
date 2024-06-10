@@ -148,7 +148,7 @@ function scrollToTop() {
 }
 
 async function loadTranslations(lang, page) {
-  const url = `/src/lang/${lang}/${page}.json`;
+  const url = `src/lang/${lang}/${page}.json`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
