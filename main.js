@@ -1,7 +1,7 @@
 import { initApp } from './src/app';
 import './style.css';
 
-initApp();
+await initApp();
 
 console.log(`
 Hi there! I'm probably working right now.
