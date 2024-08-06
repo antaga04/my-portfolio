@@ -651,6 +651,14 @@ footer p {
     -webkit-transition: all 0.4s ease-in-out;
   }
 
+  .nav-link {
+    mix-blend-mode: unset;
+  }
+
+  .nav-link.active-link {
+    color: var(--shiraz);
+  }
+
   .menu-slider {
     /* transform: translateX(100vw); */
     align-items: center;
@@ -669,21 +677,9 @@ footer p {
   }
 
   .menu-slider.menu-mode {
-    /* transform: translateX(0vw); */
-    align-items: center;
-    background-color: var(--oposite);
-    color: var(--color);
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    position: fixed;
-    right: 0;
-    top: 0;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     visibility: visible;
-    width: 80%;
-    z-index: 99;
   }
 
   .menu-btn.menu-mode .bar:nth-child(1) {
