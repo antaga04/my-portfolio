@@ -21,7 +21,7 @@ export const initApp = async () => {
       <div class="nav-1">
         <div class="logo-wrapper">
           <div id="nav-logo-section">
-            <span class="nav-logo"></span>
+            <a class="nav-logo" href="/" nav-path="/" aria-label=${data.navBar.home.ariaLabel}></a>
             <div class="info">
               <h2>Adrián Anta</h2>
               <p>Full stack dev</p>
@@ -66,8 +66,8 @@ export const initApp = async () => {
               <nav class="menu-nav hidden">
                 <ul>
                   <li><a class="nav-link slider" href="/" nav-path="/">${data.navBar.home.name}</a></li>
-                  <li><a class="nav-link slider" href="/projects" nav-path="/projects">${data.navBar.about.name}</a></li>
-                  <li><a class="nav-link slider" href="/about" nav-path="/about">${data.navBar.projects.name}</a></li>
+                  <li><a class="nav-link slider" href="/about" nav-path="/about">${data.navBar.about.name}</a></li>
+                  <li><a class="nav-link slider" href="/projects" nav-path="/projects">${data.navBar.projects.name}</a></li>
                   <li><a class="nav-link slider" href="/contact" nav-path="/contact">${data.navBar.contact.name}</a></li>
                   <div style="display: flex;">
                     <a class="slider" href="https://www.linkedin.com/in/adrian-anta-gil/" rel="noopener" target="_blank">
