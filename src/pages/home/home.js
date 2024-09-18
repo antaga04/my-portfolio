@@ -1,5 +1,5 @@
 import { Linker } from '../../router/router';
-import { loadTranslations } from '../../utils/functions';
+import { loadTranslations, scrollToTop } from '../../utils/functions';
 import './home.css';
 
 const PAGE_NAME = 'home';
@@ -171,6 +171,5 @@ export const initHome = async () => {
 
     </div>
   `;
-
-  
+  scrollToTop();
 };

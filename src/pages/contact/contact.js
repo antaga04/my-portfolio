@@ -1,5 +1,5 @@
 import { Linker } from '../../router/router';
-import { loadTranslations } from '../../utils/functions';
+import { loadTranslations, scrollToTop } from '../../utils/functions';
 import './contact.css';
 
 const PAGE_NAME = 'contact';
@@ -38,5 +38,5 @@ export const initContact = async () => {
     </section>
   `;
 
-  
+  scrollToTop();
 };

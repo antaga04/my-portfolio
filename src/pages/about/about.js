@@ -1,7 +1,7 @@
 import { rubikCube } from '../../components/rubikCube/rubikCube';
 import sideBar from '../../components/sideBar/sideBar';
 import { Linker } from '../../router/router';
-import { handleAboutStyles, loadTranslations } from '../../utils/functions';
+import { handleAboutStyles, loadTranslations, scrollToTop } from '../../utils/functions';
 import './about.css';
 
 const PAGE_NAME = 'about';
@@ -97,5 +97,5 @@ export const initAbout = async () => {
   `;
 
   handleAboutStyles();
-  
+  scrollToTop();
 };

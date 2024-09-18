@@ -3,7 +3,7 @@ import { initHome } from '../pages/home/home';
 import { initProjects } from '../pages/projects/projects';
 import { initContact } from '../pages/contact/contact';
 import { initAbout } from '../pages/about/about';
-import { handleLinkStyle, scrollToTop } from '../utils/functions';
+import { handleLinkStyle } from '../utils/functions';
 import { initProject } from '../components/card/card';
 import { initSecret } from '../pages/secret/secret';
 
@@ -33,13 +33,11 @@ function handleNavigation(pathname) {
     const initPage = routes[pathname] || initNotFound;
     initPage();
   }
-  scrollToTop();
 }
 
 function navigateTo(pathname) {
   window.history.pushState({}, '', pathname);
   handleNavigation(pathname);
-  scrollToTop();
 }
 
 function initializeApp() {

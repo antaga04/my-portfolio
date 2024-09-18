@@ -1,6 +1,7 @@
 import { gridTemplate } from '../../components/grid/grid';
 import { listTemplate } from '../../components/list/list';
 import { Linker } from '../../router/router';
+import { scrollToTop } from '../../utils/functions';
 import { projectsData } from '../../utils/projectsData';
 import './projects.css';
 
@@ -20,4 +21,5 @@ export const initProjects = async () => {
   `;
 
   Linker();
+  scrollToTop();
 };

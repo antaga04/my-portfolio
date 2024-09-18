@@ -1,5 +1,5 @@
 import { Linker } from '../../router/router';
-import { loadTranslations } from '../../utils/functions';
+import { loadTranslations, scrollToTop } from '../../utils/functions';
 import './404.css';
 
 const PAGE_NAME = 'error404';
@@ -29,4 +29,5 @@ export const initNotFound = async () => {
   `;
 
   Linker();
+  scrollToTop();
 };
