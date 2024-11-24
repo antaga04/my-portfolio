@@ -57,18 +57,26 @@ const loadPreferredTextAlign = () => {
   }
 };
 
+function getCurrentLanguage() {
+  console.log('getCurrentLanguage');
+  
+  const supportedLanguages = ['en', 'es-ES', 'gl'];
+  let browserLang = navigator.language;
+  if (!supportedLanguages.includes(browserLang)) {
+    browserLang = 'en';
+  }
+  localStorage.setItem('language', browserLang);
+  return browserLang;
+}
+
 const loadBrowserLang = () => {
   const htmlTag = document.querySelector('html');
-  let browserLanguage = navigator.language || navigator.userLanguage;
-  let storedLanguage = localStorage.getItem('language');
+  let browserLanguage = getCurrentLanguage();
+  console.log(browserLanguage);
+  
 
-  if (!storedLanguage) {
-    localStorage.setItem('language', browserLanguage);
-    storedLanguage = browserLanguage;
-  }
-
-  htmlTag.setAttribute('lang', storedLanguage);
-  return storedLanguage;
+  htmlTag.setAttribute('lang', browserLanguage);
+  return browserLanguage;
 };
 
 const handleLinkStyle = (links) => {
@@ -149,6 +157,8 @@ function scrollToTop() {
 
 async function loadTranslations(lang, page) {
   const url = `/lang/${lang}/${page}.json`;
+  console.log(url);
+  
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -159,16 +169,6 @@ async function loadTranslations(lang, page) {
   } catch (err) {
     console.error('Error al cargar el JSON:', err);
   }
-}
-
-function getCurrentLanguage() {
-  const supportedLanguages = ['en', 'es-ES', 'gl'];
-  let browserLang = navigator.language;
-  if (!supportedLanguages.includes(browserLang)) {
-    browserLang = 'en';
-  }
-  localStorage.setItem('browserLang', browserLang);
-  return browserLang;
 }
 
 export {
