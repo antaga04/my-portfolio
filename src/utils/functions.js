@@ -58,22 +58,27 @@ const loadPreferredTextAlign = () => {
 };
 
 function getCurrentLanguage() {
-  console.log('getCurrentLanguage');
-  
   const supportedLanguages = ['en', 'es-ES', 'gl'];
   let browserLang = navigator.language;
   if (!supportedLanguages.includes(browserLang)) {
     browserLang = 'en';
   }
-  localStorage.setItem('language', browserLang);
   return browserLang;
 }
 
 const loadBrowserLang = () => {
+  const supportedLanguages = ['en', 'es-ES', 'gl'];
   const htmlTag = document.querySelector('html');
   let browserLanguage = getCurrentLanguage();
-  console.log(browserLanguage);
-  
+  const browserLang = localStorage.getItem('language');
+  if (
+    !browserLang ||
+    browserLang === 'null' ||
+    browserLang === 'undefined' ||
+    !supportedLanguages.includes(browserLang)
+  ) {
+    localStorage.setItem('language', browserLanguage);
+  }
 
   htmlTag.setAttribute('lang', browserLanguage);
   return browserLanguage;
@@ -157,8 +162,7 @@ function scrollToTop() {
 
 async function loadTranslations(lang, page) {
   const url = `/lang/${lang}/${page}.json`;
-  console.log(url);
-  
+
   try {
     const response = await fetch(url);
     if (!response.ok) {
