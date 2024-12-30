@@ -1,5 +1,17 @@
 export const projectsData = [
   {
+    id: '9',
+    name: 'Puzlynk',
+    date: '28.12.24',
+    cover: '/puzlynk-preview.webp',
+    desktop: '/d-puzlynk.webp',
+    mobile: '/m-puzlynk.webp',
+    status: 'deployed',
+    techs: ['NodeJS', 'React', 'TypesSript', 'MongoDB', 'TailwindCSS'],
+    demo: 'https://puzlynk.vercel.app/',
+    github: 'https://github.com/antaga04/puzlynk',
+  },
+  {
     id: '4',
     name: 'Weather app',
     date: '10.05.24',
@@ -22,18 +34,6 @@ export const projectsData = [
     techs: ['JS', 'React'],
     demo: 'https://apod-mars.netlify.app',
     github: 'https://github.com/antaga04/apod-mars-web',
-  },
-  {
-    id: '5',
-    name: 'Games hub',
-    date: '31.05.24',
-    cover: '/future-project.webp',
-    desktop: '',
-    mobile: '',
-    status: 'future',
-    techs: ['JS', 'React', 'Testing'],
-    demo: '',
-    github: '',
   },
   {
     id: '6',

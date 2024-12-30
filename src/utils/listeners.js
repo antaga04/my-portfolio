@@ -74,9 +74,9 @@ function langListener() {
     localStorage.setItem('language', selectedLanguage);
     htmlTag.setAttribute('lang', selectedLanguage);
 
-    initApp();
-    const newLangSelect = document.getElementById('languageSelect');
-    newLangSelect.value = selectedLanguage;
+    await initApp();
+
+    document.getElementById('languageSelect').value = selectedLanguage;
   });
 }
 
