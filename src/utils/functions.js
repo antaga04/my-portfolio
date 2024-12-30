@@ -71,6 +71,9 @@ const loadBrowserLang = () => {
   const htmlTag = document.querySelector('html');
   let browserLanguage = getCurrentLanguage();
   const browserLang = localStorage.getItem('language');
+  
+  if(browserLang) return browserLang;
+
   if (
     !browserLang ||
     browserLang === 'null' ||
