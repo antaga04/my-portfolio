@@ -16,38 +16,18 @@ export const initSecret = async () => {
         <h1>${translations.h1}</h1>
         <p>${translations.p}</p>
         <div class="how-to-list">
-          <article>
-            <h3>${translations.skill_1.title}</h3>
-            <ol>
-              <li>${translations.skill_1.li_1}</li>
-              <li>${translations.skill_1.li_2}</li>
-              <li>${translations.skill_1.li_3}</li>
-              <li>${translations.skill_1.li_4}</li>
-              <li>${translations.skill_1.li_5}</li>
-            </ol>
-          </article>
-
-          <article>
-            <h3>${translations.skill_2.title}</h3>
-            <ol>
-              <li>${translations.skill_2.li_1}</li>
-              <li>${translations.skill_2.li_2}</li>
-              <li>${translations.skill_2.li_3}</li>
-              <li>${translations.skill_2.li_4}</li>
-              <li>${translations.skill_2.li_5}</li>
-            </ol>
-          </article>
-
-          <article>
-            <h3>${translations.skill_2.title}</h3>
-            <ol>
-              <li>${translations.skill_3.li_1}</li>
-              <li>${translations.skill_3.li_2}</li>
-              <li>${translations.skill_3.li_3}</li>
-              <li>${translations.skill_3.li_4}</li>
-              <li>${translations.skill_3.li_5}</li>
-            </ol>
-          </article>
+          ${translations.skills
+            .map(
+              (skill) => `
+              <article>
+                <h3>${skill.title}</h3>
+                <ol>
+                  ${skill.items.map((item) => `<li>${item}</li>`).join('')}
+                </ol>
+              </article>
+            `
+            )
+            .join('')}
         </div>
       </section>
     </div>
