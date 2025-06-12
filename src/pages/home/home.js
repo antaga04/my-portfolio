@@ -147,7 +147,7 @@ export const initHome = async () => {
         <section class="qualities">
           <article class="flex-center">
             <div class="container">
-              <p>${data.quality_title}</p>
+              <h2>${data.quality_title}</h2>
               <p>${data.quality_p}</p>
             </div>
 
