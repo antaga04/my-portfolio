@@ -1,14 +1,14 @@
 export const projectsData = [
   {
     id: '9',
-    name: 'Puzlynk',
+    name: 'Imprffct games',
     date: '28.12.24',
     cover: '/puzlynk-preview.webp',
     desktop: '/d-puzlynk.webp',
     mobile: '/m-puzlynk.webp',
     status: 'deployed',
     techs: ['NodeJS', 'React', 'TypesSript', 'MongoDB', 'TailwindCSS'],
-    demo: 'https://puzlynk.vercel.app/',
+    demo: 'https://imprffctgames.com/',
     github: 'https://github.com/antaga04/puzlynk',
   },
   {
@@ -22,6 +22,18 @@ export const projectsData = [
     techs: ['JS', 'React'],
     demo: 'http://weatherdelta.vercel.app/',
     github: 'https://github.com/antaga04/Weather-App',
+  },
+  {
+    id: '10',
+    name: 'Square - Bill Splitter',
+    date: '15.1.25',
+    cover: '/square-preview.webp',
+    desktop: '/d-square.webp',
+    mobile: '/m-square.webp',
+    status: 'deployed',
+    techs: ['NodeJS', 'React', 'TypesSript', 'MongoDB', 'TailwindCSS'],
+    demo: 'https://squaresplit.vercel.app/',
+    github: '',
   },
   {
     id: '3',
