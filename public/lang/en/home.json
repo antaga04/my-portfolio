@@ -11,5 +11,13 @@
   "quality_p": "Don't waste more time looking for a developer.",
   "quality_1": "Focused on every detail to ensure precision and excellence.",
   "quality_2": "Transform complex problems into innovative solutions.",
-  "quality_3": "Constantly learning to keep up with the ever-evolving world."
+  "quality_3": "Constantly learning to keep up with the ever-evolving world.",
+  "featured_projects": {
+    "title": "Featured Projects",
+    "link": "View all"
+  },
+  "stacks": {
+    "main": "Main Stack",
+    "other": "Other Tech"
+  }
 }

@@ -11,5 +11,13 @@
   "quality_p": "Non perdas máis tempo buscando un programador.",
   "quality_1": "Centrado en cada detalle para garantir precisión e excelencia.",
   "quality_2": "Transformo problemas complexos en solucións innovadoras.",
-  "quality_3": "Aprendendo constantemente para estar ao día cos cambios do mundo."
+  "quality_3": "Aprendendo constantemente para estar ao día cos cambios do mundo.",
+  "featured_projects": {
+    "title": "Proxectos Destacados",
+    "link": "Ver todos"
+  },
+  "stacks": {
+    "main": "Stack Principal",
+    "other": "Outras Tecnoloxías"
+  }
 }

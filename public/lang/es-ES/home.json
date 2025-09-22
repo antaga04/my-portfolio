@@ -11,5 +11,13 @@
   "quality_p": "No pierdas más tiempo buscando a un desarrollador.",
   "quality_1": "Enfocado en cada detalle para garantizar precisión y excelencia.",
   "quality_2": "Transformo problemas complejos en soluciones innovadoras.",
-  "quality_3": "Aprendiendo constantemente para estar al día con los cambios del mundo."
+  "quality_3": "Aprendiendo constantemente para estar al día con los cambios del mundo.",
+  "featured_projects": {
+    "title": "Proyectos Destacados",
+    "link": "Ver todos"
+  },
+  "stacks": {
+    "main": "Stack Principal",
+    "other": "Otras Tecnologías"
+  }
 }
