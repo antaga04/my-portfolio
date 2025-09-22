@@ -32,8 +32,8 @@ export const initProject = async (prop) => {
         <div class="description">${projectInfo}</div>
         <div class="others">
           <div class="released">
-            <p class="pill-wrapper">${translations.status[`${project.status}`]}</p>
-            <p class="pill-wrapper">${project.date}</p>
+            <p class="">${translations.status[`${project.status}`]}</p>
+            <p class="">${project.date}</p>
           </div>
           <div class="card-techs">
             ${project.techs.map((tech) => `<p class="pill-wrapper">${tech}</p>`).join('')}
