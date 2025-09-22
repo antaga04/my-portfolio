@@ -24,10 +24,6 @@ export const gridTemplate = async (propList) => {
                   <div class="project__img">
                     <img src="${prop.cover}" alt="${prop.name} preview image" loading="lazy">
                   </div>
-
-                  <div class="techs">
-                    ${prop.techs.map((tech) => `<p>${tech}</p>`).join('')}
-                  </div>
                 </a>
               </div>
               <div class="project-links">
