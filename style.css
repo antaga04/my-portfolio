@@ -34,6 +34,7 @@
 
   /* OTHERS */
   --popper-transform-origin: top right;
+  --color-muted-foreground: hsl(var(--muted-foreground));
   /* URLs */
   --crisp: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1687285497/Portafolio/crisp_q9lzph.png);
   --logo: url(https://res.cloudinary.com/drsfru9lj/image/upload/v1692092677/Portafolio/cubo-rubik-green_nwbsyc.png);
@@ -76,6 +77,7 @@ u {
   --invert: invert(0);
   --background: #e8e3da;
   --accent: #f0f2f2;
+  --muted-foreground: 0 0% 45.1%;
 }
 
 .dark-theme {
@@ -88,6 +90,7 @@ u {
   --invert: invert(1);
   --background: #010314;
   --accent: #63e;
+  --muted-foreground: 0 0% 63.9%;
 }
 
 .dark-theme ::selection {
@@ -518,7 +521,7 @@ footer p {
 
 .magic-menu {
   background-color: var(--ink);
-  border-radius: .75rem;
+  border-radius: .5rem;
   display: flex;
   flex-direction: column;
   gap: .25rem;
