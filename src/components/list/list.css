@@ -62,3 +62,7 @@
   background-color: var(--color);
   color: var(--oposite);
 }
+
+.list__container h1 {
+  text-align: left;
+}
