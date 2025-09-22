@@ -83,7 +83,7 @@ export const initApp = async () => {
           <div class="pen-nib__gear special-border">
             <span class="label">${data.magicMenu.settings.name}</span>
             <button class="nib-btn" aria-label=${data.magicMenu.settings.ariaLabel}>
-              <i class="fa-solid fa-pen-nib"></i>
+              <i class="fa-solid fa-gear"></i>
             </button>
             <ul class="magic-menu special-border">
               <li id="theme"><button aria-label=${data.magicMenu.theme.ariaLabel}>${data.magicMenu.theme.name} <span>☀️</span></button></li>
