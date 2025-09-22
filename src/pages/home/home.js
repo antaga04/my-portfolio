@@ -1,16 +1,19 @@
+import { featuredProjects } from '../../components/featuredProjects/featuredProjects';
+import { stack } from '../../components/stack/stack';
 import { Linker } from '../../router/router';
 import { loadTranslations, scrollToTop } from '../../utils/functions';
+import { projectsData } from '../../utils/projectsData';
 import './home.css';
 
 const PAGE_NAME = 'home';
 
 export const initHome = async () => {
-  const app = document.querySelector('#app');
-  const lang = localStorage.getItem('language');
-  const data = await loadTranslations(lang, PAGE_NAME);
+    const app = document.querySelector('#app');
+    const lang = localStorage.getItem('language');
+    const data = await loadTranslations(lang, PAGE_NAME);
 
-  app.innerHTML = '';
-  app.innerHTML += `
+    app.innerHTML = '';
+    app.innerHTML += `
     <div id="home-page-container">
       <section id="hero" class="hero-section">
         <article class="container animateChildren">
@@ -33,31 +36,45 @@ export const initHome = async () => {
             </div>
           </div>
 
+          <div class="line">
+            <span class="spinning_border"></span>
+            <p class="line_text"><span class="dot"></span>${data.availability}</p>
+          </div>
+
           <div class="home__btns">
             <a href="https://www.linkedin.com/in/adrian-anta-gil/" aria-label="Explore my LinkedIn" rel="noopener" target="_blank" class="ticket">
-              <div class="home__btn ticket__title">
-                <p>LinkedIn</p><i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <div class="ticket__title">
+                <span class="mobile_social__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                <span class="home__btn"><p>LinkedIn</p><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
               </div>
             </a>
             <a href="https://github.com/antaga04/" aria-label="Explore my GitHub" rel="noopener" target="_blank" class="ticket">
-              <div class="home__btn ticket__title">
-                <p>GitHub</p><i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <div class="ticket__title">
+                <span class="mobile_social__icon"><i class="fa-brands fa-github"></i></span>
+                <span class="home__btn"><p>GitHub</p><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </div>
+            </a>
+            <a href="/CV.pdf" aria-label="CV" rel="noopener" target="_blank" class="ticket">
+              <div class="ticket__title">
+                <span class="mobile_social__icon"><i class="fa-solid fa-file"></i></span>
+                <span class="home__btn"><p>CV</p><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
               </div>
             </a>
           </div>
-
-          <div class="line">
-            <p>${data.call_to_action_01}</p>
-          </div>
+          
         </article>
 
         <img class="hero-right-corner" src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687363880/Portafolio/s3-1_ym06e1.svg" loading="lazy" alt="Decoration-1">
         <img class="hero-left-corner" src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687363880/Portafolio/adorno_vnh5je.svg" loading="lazy" alt="Decoration-2">
         <img class="hero-sticker" src="https://res.cloudinary.com/drsfru9lj/image/upload/v1687461334/Portafolio/star-decoration_j33wa1.svg" loading="lazy" alt="Sticker">
-      </section>
-
+    
+        </section>
+        
+      ${await featuredProjects(projectsData, 3)}
+      ${await stack()}
+        
       <section id="marquee-section">
-        <a class="nav-link" href="/contact">
+        <a href="/contact">
           <div class="marquee">
             <div class="loop__content">
               <div class="call-to-action">
@@ -171,5 +188,6 @@ export const initHome = async () => {
 
     </div>
   `;
-  scrollToTop();
+    scrollToTop();
+    Linker();
 };

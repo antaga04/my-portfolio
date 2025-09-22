@@ -52,6 +52,7 @@
 .container {
   max-width: 717px;
   text-align: center;
+  margin: auto;
 }
 
 /* IMAGES */
@@ -80,7 +81,7 @@
 
 .hero-sticker {
   bottom: 40%;
-  z-index: 3;
+  z-index: -1;
   left: 10%;
   position: absolute;
   width: 5rem;
@@ -138,6 +139,25 @@
   font-size: larger;
 }
 
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #00C951;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.spinning_border {
+  position: absolute;
+  top: -1000%;
+  right: -1000%;
+  bottom: -1000%;
+  left: -1000%;
+  animation: spin 2s linear infinite;
+  background-image: conic-gradient(from 90deg at 50% 50%, #51E4B8 0%, #21554E 50%, #51E4B8 100%);
+}
+
 .action-separator {
   margin: 0 2.4rem;
 }
@@ -153,6 +173,12 @@
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -199,12 +225,16 @@
   }
 }
 
+.ticket__title .mobile_social__icon {
+  display: none;
+}
+
 .home__btns {
-  padding: 3rem 0 1rem;
+  padding: .75rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6%;
+  gap: 3%;
 }
 
 .home__btns a {
@@ -227,11 +257,39 @@
 }
 
 .line {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 9999px;
+  padding: 1px;
 }
 
 .line p {
-  font-size: 1.25rem;
+  --spinning-border-bg: #f3ffef;
+}
+
+.dark-theme .line p {
+  --spinning-border-bg: #1f2822;
+}
+
+.line p.line_text {
+  font-size: 1.25rem !important;
+  display: inline-flex;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  background-color: var(--spinning-border-bg);
+  cursor: pointer;
+  backdrop-filter: blur(64px);
 }
 
 /* QUALITIES */
@@ -321,10 +379,6 @@
     max-width: 260px;
   }
 
-  .hero-sticker {
-    bottom: 25%;
-  }
-
   .card-block:nth-child(2) {
     transform: translateY(0px);
   }
@@ -364,10 +418,24 @@
     padding: .5rem;
   }
 
+  .ticket__title .mobile_social__icon {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  .home__btns .ticket {
+    width: fit-content;
+  }
+
+  .home__btn {
+    display: none;
+  }
+
   .home__btns {
     gap: 1rem;
     flex-wrap: wrap;
   }
+
 }
 
 @keyframes background-pan {
