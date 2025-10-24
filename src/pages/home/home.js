@@ -38,7 +38,7 @@ export const initHome = async () => {
 
           <div class="line">
             <span class="spinning_border"></span>
-            <p class="line_text"><span class="dot"></span>${data.availability}</p>
+            <p class="line_text"><span class="dot"></span>${data.working}</p>
           </div>
 
           <div class="home__btns">
