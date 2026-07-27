@@ -6,15 +6,15 @@
     },
     "about": {
       "name": "acerca",
-    "ariaLabel": "Link a la página acerca"
+      "ariaLabel": "Link a la página acerca"
     },
     "projects": {
       "name": "proyectos",
-    "ariaLabel": "Link a la página proyectos"
+      "ariaLabel": "Link a la página proyectos"
     },
     "contact": {
       "name": "contacto",
-    "ariaLabel": "Link a la página contacto"
+      "ariaLabel": "Link a la página contacto"
     }
   },
   "burgerMenu": "Botón del menú hamburguesa",
@@ -56,5 +56,57 @@
     "Jueves",
     "Viernes",
     "Sábado"
-  ]
+  ],
+  "whyMe": {
+    "fab": "¿Por qué yo?",
+    "fabAria": "Abrir el chat sobre por qué contratarme",
+    "title": "¿Por qué contratar a este tío?",
+    "question": "¿Por qué contratar a este tío?",
+    "close": "Cerrar",
+    "thinking": [
+      "Pensando",
+      "Revisando mis commits",
+      "Consultando mis referencias",
+      "Contando los detalles"
+    ],
+    "answer": [
+      {
+        "type": "p",
+        "text": "Respuesta corta: **me encanta crear, sea cual sea el stack.** Mi objetivo es resolver problemas y tener impacto, así que aprenderé lo que haga falta."
+      },
+      {
+        "type": "p",
+        "text": "Un buen desarrollo es **algo más que escribir código**. Va de todo lo demás que viene con el trabajo:"
+      },
+      {
+        "type": "li",
+        "text": "**Entregar y rendir bajo presión real**: plazos ajustados y un listón alto."
+      },
+      {
+        "type": "li",
+        "text": "**Los detalles no son un extra.** Me importa el usuario final más que nada: el diablo está en los detalles, y yo también."
+      },
+      {
+        "type": "li",
+        "text": "**No solo se me da bien el código, también entender a las personas.** Así llevé el negocio de mi padre a 100k+ seguidores en TikTok y 90k+ suscriptores en YouTube, con millones de visualizaciones y likes entre ambos."
+      },
+      {
+        "type": "li",
+        "text": "**Analizar el problema antes de ejecutar**, buscando siempre la mejor solución posible."
+      },
+      {
+        "type": "cta",
+        "text": "Y esto es solo la punta del iceberg. ",
+        "link": "Conozcámonos mejor",
+        "path": "/contact"
+      }
+    ],
+    "placeholder": "Escribe un mensaje…",
+    "model": "Anta 5",
+    "modelMode": "Extended",
+    "hint": "Si quieres preguntarme algo, concédeme una entrevista ;)",
+    "disclaimer": "Anta es humano y puede cometer errores. Por favor, verifícalo contratándolo.",
+    "copy": "Copiar",
+    "copied": "Copiado"
+  }
 }

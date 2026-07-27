@@ -6,15 +6,15 @@
     },
     "about": {
       "name": "acerca",
-    "ariaLabel": "Link á páxina acerca"
+      "ariaLabel": "Link á páxina acerca"
     },
     "projects": {
       "name": "proxectos",
-    "ariaLabel": "Link á páxina proxectos"
+      "ariaLabel": "Link á páxina proxectos"
     },
     "contact": {
       "name": "contacto",
-    "ariaLabel": "Link á páxina contacto"
+      "ariaLabel": "Link á páxina contacto"
     }
   },
   "burgerMenu": "Botón do menú hamburguesa",
@@ -56,5 +56,57 @@
     "Xoves",
     "Venres",
     "Sábado"
-  ]
+  ],
+  "whyMe": {
+    "fab": "Por que eu?",
+    "fabAria": "Abrir o chat sobre por que contratarme",
+    "title": "Por que contratar a este rapaz?",
+    "question": "Por que contratar a este rapaz?",
+    "close": "Pechar",
+    "thinking": [
+      "Pensando",
+      "Revisando os meus commits",
+      "Consultando as miñas referencias",
+      "Contando os detalles"
+    ],
+    "answer": [
+      {
+        "type": "p",
+        "text": "Resposta corta: **encántame crear, sexa cal sexa o stack.** O meu obxectivo é resolver problemas e ter impacto, así que aprenderei o que faga falta."
+      },
+      {
+        "type": "p",
+        "text": "Un bo desenvolvemento é **algo máis que escribir código**. Vai de todo o demais que vén co traballo:"
+      },
+      {
+        "type": "li",
+        "text": "**Entregar e render baixo presión real**: prazos axustados e un listón alto."
+      },
+      {
+        "type": "li",
+        "text": "**Os detalles non son un extra.** Impórtame o usuario final máis ca nada: o demo está nos detalles, eu tamén."
+      },
+      {
+        "type": "li",
+        "text": "**Non só se me dá ben o código, tamén entender ás persoas.** Así levei o negocio de meu pai a 100k+ seguidores en TikTok e 90k+ subscritores en YouTube, con millóns de visualizacións e likes entre ambos."
+      },
+      {
+        "type": "li",
+        "text": "**Analizar o problema antes de executar**, buscando sempre a mellor solución posible."
+      },
+      {
+        "type": "cta",
+        "text": "E isto é só a punta do iceberg. ",
+        "link": "Coñezámonos mellor",
+        "path": "/contact"
+      }
+    ],
+    "placeholder": "Escribe unha mensaxe…",
+    "model": "Anta 5",
+    "modelMode": "Extended",
+    "hint": "Se queres preguntarme algo, concédeme unha entrevista ;)",
+    "disclaimer": "Anta é humano e pode cometer erros. Por favor, verifícao contratándoo.",
+    "copy": "Copiar",
+    "copied": "Copiado"
+  }
 }

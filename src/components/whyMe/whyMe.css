@@ -1,0 +1,506 @@
+.whyme-root {
+  --whyme-surface: #faf9f5;
+  --whyme-raised: #fff;
+  --whyme-text: #1f1e1d;
+  --whyme-muted: #6e6b65;
+  --whyme-border: rgba(0, 0, 0, 0.1);
+  --whyme-bubble: #f0eee6;
+  --whyme-spark: #d97757;
+}
+
+.dark-theme .whyme-root {
+  --whyme-surface: #17161a;
+  --whyme-raised: #1f1e23;
+  --whyme-text: #f2f0ea;
+  --whyme-muted: #a09d97;
+  --whyme-border: rgba(255, 255, 255, 0.12);
+  --whyme-bubble: #2a2930;
+  --whyme-spark: #e08a6b;
+}
+
+/* the global `*` rule forces Teko everywhere, so re-set it inside the replica */
+.whyme-root,
+.whyme-root * {
+  font-family: var(--font-sans-serif);
+}
+
+/* ---------- floating trigger ---------- */
+
+.whyme-fab {
+  position: fixed;
+  left: 50%;
+  translate: -50% 0;
+  bottom: 1.5rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid var(--whyme-border);
+  border-radius: 999px;
+  background-color: var(--whyme-surface);
+  background-color: color-mix(in srgb, var(--whyme-surface) 82%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--whyme-text);
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  opacity: 0.72;
+  box-shadow: 0 2px 12px var(--shadow);
+  transition: var(--transition);
+}
+
+.whyme-fab:hover,
+.whyme-fab:focus-visible {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.whyme-fab__spark {
+  color: var(--whyme-spark);
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.whyme-fab:hover .whyme-fab__spark {
+  animation: whyme-spin 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes whyme-spin {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+/* ---------- modal shell ---------- */
+
+.whyme-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+}
+
+.whyme-modal[hidden] {
+  display: none;
+}
+
+.whyme-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  animation: whyme-fade 0.25s ease;
+}
+
+.whyme-modal__panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--whyme-surface);
+  color: var(--whyme-text);
+  animation: whyme-rise 0.32s cubic-bezier(0.645, 0.045, 0.355, 1);
+  outline: none;
+}
+
+@keyframes whyme-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes whyme-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.995);
+  }
+}
+
+/* ---------- top bar ---------- */
+
+.whyme-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.4rem;
+  flex-shrink: 0;
+}
+
+.whyme-topbar__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--whyme-text);
+}
+
+.whyme-topbar__title i {
+  font-size: 0.7rem;
+  color: var(--whyme-muted);
+}
+
+.whyme-close {
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid var(--whyme-border);
+  border-radius: 0.6rem;
+  background-color: transparent;
+  color: var(--whyme-text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.whyme-close:hover,
+.whyme-close:focus-visible {
+  background-color: var(--whyme-bubble);
+}
+
+/* ---------- thread ---------- */
+
+.whyme-thread {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 1.4rem;
+}
+
+.whyme-thread__inner {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.whyme-msg {
+  margin-bottom: 1.6rem;
+}
+
+.whyme-msg--user {
+  display: flex;
+  justify-content: flex-end;
+  animation: whyme-send 0.42s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes whyme-send {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+
+.whyme-bubble {
+  max-width: 80%;
+  padding: 0.7rem 1.05rem;
+  border-radius: 1rem;
+  background-color: var(--whyme-bubble);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.whyme-thinking {
+  font-size: 1rem;
+  padding: 0.2rem 0 1.4rem;
+}
+
+.whyme-thinking__text {
+  background: linear-gradient(
+    90deg,
+    var(--whyme-muted) 30%,
+    var(--whyme-text) 50%,
+    var(--whyme-muted) 70%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: whyme-shimmer 1.5s linear infinite;
+}
+
+@keyframes whyme-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.whyme-msg--assistant {
+  animation: whyme-fade 0.3s ease;
+}
+
+.whyme-avatar {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--whyme-spark);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+/* the answer body reads as prose, like the real thing */
+.whyme-prose,
+.whyme-prose * {
+  font-family: var(--font);
+}
+
+.whyme-prose {
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+.whyme-prose p {
+  margin-bottom: 1rem;
+}
+
+.whyme-prose__list {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.whyme-prose__list li {
+  margin-bottom: 0.7rem;
+  padding-left: 0.25rem;
+}
+
+.whyme-prose strong {
+  font-weight: 700;
+}
+
+.whyme-cta a {
+  color: var(--whyme-spark);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.whyme-cta a:hover,
+.whyme-cta a:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+.whyme-prose.is-streaming > *:last-child::after {
+  content: '';
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  margin-left: 0.12em;
+  vertical-align: -0.15em;
+  background-color: var(--whyme-text);
+  animation: whyme-blink 1s steps(2, start) infinite;
+}
+
+.whyme-prose.is-streaming > .whyme-prose__list:last-child::after {
+  display: none;
+}
+
+.whyme-prose.is-streaming > .whyme-prose__list:last-child li:last-child::after {
+  content: '';
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  margin-left: 0.12em;
+  vertical-align: -0.15em;
+  background-color: var(--whyme-text);
+  animation: whyme-blink 1s steps(2, start) infinite;
+}
+
+@keyframes whyme-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.whyme-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  color: var(--whyme-muted);
+  font-size: 0.85rem;
+}
+
+.whyme-actions button,
+.whyme-actions span {
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: inherit;
+  line-height: 1;
+}
+
+.whyme-actions button {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.whyme-actions button:hover,
+.whyme-actions button:focus-visible {
+  color: var(--whyme-text);
+}
+
+.whyme-actions .is-copied {
+  color: var(--whyme-spark);
+}
+
+/* ---------- composer replica ---------- */
+
+.whyme-composer {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0.5rem 1.4rem 1.1rem;
+}
+
+.whyme-composer__hint {
+  height: 1.6rem;
+  color: var(--whyme-spark);
+  font-size: 0.88rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: var(--transition);
+}
+
+.whyme-composer__hint.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.whyme-composer__box {
+  border: 1px solid var(--whyme-border);
+  border-radius: 1.1rem;
+  background-color: var(--whyme-raised);
+  padding: 0.9rem 1rem 0.7rem;
+  cursor: not-allowed;
+  box-shadow: 0 2px 10px var(--shadow);
+  user-select: none;
+}
+
+.whyme-composer__box.is-nudged {
+  animation: whyme-nudge 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+@keyframes whyme-nudge {
+  10%,
+  90% {
+    transform: translateX(-2px);
+  }
+  30%,
+  70% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+}
+
+.whyme-composer__input {
+  color: var(--whyme-muted);
+  font-size: 1.05rem;
+  padding-bottom: 1.1rem;
+}
+
+.whyme-composer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.whyme-composer__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.whyme-icon-btn {
+  color: var(--whyme-muted);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.whyme-model {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--whyme-text);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.whyme-model em {
+  color: var(--whyme-muted);
+  font-style: normal;
+}
+
+.whyme-model i {
+  font-size: 0.65rem;
+  color: var(--whyme-muted);
+}
+
+.whyme-disclaimer {
+  margin-top: 0.7rem;
+  color: var(--whyme-muted);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 620px) {
+  .whyme-fab {
+    bottom: 1rem;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .whyme-thread,
+  .whyme-composer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .whyme-topbar {
+    padding: 0.85rem 1rem;
+  }
+
+  .whyme-prose {
+    font-size: 1.05rem;
+  }
+
+  .whyme-composer__input {
+    font-size: 1rem;
+  }
+
+  .whyme-model em {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whyme-fab,
+  .whyme-modal__backdrop,
+  .whyme-modal__panel,
+  .whyme-msg--user,
+  .whyme-msg--assistant,
+  .whyme-composer__box.is-nudged,
+  .whyme-fab:hover .whyme-fab__spark {
+    animation: none;
+    transition: none;
+  }
+
+  .whyme-prose.is-streaming > *:last-child::after,
+  .whyme-prose.is-streaming > .whyme-prose__list:last-child li:last-child::after {
+    display: none;
+  }
+}

@@ -6,6 +6,7 @@ import {
   loadTranslations,
 } from './utils/functions';
 import { Listeners } from './utils/listeners';
+import { whyMe, initWhyMe } from './components/whyMe/whyMe';
 
 const PAGE_NAME = 'common';
 
@@ -121,9 +122,13 @@ export const initApp = async () => {
 
       </ul>
     </footer>
+
+    ${whyMe(data.whyMe)}
   `;
 
   initializeApp();
+
+  initWhyMe(data.whyMe);
 
   menuLinker();
 

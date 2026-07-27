@@ -56,5 +56,57 @@
     "Thursday",
     "Friday",
     "Saturday"
-  ]
+  ],
+  "whyMe": {
+    "fab": "Why me?",
+    "fabAria": "Open the why-hire-me chat",
+    "title": "Why hire me?",
+    "question": "Why hire me?",
+    "close": "Close",
+    "thinking": [
+      "Thinking",
+      "Reviewing my commits",
+      "Checking my references",
+      "Counting the details"
+    ],
+    "answer": [
+      {
+        "type": "p",
+        "text": "Short answer: **I love creating, no matter the stack.** My goal is solving problems and having an impact, so I'll learn whatever it takes."
+      },
+      {
+        "type": "p",
+        "text": "Good development is **more than writing code**. It's about everything else that comes with the job:"
+      },
+      {
+        "type": "li",
+        "text": "**Shipping and performing under real pressure**, tight deadlines and high standards."
+      },
+      {
+        "type": "li",
+        "text": "**Details aren't a nice-to-have.** I care about the end user more than anything: the devil is in the details, and so am I."
+      },
+      {
+        "type": "li",
+        "text": "**Being good with people, not just with code.** That's how I grew my father's business to 100k+ followers on TikTok and 90k+ subscribers on YouTube; millions of views and likes across both."
+      },
+      {
+        "type": "li",
+        "text": "**Analyzing the problem before executing**, always looking for the best possible solution."
+      },
+      {
+        "type": "cta",
+        "text": "And that's just the tip of the iceberg. ",
+        "link": "Let's get to know each other better",
+        "path": "/contact"
+      }
+    ],
+    "placeholder": "Write a message…",
+    "model": "Anta 5",
+    "modelMode": "Extended",
+    "hint": "If you want to ask me something, just grant me an interview ;)",
+    "disclaimer": "Anta is human and can make mistakes. Please double-check by hiring him.",
+    "copy": "Copy",
+    "copied": "Copied"
+  }
 }
