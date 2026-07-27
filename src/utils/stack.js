@@ -79,6 +79,7 @@ export const sideStack = [
     {
         name: 'Resend',
         svg: 'svgs/resend.svg',
+        dark: 'svgs/resend-dark.svg',
     },
     {
         name: 'Vite',

@@ -38,11 +38,23 @@ const stackList = (list) => {
       .map(
           (item) => `
           <div class="tech_stack__item">
-            <img src="${item.svg}" alt="${item.name}" />
+            ${stackIcon(item)}
             <p id="tech_stack__item__title">${item.name}</p>
           </div>
         `
       )
       .join('')}
         `;
+};
+
+// Items with a `dark` variant render both icons; stack.css shows the one that
+// matches the theme class on <html>, so the swap follows the theme toggle.
+const stackIcon = (item) => {
+    if (!item.dark) {
+        return `<img src="${item.svg}" alt="${item.name}" />`;
+    }
+
+    return `
+            <img class="tech_stack__icon--light" src="${item.svg}" alt="${item.name}" />
+            <img class="tech_stack__icon--dark" src="${item.dark}" alt="${item.name}" />`;
 };
