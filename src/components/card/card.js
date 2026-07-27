@@ -15,19 +15,21 @@ export const initProject = async (prop) => {
   const projectInfo = translations.info[`info_${prop}`];
   
   if (project) {
+    const hasMobile = project.mobile !== '';
+
     side = `
-      <div id="${project.name}" class="clipping">
+      <div id="${project.name}" class="clipping${hasMobile ? '' : ' no-mobile'}">
         <div class="preview desktop ticket">
           <img src="${project.desktop === '' ? project.cover : project.desktop}" alt="${translations.desktop_img_alt} ${project.name}">
         </div>
-        <div class="preview mobile">
-          ${
-            project.mobile === ''
-              ? ''
-              : `<img src="${project.mobile}" alt="${translations.mobile_img_alt} ${project.name}">`
-          }
-        </div>
-        
+        ${
+          hasMobile
+            ? `<div class="preview mobile">
+          <img src="${project.mobile}" alt="${translations.mobile_img_alt} ${project.name}">
+        </div>`
+            : ''
+        }
+
         <h1 class="">${project.name}</h1>
         <div class="description">${projectInfo}</div>
         <div class="others">

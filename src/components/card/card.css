@@ -79,6 +79,11 @@
     border: none;
   }
 
+  .clipping.no-mobile .desktop,
+  .clipping.no-mobile h1 {
+    grid-column: span 6;
+  }
+
   .description {
     padding: .5rem;
     grid-column: span 4;
