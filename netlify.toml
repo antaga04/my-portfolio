@@ -1,0 +1,16 @@
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  # pnpm 11 (see "packageManager" in package.json) needs Node 20+.
+  # Netlify defaults to Node 18, which fails corepack with
+  # "TypeError: Invalid host defined options".
+  NODE_VERSION = "22"
+
+# Send the old Netlify subdomain to the custom domain.
+[[redirects]]
+  from = "https://adrian-anta.netlify.app/*"
+  to = "https://adriananta.dev/:splat"
+  status = 301
+  force = true
