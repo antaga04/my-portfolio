@@ -95,17 +95,17 @@
 .contact-hero-wrapper {
   opacity: 1 !important;
   animation: none !important;
+  bottom: auto;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  height: 100svh;
+  left: auto;
+  transform: rotate(90deg);
 }
 
 .contact-hero-corner {
-  bottom: auto;
-  position: absolute;
-  top: 16.1%;
-  z-index: -1;
-  height: 67.1svh;
-  left: auto;
-  right: -6%;
-  transform: rotate(90deg);
+  height: 67svh;
 }
 
 .message-container {
@@ -117,7 +117,7 @@
 
 @media screen and (min-width: 1066px) {
   .contact-question {
-    font-size: 5rem;
+    font-size: 4.7rem;
   }
 }
 
@@ -126,12 +126,10 @@
     padding: 1.25rem 3rem;
   }
 
-  .contact-hero-corner {
-    bottom: 15%;
-    left: 0%;
-    right: auto;
-    top: auto;
-    transform: rotate(0deg);
+  .contact-hero-wrapper {
+    top: 50%;
+    transform: translateY(-25%) rotate(0deg);
+    left: 0;
     width: 100svw;
   }
 

@@ -1,6 +1,6 @@
 import { loadTranslations } from '../../utils/functions';
 import './stack.css';
-import { mainStack, sideStack } from '../../utils/stack';
+import { legacyStack, mainStack, sideStack } from '../../utils/stack';
 
 const PAGE_NAME = 'home';
 
@@ -20,6 +20,12 @@ export const stack = async () => {
         <h2 class="tech_stack__title">${translations.stacks.other}</h2>
         <div class="tech_stack__container">
         ${stackList(sideStack)}
+        </div>
+      </div>
+      <div>
+        <h2 class="tech_stack__title">${translations.stacks.known}</h2>
+        <div class="tech_stack__container">
+        ${stackList(legacyStack)}
         </div>
       </div>
     </section>

@@ -109,13 +109,16 @@ function handleAboutStyles() {
   const beginningP = document.getElementById('beginning-p');
   const umP = document.getElementById('um-p');
   const rcP = document.getElementById('rc-p');
+  const nowP = document.getElementById('now-p');
 
   const beginningImg = document.querySelector('.pacman--img img');
   const umCarImg = document.querySelector('.umCar--img img');
+  const claudeImg = document.querySelector('.claude--img img');
   const rcImgs = document.querySelectorAll('.web-developer__image img');
 
   setAboutStyles(beginningP, beginningImg);
   setAboutStyles(umP, umCarImg);
+  setAboutStyles(nowP, claudeImg);
   rcImgs.forEach((rcImg) => {
     setAboutStyles(rcP, rcImg);
   });

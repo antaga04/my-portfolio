@@ -8,22 +8,22 @@ const PAGE_NAME = 'about';
 const COMMON = 'common';
 
 export const initAbout = async () => {
-  const app = document.querySelector('#app');
-  const lang = localStorage.getItem('language');
-  const data = await loadTranslations(lang, PAGE_NAME);
-  const dateData = await loadTranslations(lang, COMMON);
+    const app = document.querySelector('#app');
+    const lang = localStorage.getItem('language');
+    const data = await loadTranslations(lang, PAGE_NAME);
+    const dateData = await loadTranslations(lang, COMMON);
 
-  const date = new Date();
+    const date = new Date();
 
-  const dayName = dateData.dayNames[date.getDay()];
-  const day = String(date.getDate()).padStart(2, '0');
-  const monthName = dateData.monthNames[date.getMonth()];
-  const year = date.getFullYear();
+    const dayName = dateData.dayNames[date.getDay()];
+    const day = String(date.getDate()).padStart(2, '0');
+    const monthName = dateData.monthNames[date.getMonth()];
+    const year = date.getFullYear();
 
-  const currentDate = `${dayName}, ${day} ${monthName}, ${year}`;
+    const currentDate = `${dayName}, ${day} ${monthName}, ${year}`;
 
-  app.innerHTML = '';
-  app.innerHTML += `
+    app.innerHTML = '';
+    app.innerHTML += `
     <div class="about__wrapper justify-text fadeInAnimation">
       <section class="about-page">
         <h1>${data.h1}</h1>
@@ -72,7 +72,7 @@ export const initAbout = async () => {
         </div>
 
         <div id="rc-p" class="paragraph web-developer">
-          <a class="img--flex web-developer__image rc-titulo" href="https://www.thepowermba.com/es/bootcamp-fullstack" arial-label="ThePower business school" target="_blank">
+          <a class="img--flex web-developer__image rc-titulo" href="https://thepower.education/thepowermba/tech/rock-the-code" arial-label="ThePower business school" target="_blank">
             <img
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693501843/Portafolio/rockTheCode-certificate_l0wkgx.png"
               alt="${data.alt_img_certificate}">
@@ -84,18 +84,38 @@ export const initAbout = async () => {
             </div>
           </div>
 
-          <a class="web-developer__image rc-tech" href="https://www.rockthecode.es/new/" arial-label="RockTheCode website"target="_blank">
+          <div class="web-developer__image rc-tech">
             <img
               src="https://res.cloudinary.com/drsfru9lj/image/upload/v1693505547/Portafolio/rock-the-code-tech_ufgnqt.png"
               alt="${data.alt_img_rtc}">
-          </a>
+          </div>
+          </div>
+          
+          <div id="now-p" class="paragraph bottom-space column--full with-border">
+            <h3>${data.h3_4}</h3>
+            <div class="now-content">
+              <p class="now-text">${data.p4_1}</p>
+              <figure class="claude--img claude">
+                <img
+                  src="/claude-dark.webp"
+                  alt="${data.alt_img_claude}">
+              </figure>
+              <p class="now-text">${data.p4_2}</p>
+            </div>
         </div>
-        
+
+        <div id="store-p" class="paragraph bottom-space column--full with-border">
+          <h3>${data.h3_5}</h3>
+          <div class="multi-column">
+            <p>${data.p5}</p>
+          </div>
+        </div>
+
         ${sideBar(data.aside)}
       </section>
     </div>
   `;
 
-  handleAboutStyles();
-  scrollToTop();
+    handleAboutStyles();
+    scrollToTop();
 };

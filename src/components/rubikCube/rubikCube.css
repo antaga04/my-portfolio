@@ -62,37 +62,37 @@
 
 .top {
   transform: translateZ(70px) rotateY(0deg);
-  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/4_bjkgci.png');
+  background: url('/anta-orange.webp');
   background-size: cover;
 }
 
 .bottom {
   transform: translateZ(-70px) rotateY(180deg);
-  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/4_bjkgci.png');
+  background: url('/anta-orange.webp');
   background-size: cover;
 }
 
 .left {
   transform: translateX(-70px) rotateY(-90deg);
-  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/2_teyfzm.png');
+  background: url('/anta-green.webp');
   background-size: cover;
 }
 
 .right {
   transform: translateX(70px) rotateY(90deg);
-  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134307/Portafolio/1_lb3rlc.png');
+  background: url('/anta-blue.webp');
   background-size: cover;
 }
 
 .front {
   transform: translateY(-70px) rotateX(90deg);
-  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/5_ajq59e.png');
+  background: url('/anta-yellow.webp');
   background-size: cover;
 }
 
 .back {
   transform: translateY(70px) rotateX(-90deg);
-  background: url('https://res.cloudinary.com/drsfru9lj/image/upload/v1693134306/Portafolio/3_amibcy.png');
+  background: url('/anta-white.webp');
   background-size: cover;
 }
 

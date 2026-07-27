@@ -520,7 +520,7 @@ footer p {
   pointer-events: none;
   position: absolute;
   right: 200%;
-  transition: opacity .7s cubic-bezier(.23, 1, .32, 1);
+  transition: opacity .25s cubic-bezier(.23, 1, .32, 1);
   width: max-content;
 }
 
@@ -545,7 +545,7 @@ footer p {
   transform-origin: var(--popper-transform-origin);
   transform-style: preserve-3d;
   transform: scale(.8) translateZ(0);
-  transition: visibility .4s ease-in-out, opacity .25s ease-in-out, transform .3s ease-in-out;
+  transition: visibility .25s ease-out, opacity .15s ease-out, transform .2s ease-out;
   visibility: hidden;
   width: max-content;
 }

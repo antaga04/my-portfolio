@@ -28,6 +28,9 @@
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  list-style: circle;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 .attributions a:hover {

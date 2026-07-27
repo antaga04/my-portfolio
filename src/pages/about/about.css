@@ -114,7 +114,32 @@ figure {
 
 .multi-column {
   column-count: 2;
-  column-gap: 1.3rem;
+  column-gap: 2.25rem;
+}
+
+.column--full {
+  grid-column: 1/-1;
+}
+
+.now-content {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr 1.25fr;
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.now-content .now-text {
+  margin: 0;
+}
+
+.now-content .claude {
+  margin: 0;
+}
+
+.now-content .claude img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 0;
 }
 
 .paragraph {
@@ -178,6 +203,7 @@ figure {
 
 .about-page .umCar--img:hover img,
 .about-page .pacman--img:hover img,
+.about-page .claude--img:hover img,
 .about-page .web-developer__image:hover img {
   filter: grayscale(0);
 }
@@ -357,6 +383,20 @@ figure {
 
   .multi-column {
     column-count: unset;
+  }
+
+  .now-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .now-content .claude {
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .now-content .now-text:last-of-type {
+    order: 2;
   }
 
   .rubik-container {
