@@ -10,9 +10,14 @@
   "h3_1": "O comezo",
   "h3_2": "Seguinte etapa",
   "h3_3": "O camino do desarrollo web",
+  "h3_4": "Onde estou agora",
+  "h3_5": "Tras o mostrador",
   "p1": "Todo comezou no instituto durante unha clase de informática. A nosa misión? Construír un videoxogo usando Python. Engancheime ao instante pero as clases eran lentas, así que decidín aprender pola miña conta en liña. En pouco tempo, Sabía o que quería: un clon de Pac-Man; bastante duro para un principiante. O resultado final non foi perfecto, pero foi unha gran experiencia de aprendizaxe.",
-  "p2": "Posteriormente, aventureime na universidade, cursando o grao de Enxeñaría Informáticac (actualmente rematando). Nalgún lugar neste camiño, xuntei forzas cun equipo chamado Uvigo MotorSport, un exclusivo equipo galego de Formula Student e así abrazar unha experiencia fresca. Con todo, o meu tempo alí foi breve, xa que non acendeu a miña verdadeira paixón.",
+  "p2": "Posteriormente, aventureime na universidade, cursando o grao de Enxeñaría Informáticac (actualmente rematando). Foi alí onde construín as miñas bases de programación, comezando por C++ para o esencial e aprendendo Java máis adiante. Nalgún lugar neste camiño, xuntei forzas cun equipo chamado Uvigo MotorSport, un exclusivo equipo galego de Formula Student e así abrazar unha experiencia fresca. Con todo, o meu tempo alí foi breve, xa que non acendeu a miña verdadeira paixón.",
   "p3": "Poco despois, xurdiu unha nova revelación; atopeime co mundo do desenvolvemento web. A decisión foi clara: matriculeime nun bootcamp para acelerar o meu dominio e conseguir unha certificación tanxible. Hoxe atópome case ao final do programa, cheo de ganas de rematar e emprender na viaxe do ámbito profesional",
+  "p4_1": "Hoxe céntrome no front-end no traballo, pero sigo desenvolvendo aplicacións full-stack pola miña conta. Traballei nunha plataforma multi-tenant para clientes construída desde cero, deseñando un sistema de temas que permite a cada cliente personalizar cores, border radius e moito máis. Despois, participei no lanzamento dunha segunda plataforma multi-tenant  unha de CTF  baixo a presión de prazos reais. Actualmente estou construíndo dúas bibliotecas de compoñentes, publicadas nun rexistro npm privado con Tailwind e Storybook. Ao mesmo tempo, formo parte dun equipo que desenvolve unha web de enquisas CAWI.",
+  "p4_2": "Fóra do traballo, estiven explorando o desenvolvemento con IA, supervisando a Claude para construír e publicar software real e funcional: unha aplicación de escritorio que automatiza a xeración de contratos para un avogado, entre outras funcións de arquivos, con instaladores auto-actualizables para Windows e macOS mediante CI/CD, e unha app para iOS actualmente en desenvolvemento. O mesmo principio de sempre: entender o problema real, coidar os detalles e entregar algo que de verdade funcione para a persoa que o usa.",
+  "p5": "Ademais do meu traballo a tempo completo como enxeñeiro, encargueime das vendas, a atención e as operacións diarias dunha tenda de cara ao cliente, de novembro de 2025 a maio de 2026. Iso supuxo xornadas de ata 13 horas entre semana durante tres meses, e de 10 horas durante outros tres, sen descoidar ningunha das dúas.",
   "aside": {
     "inspiration_ticket": "MEJORES WEBS PARA INSPIRARSE AO 50% DE DESCUENTO",
     "aside_h3_1": "Cousa que me gusta",
@@ -50,11 +55,17 @@
         "href": "https://www.meowlivia.com/",
         "name": "Olivia Ng",
         "p": "- Páxina /acerca baseada no seu deseño."
+      },
+      "item_4": {
+        "href": "https://x.com/theo",
+        "name": "Theo",
+        "p": "- Creador de contidos online."
       }
     }
   },
   "alt_img_pacman": "Clon do xogo de Pacman",
   "alt_img_umc": "Coche de carreiras de Uvigo MotorSport 2022",
   "alt_img_certificate": "Certificado de RockTheCode de ThePower business school",
-  "alt_img_rtc": "Tecnoloxías ensinadas en RockTheCode"
+  "alt_img_rtc": "Tecnoloxías ensinadas en RockTheCode",
+  "alt_img_claude": "IA de Claude"
 }

@@ -10,9 +10,14 @@
   "h3_1": "El comienzo",
   "h3_2": "Siguiente etapa",
   "h3_3": "El camino de desarrollo web",
+  "h3_4": "Dónde estoy ahora",
+  "h3_5": "Tras el mostrador",
   "p1": "Todo empezó en el instituto, durante una clase de informática. ¿Nuestra misión? Construir un videojuego con Python. Me enganché al instante. Pero las clases eran lentas, así que decidí aprender por mi cuenta en Internet. En poco tiempo supe lo que quería: un clon de Pac-Man. Bastante difícil para un principiante, pero estaba decidido. El resultado final no fue perfecto, pero fue una gran experiencia de aprendizaje",
-  "p2": "Posteriormente, me aventuré en la universidad, en busca de un título en Ingeniería Informática (actualmente terminando). En algún momento de este camino, me uní a un equipo llamado Uvigo MotorSport, un exclusivo equipo gallego de Formula Student; ansioso por abrazar una nueva experiencia. Sin embargo, mi estancia allí fue breve, ya que no encendió mi verdadera pasión",
+  "p2": "Posteriormente, me aventuré en la universidad, en busca de un título en Ingeniería Informática (actualmente terminando). Fue allí donde construí mis bases de programación, empezando por C++ para lo esencial y aprendiendo Java más adelante. En algún momento de este camino, me uní a un equipo llamado Uvigo MotorSport, un exclusivo equipo gallego de Formula Student; ansioso por abrazar una nueva experiencia. Sin embargo, mi estancia allí fue breve, ya que no encendió mi verdadera pasión",
   "p3": "Poco después llegó una nueva revelación; me topé con el mundo del desarrollo web. La decisión estaba clara: me matriculé en un bootcamp para acelerar mi aprendizaje y conseguir una certificación tangible. Hoy, me encuentro casi a al final del programa, rebosante de ilusión por concluirlo y embarcarme en un viaje hacia el ámbito profesional",
+  "p4_1": "Hoy me centro en el front-end en el trabajo, pero sigo desarrollando aplicaciones full-stack por mi cuenta. He trabajado en una plataforma multi-tenant para clientes construida desde cero, diseñando un sistema de temas que permite a cada cliente personalizar colores, border radius y mucho más. Después, participé en el lanzamiento de una segunda plataforma multi-tenant  una de CTF  bajo la presión de plazos reales. Actualmente estoy construyendo dos librerías de componentes, publicadas en un registro npm privado con Tailwind y Storybook. Al mismo tiempo, formo parte de un equipo que desarrolla una web de encuestas CAWI.",
+  "p4_2": "Fuera del trabajo, he estado explorando el desarrollo con IA, supervisando a Claude para construir y publicar software real y funcional: una aplicación de escritorio que automatiza la generación de contratos para un abogado, entre otras funciones de archivos, con instaladores auto-actualizables para Windows y macOS mediante CI/CD, y una app para iOS actualmente en desarrollo. El mismo principio de siempre: entender el problema real, cuidar los detalles y entregar algo que de verdad funcione para la persona que lo usa.",
+  "p5": "Además de mi trabajo a tiempo completo como ingeniero, me encargué de las ventas, la atención y las operaciones diarias de una tienda de cara al cliente, de noviembre de 2025 a mayo de 2026. Eso supuso jornadas de hasta 13 horas entre semana durante tres meses, y de 10 horas durante otros tres, sin descuidar ninguna de las dos.",
   "aside": {
     "inspiration_ticket": "MEJORES WEBS PARA INSPIRARSE AO 50% DE DESCUENTO",
     "aside_h3_1": "Cosas que me gustan",
@@ -50,11 +55,17 @@
         "href": "https://www.meowlivia.com/",
         "name": "Olivia Ng",
         "p": "- Página About basad en su diseño."
+      },
+      "item_4": {
+        "href": "https://x.com/theo",
+        "name": "Theo",
+        "p": "- Creador de contenido."
       }
     }
   },
   "alt_img_pacman": "Clon del juego de Pacman",
   "alt_img_umc": "Coche de carreras de Uvigo MotorSport 2022",
   "alt_img_certificate": "Certificado de RockTheCode de ThePower business school",
-  "alt_img_rtc": "Tecnologías enseñadas en RockTheCode"
+  "alt_img_rtc": "Tecnologías enseñadas en RockTheCode",
+  "alt_img_claude": "IA de Claude"
 }

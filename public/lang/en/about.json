@@ -1,21 +1,26 @@
 {
   "h1": "The Daily About",
-  "issue": "ISSUE #1",
+  "issue": "ISSUE #2",
   "price": "PRICE 5 CENTS",
   "h2": "Driven by Learning, Defined by Detail",
-  "p_intro_1": "<span class='drop-cap'>W</span>elcome! My name is Adrian, a future Full Stack maestro with a current focus on front-end, and a dedicated Software Engineering student.",
+  "p_intro_1": "<span class='drop-cap'>W</span>elcome! My name is Adrián, a Software Engineer currently focused on front-end and steadily building my way across the full stack.",
   "p_intro_2": "A perfectionist who believes details truly matter. I believe great development is about more than just writing code. It's about understanding the end user, empathizing with their needs, and anticipating how they'll interact with the final product.",
-  "p_intro_3": "My ultimate goal is to be a valuable asset to a company, where I can contribute meaningfully to its growth while elevating my skills as a developer.",
+  "p_intro_3": "My goal remains the same as it's always been: to be a valuable asset to the team I'm part of, contributing meaningfully to its growth while continuing to sharpen my craft as a developer.",
   "cube_caption": "Rotating Rubik Cube",
   "h3_1": "The beginning",
   "h3_2": "Next stage",
-  "h3_3": "Web developer path",
+  "h3_3": "Turning point",
+  "h3_4": "Where I am now",
+  "h3_5": "Behind the counter",
   "p1": "It all started back in high school during an IT class. Our mission? Build a video game using Python. I was instantly hooked. But classes were slow, so I decided to learn on my own online. Before long, I knew what I wanted: a Pac-Man clone. Pretty tough for a beginner, but I was determined. The end result wasn't perfect, but it was a great learning experience.",
-  "p2": "Subsequently, I ventured into college, pursuing a degree in Software Engineering (currently in my third year). Somewhere along this path, I joined forces with a team called Uvigo MotorSport—an exclusive Galician Formula Student team; eager to embrace a fresh experience. Yet, my time there was brief, as it didn't ignite my true passion.",
-  "p3": "Soon thereafter, a new revelation dawned; I stumbled upon the world of web development. The decision was clear: I enrolled in a bootcamp to expedite my mastery and secure a tangible certification. Today, I find myself almost midway through the program, brimming with anticipation to conclude and embark on a journey into the professional realm.",
+  "p2": "Subsequently, I ventured into college, pursuing a degree in Software Engineering at the University of Vigo, a path I completed in 2025. It was there that I built my programming foundations, starting with C++ for the basics and later picking up Java. Somewhere along the way, I joined Uvigo MotorSport, an exclusive Galician Formula Student team, eager to embrace a fresh experience. My time there was brief though, it didn't ignite my true passion. Around the same period, I also spent a semester abroad in Poland, which broadened the experience well beyond the codebase.",
+  "p3": "Soon thereafter, a new revelation dawned: I stumbled upon the world of web development. The decision was clear: I enrolled in a bootcamp to fast-track my skills and earn a tangible certification. I completed it in 2024, consistently pushing past the brief on every project, not just meeting requirements, but chasing the extra layer of polish and detail that actually matters to the end user. Not long after, I completed a software engineering internship, and soon after that, I joined my current company as a Software Engineer.",
+  "p4_1": "Today I'm focused on front-end at work but I keep developing full-stack apps on my own. I've worked on a multi-tenant client platform built from scratch, designing a theming system that lets each client personalize colors, border radius, and more. After that, I was involved in shipping a second multi-tenant platform, a CTF one, under real deadline pressure. I'm currently building two component libraries, published to a private npm registry with Tailwind and Storybook. At the same time, I am part of a team building a CAWI surveys website.",
+  "p4_2": "Outside of work, I've been exploring AI development, supervising Claude to build and ship real, working software: a desktop app that automates contract generation for a lawyer among other file features, complete with auto-updating Windows and macOS installers via CI/CD, and an iOS app currently in progress. Same principle as always: understand the real problem, sweat the details, and ship something that actually works for the person using it.",
+  "p5": "Alongside my full-time engineering job, I ran sales, service, and daily operations at a client-facing store from November 2025 to May 2026. That meant up to 13-hour weekdays for three months, then 10-hour days for three more, without slipping on either front.",
   "aside": {
     "inspiration_ticket": "50% OFF BEST WEBSITES FOR INSPIRATION",
-    "aside_h3_1": "Thing I like",
+    "aside_h3_1": "Things I like",
     "aside_h4_2": "Color Palette Generator",
     "aside_h4_3": "Amazing Mockups",
     "aside_h4_4": "Animations Library",
@@ -30,7 +35,7 @@
       "item_5": "Work out",
       "item_6": "Rock"
     },
-    "aside_p_2": "More often than not, we developers find ourselfs in need of insteresting colors for our projests. Huemint is just perfect for that.",
+    "aside_p_2": "More often than not, we developers find ourselves in need of interesting colors for our projects. Huemint is just perfect for that.",
     "aside_p_3": "For developers in search of impressive mockups, Shots is the ultimate choice.",
     "aside_p_4": "Elevate user experiences with Animista, a CSS animation library for developers.",
     "aside_p_5": "Achieve seamless animations with ease using Easings, your go-to resource for easing functions.",
@@ -50,11 +55,17 @@
         "href": "https://www.meowlivia.com/",
         "name": "Olivia Ng",
         "p": "- About page based on her design."
+      },
+      "item_4": {
+        "href": "https://x.com/theo",
+        "name": "Theo",
+        "p": "- Content creator."
       }
     }
   },
   "alt_img_pacman": "Pacman game clon",
   "alt_img_umc": "Uvigo MotorSport 2022 racing car",
   "alt_img_certificate": "Certificate from RockTheCode by ThePower business school",
-  "alt_img_rtc": "Technologies taught in RockTheCode"
+  "alt_img_rtc": "Technologies taught in RockTheCode",
+  "alt_img_claude": "Claude AI"
 }

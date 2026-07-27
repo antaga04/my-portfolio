@@ -20,6 +20,7 @@
   },
   "stacks": {
     "main": "Stack Principal",
-    "other": "Outras Tecnoloxías"
+    "other": "Outras Tecnoloxías",
+    "known": "Tamén Coñecidas"
   }
 }

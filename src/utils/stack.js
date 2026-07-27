@@ -18,6 +18,7 @@ export const mainStack = [
     {
         name: 'Express.js',
         svg: 'svgs/express.svg',
+        dark: 'svgs/express-dark.svg',
     },
     {
         name: 'MongoDB',
@@ -28,8 +29,8 @@ export const mainStack = [
         svg: 'svgs/mongoose.svg',
     },
     {
-        name: 'Docker',
-        svg: 'svgs/docker.svg',
+        name: 'Claude',
+        svg: 'svgs/claude.svg',
     },
     {
         name: 'Git',
@@ -38,6 +39,7 @@ export const mainStack = [
     {
         name: 'Vercel',
         svg: 'svgs/vercel.svg',
+        dark: 'svgs/vercel-dark.svg',
     },
 ];
 
@@ -47,12 +49,12 @@ export const sideStack = [
         svg: 'svgs/nextjs.svg',
     },
     {
-        name: 'Nest.js',
-        svg: 'svgs/nestjs.svg',
+        name: 'Docker',
+        svg: 'svgs/docker.svg',
     },
     {
-        name: 'HTML',
-        svg: 'svgs/html.svg',
+        name: 'Sass',
+        svg: 'svgs/sass.svg',
     },
     {
         name: 'CSS',
@@ -63,9 +65,28 @@ export const sideStack = [
         svg: 'svgs/javascript.svg',
     },
     {
-        name: 'Astro',
-        svg: 'svgs/astro.svg',
+        name: 'HTML',
+        svg: 'svgs/html.svg',
     },
+    {
+        name: 'Electron',
+        svg: 'svgs/electron.svg',
+    },
+    {
+        name: 'Expo',
+        svg: 'svgs/expo.svg',
+    },
+    {
+        name: 'Resend',
+        svg: 'svgs/resend.svg',
+    },
+    {
+        name: 'Vite',
+        svg: 'svgs/vite.svg',
+    },
+];
+
+export const legacyStack = [
     {
         name: 'Java',
         svg: 'svgs/java.svg',
@@ -81,5 +102,9 @@ export const sideStack = [
     {
         name: 'Python',
         svg: 'svgs/python.svg',
+    },
+    {
+        name: 'PostgreSQL',
+        svg: 'svgs/PostgreSQL.svg',
     },
 ];
