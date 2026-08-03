@@ -31,7 +31,7 @@ export const initContact = async () => {
         
           <div class="dev-email">
             <img class="arrow" src="https://res.cloudinary.com/drsfru9lj/image/upload/v1692125714/Portafolio/arrow_xfcrdc.svg" alt="Arrow">
-            <a href="mailto:antaga04@gmail.com">antaga04@gmail.com</a>
+            <a href="mailto:hello@adriananta.dev">hello@adriananta.dev</a>
           </div>
         </div>
       </div>

@@ -54,7 +54,7 @@
 #block(width: 100%)[
   #text(size: 8.6pt)[
     #link("https://adriananta.dev")[adriananta.dev] #h(8pt)
-    #link("mailto:antaga04@gmail.com")[antaga04\@gmail.com] #h(8pt)
+    #link("mailto:hello@adriananta.dev")[hello\@adriananta.dev] #h(8pt)
     #link("tel:+34604050533")[(34)604 05 05 33] #h(8pt)
     #link("https://linkedin.com/in/adrian-anta-gil")[/in/adrian-anta-gil] #h(8pt)
     #link("https://github.com/antaga04")[github.com/antaga04]
