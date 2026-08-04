@@ -128,7 +128,7 @@
   #v(12pt)
   #entry("Exchange semester", "Poland", "February 2024 – June 2024")
   #v(12pt)
-  #entry("Bachillerato de Excelencia", "STEAM track - passive house project", "")
+  #entry("Honors Baccalaureate (STEAM Track)", "Passive House project", "")
 ]
 
 // ---- Languages ----
